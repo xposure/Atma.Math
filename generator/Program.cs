@@ -15,34 +15,41 @@ namespace Atma.Math
     {
         public static string Namespace = "Atma.Math";
 
-        private static string GetRootDirectory()
+        private static bool IsRunningFromGenerateDirectory(out string rootPath)
         {
-            var path = Environment.CurrentDirectory;
-            while (string.Compare(Path.GetFileName(path), "source", true) != 0)
-                path = Path.GetDirectoryName(path);
-
-            return path;
+            var path = Path.GetDirectoryName(Environment.CurrentDirectory);
+            rootPath = path;
+            var folders = new string[] { "generator", "source", "tests" };
+            return folders.All(x => Directory.Exists(Path.Combine(path, x)));
         }
 
         private static void Main(string[] args)
         {
+            if (!IsRunningFromGenerateDirectory(out var basePath))
+            {
+                Console.WriteLine("I suggest you use `dotnet run` form the generator source folder");
+                return;
+            }
+
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
 
             Console.WriteLine("Atma.Math Generator");
 
-            var basePath = GetRootDirectory();
-            var path = Path.Combine(basePath, "Atma.Math\\source\\Intrinsic\\Math");
-            var testpath = Path.Combine(basePath, "Atma.Math\\tests\\Intrinsic\\Math");
+            var path = Path.Combine(basePath, "source\\Atma\\Math");
+            var testpath = Path.Combine(basePath, "tests\\Atma\\Math");
+            Console.WriteLine($"Path: {path}");
+            Console.WriteLine($"TestPath: {testpath}");
 
             AbstractType.Version = 45;
+            Console.WriteLine($"Initing types, version: {AbstractType.Version}");
             AbstractType.InitTypes();
 
             // see: https://www.opengl.org/sdk/docs/man4/html/ for functions
 
             foreach (var type in AbstractType.Types.Values)
             {
-                //Console.WriteLine("Processing " + type.NameTha);
+                Console.WriteLine("Processing " + type.NameThat);
                 // generate lib code
                 {
                     var filename = type.PathOf(path);
@@ -67,7 +74,7 @@ namespace Atma.Math
                 }
 
             }
-            Console.Read();
+            //Console.Read();
         }
     }
 }
