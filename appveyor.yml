@@ -16,9 +16,11 @@ environment:
 
 configuration: Debug
 
+skip_tags: true
+
 before_build:
   - cmd: nuget sources add -Name "AccountFeed" -Source %nuget_feed% -UserName %nuget_user% -Password %nuget_pass%
-  - cmd: dotnet restore --ignore-failed-sources --no-cache --disable-parallel
+  - cmd: dotnet restore
   - ps: gitversion /l console /output buildserver /updateAssemblyInfo
   - cmd: dotnet test
 
