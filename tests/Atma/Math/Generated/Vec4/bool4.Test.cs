@@ -22,38 +22,38 @@ namespace  Atma.Math.Generated.Vec4
         public void Constructors()
         {
             {
-                var v = new bool4(false);
-                Assert.AreEqual(false, v.x);
-                Assert.AreEqual(false, v.y);
-                Assert.AreEqual(false, v.z);
-                Assert.AreEqual(false, v.w);
+                var v = new bool4(true);
+                Assert.AreEqual(true, v.x);
+                Assert.AreEqual(true, v.y);
+                Assert.AreEqual(true, v.z);
+                Assert.AreEqual(true, v.w);
             }
             {
-                var v = new bool4(true, false, false, true);
+                var v = new bool4(true, true, false, true);
                 Assert.AreEqual(true, v.x);
-                Assert.AreEqual(false, v.y);
+                Assert.AreEqual(true, v.y);
                 Assert.AreEqual(false, v.z);
                 Assert.AreEqual(true, v.w);
             }
             {
-                var v = new bool4(new bool2(true, false));
+                var v = new bool4(new bool2(true, true));
                 Assert.AreEqual(true, v.x);
-                Assert.AreEqual(false, v.y);
+                Assert.AreEqual(true, v.y);
                 Assert.AreEqual(false, v.z);
                 Assert.AreEqual(false, v.w);
             }
             {
-                var v = new bool4(new bool3(false, false, false));
+                var v = new bool4(new bool3(false, false, true));
+                Assert.AreEqual(false, v.x);
+                Assert.AreEqual(false, v.y);
+                Assert.AreEqual(true, v.z);
+                Assert.AreEqual(false, v.w);
+            }
+            {
+                var v = new bool4(new bool4(false, false, false, false));
                 Assert.AreEqual(false, v.x);
                 Assert.AreEqual(false, v.y);
                 Assert.AreEqual(false, v.z);
-                Assert.AreEqual(false, v.w);
-            }
-            {
-                var v = new bool4(new bool4(true, true, true, false));
-                Assert.AreEqual(true, v.x);
-                Assert.AreEqual(true, v.y);
-                Assert.AreEqual(true, v.z);
                 Assert.AreEqual(false, v.w);
             }
         }
@@ -61,10 +61,10 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void Indexer()
         {
-            var v = new bool4(false, false, false, true);
-            Assert.AreEqual(false, v[0]);
+            var v = new bool4(true, false, true, true);
+            Assert.AreEqual(true, v[0]);
             Assert.AreEqual(false, v[1]);
-            Assert.AreEqual(false, v[2]);
+            Assert.AreEqual(true, v[2]);
             Assert.AreEqual(true, v[3]);
             
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[-2147483648]; } );
@@ -78,20 +78,20 @@ namespace  Atma.Math.Generated.Vec4
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[5]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[5] = false; } );
             
-            v[3] = false;
-            Assert.AreEqual(false, v[3]);
-            v[0] = true;
-            Assert.AreEqual(true, v[0]);
+            v[0] = false;
+            Assert.AreEqual(false, v[0]);
+            v[3] = true;
+            Assert.AreEqual(true, v[3]);
         }
 
         [Test]
         public void PropertyValues()
         {
-            var v = new bool4(true, false, false, false);
+            var v = new bool4(true, false, true, false);
             var vals = v.Values;
             Assert.AreEqual(true, vals[0]);
             Assert.AreEqual(false, vals[1]);
-            Assert.AreEqual(false, vals[2]);
+            Assert.AreEqual(true, vals[2]);
             Assert.AreEqual(false, vals[3]);
             Assert.That(vals.SequenceEqual(v.ToArray()));
         }
@@ -133,9 +133,9 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void Operators()
         {
-            var v1 = new bool4(true, true, false, false);
-            var v2 = new bool4(true, true, false, false);
-            var v3 = new bool4(false, false, true, true);
+            var v1 = new bool4(true, true, true, false);
+            var v2 = new bool4(true, true, true, false);
+            var v3 = new bool4(false, true, true, true);
             Assert.That(v1 == new bool4(v1));
             Assert.That(v2 == new bool4(v2));
             Assert.That(v3 == new bool4(v3));
@@ -147,7 +147,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void StringInterop()
         {
-            var v = new bool4(false, false, false, false);
+            var v = new bool4(false, false, true, true);
             
             var s0 = v.ToString();
             var s1 = v.ToString("#");
@@ -182,7 +182,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void SerializationJson()
         {
-            var v0 = new bool4(false, false, false, true);
+            var v0 = new bool4(true, true, false, false);
             var s0 = JsonConvert.SerializeObject(v0);
             
             var v1 = JsonConvert.DeserializeObject<bool4>(s0);

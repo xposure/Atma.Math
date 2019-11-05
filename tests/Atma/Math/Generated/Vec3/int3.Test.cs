@@ -22,44 +22,44 @@ namespace  Atma.Math.Generated.Vec3
         public void Constructors()
         {
             {
-                var v = new int3(-8);
-                Assert.AreEqual(-8, v.x);
-                Assert.AreEqual(-8, v.y);
-                Assert.AreEqual(-8, v.z);
+                var v = new int3(-7);
+                Assert.AreEqual(-7, v.x);
+                Assert.AreEqual(-7, v.y);
+                Assert.AreEqual(-7, v.z);
             }
             {
-                var v = new int3(9, 5, -8);
-                Assert.AreEqual(9, v.x);
-                Assert.AreEqual(5, v.y);
-                Assert.AreEqual(-8, v.z);
+                var v = new int3(-9, -5, 9);
+                Assert.AreEqual(-9, v.x);
+                Assert.AreEqual(-5, v.y);
+                Assert.AreEqual(9, v.z);
             }
             {
-                var v = new int3(new int2(3, -1));
-                Assert.AreEqual(3, v.x);
-                Assert.AreEqual(-1, v.y);
+                var v = new int3(new int2(6, 9));
+                Assert.AreEqual(6, v.x);
+                Assert.AreEqual(9, v.y);
                 Assert.AreEqual(0, v.z);
             }
             {
-                var v = new int3(new int3(-3, -6, 3));
-                Assert.AreEqual(-3, v.x);
-                Assert.AreEqual(-6, v.y);
-                Assert.AreEqual(3, v.z);
+                var v = new int3(new int3(5, -9, -3));
+                Assert.AreEqual(5, v.x);
+                Assert.AreEqual(-9, v.y);
+                Assert.AreEqual(-3, v.z);
             }
             {
-                var v = new int3(new int4(3, -3, -5, -5));
-                Assert.AreEqual(3, v.x);
-                Assert.AreEqual(-3, v.y);
-                Assert.AreEqual(-5, v.z);
+                var v = new int3(new int4(9, 1, -9, -3));
+                Assert.AreEqual(9, v.x);
+                Assert.AreEqual(1, v.y);
+                Assert.AreEqual(-9, v.z);
             }
         }
 
         [Test]
         public void Indexer()
         {
-            var v = new int3(-8, 2, 1);
-            Assert.AreEqual(-8, v[0]);
-            Assert.AreEqual(2, v[1]);
-            Assert.AreEqual(1, v[2]);
+            var v = new int3(-4, 8, -4);
+            Assert.AreEqual(-4, v[0]);
+            Assert.AreEqual(8, v[1]);
+            Assert.AreEqual(-4, v[2]);
             
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[-2147483648]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[-2147483648] = 0; } );
@@ -72,54 +72,54 @@ namespace  Atma.Math.Generated.Vec3
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[5]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[5] = 0; } );
             
-            v[1] = 0;
-            Assert.AreEqual(0, v[1]);
+            v[2] = 0;
+            Assert.AreEqual(0, v[2]);
             v[0] = 1;
             Assert.AreEqual(1, v[0]);
             v[1] = 2;
             Assert.AreEqual(2, v[1]);
-            v[1] = 3;
-            Assert.AreEqual(3, v[1]);
-            v[1] = 4;
-            Assert.AreEqual(4, v[1]);
-            v[2] = 5;
-            Assert.AreEqual(5, v[2]);
+            v[2] = 3;
+            Assert.AreEqual(3, v[2]);
+            v[2] = 4;
+            Assert.AreEqual(4, v[2]);
+            v[1] = 5;
+            Assert.AreEqual(5, v[1]);
             v[0] = 6;
             Assert.AreEqual(6, v[0]);
             v[2] = 7;
             Assert.AreEqual(7, v[2]);
-            v[1] = 8;
-            Assert.AreEqual(8, v[1]);
-            v[1] = 9;
-            Assert.AreEqual(9, v[1]);
-            v[0] = -1;
-            Assert.AreEqual(-1, v[0]);
-            v[2] = -2;
-            Assert.AreEqual(-2, v[2]);
-            v[2] = -3;
-            Assert.AreEqual(-3, v[2]);
-            v[2] = -4;
-            Assert.AreEqual(-4, v[2]);
-            v[2] = -5;
-            Assert.AreEqual(-5, v[2]);
-            v[2] = -6;
-            Assert.AreEqual(-6, v[2]);
-            v[1] = -7;
-            Assert.AreEqual(-7, v[1]);
+            v[0] = 8;
+            Assert.AreEqual(8, v[0]);
+            v[0] = 9;
+            Assert.AreEqual(9, v[0]);
+            v[2] = -1;
+            Assert.AreEqual(-1, v[2]);
+            v[0] = -2;
+            Assert.AreEqual(-2, v[0]);
+            v[1] = -3;
+            Assert.AreEqual(-3, v[1]);
+            v[0] = -4;
+            Assert.AreEqual(-4, v[0]);
+            v[1] = -5;
+            Assert.AreEqual(-5, v[1]);
+            v[1] = -6;
+            Assert.AreEqual(-6, v[1]);
+            v[0] = -7;
+            Assert.AreEqual(-7, v[0]);
             v[1] = -8;
             Assert.AreEqual(-8, v[1]);
-            v[2] = -9;
-            Assert.AreEqual(-9, v[2]);
+            v[1] = -9;
+            Assert.AreEqual(-9, v[1]);
         }
 
         [Test]
         public void PropertyValues()
         {
-            var v = new int3(8, 4, -9);
+            var v = new int3(-4, -7, 0);
             var vals = v.Values;
-            Assert.AreEqual(8, vals[0]);
-            Assert.AreEqual(4, vals[1]);
-            Assert.AreEqual(-9, vals[2]);
+            Assert.AreEqual(-4, vals[0]);
+            Assert.AreEqual(-7, vals[1]);
+            Assert.AreEqual(0, vals[2]);
             Assert.That(vals.SequenceEqual(v.ToArray()));
         }
 
@@ -158,9 +158,9 @@ namespace  Atma.Math.Generated.Vec3
         [Test]
         public void Operators()
         {
-            var v1 = new int3(-4, -9, -4);
-            var v2 = new int3(-4, -9, -4);
-            var v3 = new int3(-4, -10, -4);
+            var v1 = new int3(-5, 1, 2);
+            var v2 = new int3(-5, 1, 2);
+            var v3 = new int3(2, 1, -5);
             Assert.That(v1 == new int3(v1));
             Assert.That(v2 == new int3(v2));
             Assert.That(v3 == new int3(v3));
@@ -172,7 +172,7 @@ namespace  Atma.Math.Generated.Vec3
         [Test]
         public void StringInterop()
         {
-            var v = new int3(-1, 0, -1);
+            var v = new int3(4, -7, 5);
             
             var s0 = v.ToString();
             var s1 = v.ToString("#");
@@ -218,7 +218,7 @@ namespace  Atma.Math.Generated.Vec3
         [Test]
         public void SerializationJson()
         {
-            var v0 = new int3(6, 3, -4);
+            var v0 = new int3(5, 2, -9);
             var s0 = JsonConvert.SerializeObject(v0);
             
             var v1 = JsonConvert.DeserializeObject<int3>(s0);
@@ -232,43 +232,43 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantId()
         {
             {
-                var v0 = new int3(-5, 8, -5);
+                var v0 = new int3(5, 9, -7);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-9, 2, -4);
+                var v0 = new int3(-9, -7, -6);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(5, 5, 6);
+                var v0 = new int3(-5, -3, 6);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-9, 7, -1);
+                var v0 = new int3(1, -7, -4);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-9, 8, 6);
+                var v0 = new int3(-4, 9, 4);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(3, 1, 3);
+                var v0 = new int3(1, 3, 0);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(4, 2, 0);
+                var v0 = new int3(6, -9, -8);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-1, 1, -2);
+                var v0 = new int3(-1, -7, 8);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-9, -3, 0);
+                var v0 = new int3(-6, -9, -1);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new int3(-9, 4, 8);
+                var v0 = new int3(5, 5, -5);
                 Assert.AreEqual(v0, +v0);
             }
         }
@@ -277,43 +277,43 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantDouble()
         {
             {
-                var v0 = new int3(4, -2, -8);
+                var v0 = new int3(-1, -6, -4);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(-8, 2, -1);
+                var v0 = new int3(0, 6, 6);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(5, 0, 2);
+                var v0 = new int3(-9, -1, -2);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(3, 9, 6);
+                var v0 = new int3(-5, 1, -3);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(-8, -1, 0);
+                var v0 = new int3(9, -7, -4);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(5, 6, -3);
+                var v0 = new int3(3, -3, 2);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(1, 7, -1);
+                var v0 = new int3(1, 7, 9);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(-9, -5, 1);
+                var v0 = new int3(4, -2, -7);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(2, 7, 6);
+                var v0 = new int3(6, 7, -3);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new int3(7, -4, -6);
+                var v0 = new int3(-6, -8, -5);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
         }
@@ -322,43 +322,43 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantTriple()
         {
             {
-                var v0 = new int3(-1, -3, -7);
+                var v0 = new int3(-5, 9, -5);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(-8, 6, -3);
+                var v0 = new int3(-5, 8, 1);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(4, 8, 0);
+                var v0 = new int3(1, 6, -2);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(-6, -3, 1);
+                var v0 = new int3(6, 7, 0);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(-1, -1, 5);
+                var v0 = new int3(6, -7, -7);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(3, 9, 9);
+                var v0 = new int3(5, -5, -1);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(-8, 0, -4);
+                var v0 = new int3(6, 5, -3);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(0, 0, 1);
+                var v0 = new int3(7, 8, 5);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(-1, 6, -8);
+                var v0 = new int3(5, -5, 2);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new int3(8, -6, 5);
+                var v0 = new int3(-7, -6, -6);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
         }
@@ -367,53 +367,53 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantCommutative()
         {
             {
-                var v0 = new int3(5, 8, -8);
-                var v1 = new int3(6, -1, -6);
+                var v0 = new int3(3, -4, 3);
+                var v1 = new int3(-4, 0, 7);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(0, -1, 1);
-                var v1 = new int3(1, -7, 5);
+                var v0 = new int3(-9, 1, -3);
+                var v1 = new int3(-9, -2, 8);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(-5, 5, 1);
-                var v1 = new int3(-3, 6, 2);
+                var v0 = new int3(7, 0, -6);
+                var v1 = new int3(-5, -6, 1);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(1, 0, -5);
-                var v1 = new int3(1, -5, 2);
+                var v0 = new int3(-8, -3, -7);
+                var v1 = new int3(-6, -3, 9);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(9, 4, 5);
-                var v1 = new int3(6, -4, 1);
+                var v0 = new int3(0, 6, -4);
+                var v1 = new int3(8, -5, 6);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(-7, 2, 1);
-                var v1 = new int3(9, 6, -5);
+                var v0 = new int3(4, 9, 5);
+                var v1 = new int3(6, 6, -1);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(7, 9, -7);
-                var v1 = new int3(7, 2, 9);
+                var v0 = new int3(-1, -4, -8);
+                var v1 = new int3(-3, -4, -6);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(-3, 0, 6);
-                var v1 = new int3(-9, 5, 4);
+                var v0 = new int3(-5, 4, -7);
+                var v1 = new int3(3, 6, 7);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(5, 3, -2);
-                var v1 = new int3(0, -1, 2);
+                var v0 = new int3(3, 3, 3);
+                var v1 = new int3(-6, 4, -5);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new int3(4, 3, -3);
-                var v1 = new int3(-6, -6, 6);
+                var v0 = new int3(0, 6, 1);
+                var v1 = new int3(-3, -4, -3);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
         }
@@ -422,63 +422,63 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantAssociative()
         {
             {
-                var v0 = new int3(5, 2, -6);
-                var v1 = new int3(-5, -8, 2);
-                var v2 = new int3(-8, 4, 5);
+                var v0 = new int3(-8, 8, 8);
+                var v1 = new int3(4, 7, 8);
+                var v2 = new int3(8, 8, 5);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-7, -6, 9);
-                var v1 = new int3(1, -1, 6);
-                var v2 = new int3(-2, -2, 5);
+                var v0 = new int3(6, -1, 2);
+                var v1 = new int3(2, -1, -7);
+                var v2 = new int3(5, 7, -6);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-4, 2, -8);
-                var v1 = new int3(-7, -8, 5);
-                var v2 = new int3(9, -3, -4);
+                var v0 = new int3(2, -3, 4);
+                var v1 = new int3(5, -5, 1);
+                var v2 = new int3(0, -9, -1);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-2, -3, -2);
-                var v1 = new int3(-6, -9, 3);
-                var v2 = new int3(1, -6, -5);
+                var v0 = new int3(8, 4, 9);
+                var v1 = new int3(0, -7, 7);
+                var v2 = new int3(-1, 6, 9);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(4, -2, 4);
-                var v1 = new int3(-7, -5, -4);
-                var v2 = new int3(-9, -7, -2);
+                var v0 = new int3(-1, -9, -1);
+                var v1 = new int3(-2, 3, -2);
+                var v2 = new int3(-2, -8, -2);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(7, 0, -9);
-                var v1 = new int3(-4, -8, -1);
-                var v2 = new int3(3, -6, -7);
+                var v0 = new int3(6, 1, 5);
+                var v1 = new int3(-7, -9, 6);
+                var v2 = new int3(1, 7, -7);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-3, 7, 3);
-                var v1 = new int3(9, 4, 4);
-                var v2 = new int3(7, 6, -2);
+                var v0 = new int3(-2, -2, -4);
+                var v1 = new int3(6, 4, 8);
+                var v2 = new int3(-7, -9, 3);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-4, 0, -6);
-                var v1 = new int3(5, 0, -5);
-                var v2 = new int3(-2, 7, -9);
+                var v0 = new int3(-5, 5, -3);
+                var v1 = new int3(-4, -1, 3);
+                var v2 = new int3(6, -5, 7);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(0, -6, 6);
-                var v1 = new int3(4, -7, 1);
-                var v2 = new int3(-3, 2, -3);
+                var v0 = new int3(5, -1, 8);
+                var v1 = new int3(-3, -3, -7);
+                var v2 = new int3(9, -3, -7);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new int3(-5, -7, -4);
-                var v1 = new int3(0, -2, 3);
-                var v2 = new int3(6, 7, 7);
+                var v0 = new int3(5, -2, 5);
+                var v1 = new int3(3, -8, 9);
+                var v2 = new int3(9, -9, -4);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
         }
@@ -487,43 +487,43 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantIdNeg()
         {
             {
-                var v0 = new int3(-4, -1, -6);
+                var v0 = new int3(-9, -2, 7);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(-8, -6, 6);
+                var v0 = new int3(-8, 8, -9);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(9, 7, 6);
+                var v0 = new int3(-5, -7, 9);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(3, 4, -8);
+                var v0 = new int3(-6, 9, -5);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(-7, -5, 9);
+                var v0 = new int3(1, 8, 6);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(9, -6, 0);
+                var v0 = new int3(-1, -5, 8);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(-4, -1, -5);
+                var v0 = new int3(-9, 8, -6);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(-8, -6, -1);
+                var v0 = new int3(5, 3, -4);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(-8, 1, 0);
+                var v0 = new int3(-1, -4, 1);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new int3(8, 5, 4);
+                var v0 = new int3(-8, 3, -6);
                 Assert.AreEqual(v0, -(-v0));
             }
         }
@@ -532,53 +532,53 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantCommutativeNeg()
         {
             {
-                var v0 = new int3(0, -1, -8);
-                var v1 = new int3(-3, 7, 6);
+                var v0 = new int3(2, 3, 4);
+                var v1 = new int3(7, 3, -9);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(6, -6, -6);
-                var v1 = new int3(-9, -3, 4);
+                var v0 = new int3(5, -8, -9);
+                var v1 = new int3(-2, 5, 6);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(5, 5, 1);
-                var v1 = new int3(-7, -6, -8);
+                var v0 = new int3(-4, 8, 6);
+                var v1 = new int3(5, 7, -3);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(-6, 1, 9);
-                var v1 = new int3(-3, 8, -3);
+                var v0 = new int3(1, 8, 1);
+                var v1 = new int3(-7, 6, -4);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(-6, 8, 7);
-                var v1 = new int3(1, -1, -1);
+                var v0 = new int3(-6, -3, -6);
+                var v1 = new int3(0, -5, -6);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(9, -3, 0);
-                var v1 = new int3(-1, -6, -8);
+                var v0 = new int3(6, 0, -8);
+                var v1 = new int3(-1, -5, -4);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(8, 5, 8);
-                var v1 = new int3(1, -2, 6);
+                var v0 = new int3(-7, -6, -3);
+                var v1 = new int3(9, 1, 5);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(1, -3, -5);
-                var v1 = new int3(-7, -2, 6);
+                var v0 = new int3(-2, -2, -5);
+                var v1 = new int3(-6, 8, -5);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(-1, 2, 3);
-                var v1 = new int3(-1, 8, 5);
+                var v0 = new int3(-3, 1, 7);
+                var v1 = new int3(5, -1, 3);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new int3(-8, 7, 1);
-                var v1 = new int3(4, -6, -8);
+                var v0 = new int3(-6, 4, -7);
+                var v1 = new int3(9, -2, 9);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
         }
@@ -587,63 +587,63 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantAssociativeNeg()
         {
             {
-                var v0 = new int3(2, 2, -3);
-                var v1 = new int3(0, 8, 5);
-                var v2 = new int3(4, 2, 8);
+                var v0 = new int3(9, -5, 9);
+                var v1 = new int3(-8, 7, 7);
+                var v2 = new int3(8, -7, 5);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-5, -3, -7);
-                var v1 = new int3(6, 1, 8);
-                var v2 = new int3(-4, -6, 5);
+                var v0 = new int3(1, -6, 9);
+                var v1 = new int3(-3, -7, -8);
+                var v2 = new int3(-6, 3, 7);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-5, 4, -5);
-                var v1 = new int3(7, -2, 3);
-                var v2 = new int3(3, -9, 6);
+                var v0 = new int3(-8, -7, -9);
+                var v1 = new int3(-7, 9, 5);
+                var v2 = new int3(9, 2, -4);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-7, 2, 9);
-                var v1 = new int3(0, 1, 8);
-                var v2 = new int3(-9, 3, 4);
+                var v0 = new int3(8, 9, 7);
+                var v1 = new int3(5, -6, 3);
+                var v2 = new int3(4, 4, -2);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-5, -6, 5);
-                var v1 = new int3(1, -2, -8);
-                var v2 = new int3(1, 1, -9);
+                var v0 = new int3(-4, -6, 0);
+                var v1 = new int3(-3, 0, 2);
+                var v2 = new int3(3, -1, -9);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-4, 3, -5);
-                var v1 = new int3(8, -3, 0);
-                var v2 = new int3(6, 5, 6);
+                var v0 = new int3(-5, -8, 5);
+                var v1 = new int3(5, 8, 2);
+                var v2 = new int3(-1, -6, 1);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(0, -4, 9);
-                var v1 = new int3(9, -6, 9);
-                var v2 = new int3(-8, 6, 0);
+                var v0 = new int3(-4, -3, 5);
+                var v1 = new int3(4, 7, 4);
+                var v2 = new int3(-3, 0, 6);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-8, -4, -2);
-                var v1 = new int3(8, 7, -7);
-                var v2 = new int3(3, -9, 0);
+                var v0 = new int3(-8, -5, -9);
+                var v1 = new int3(5, 7, -3);
+                var v2 = new int3(5, 2, 7);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(0, -4, -2);
-                var v1 = new int3(-7, 5, -1);
-                var v2 = new int3(3, 9, -5);
+                var v0 = new int3(6, 4, -7);
+                var v1 = new int3(-7, -3, -8);
+                var v2 = new int3(5, -5, 4);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new int3(-2, 8, 8);
-                var v1 = new int3(8, -4, -5);
-                var v2 = new int3(1, -8, 9);
+                var v0 = new int3(8, 3, 0);
+                var v1 = new int3(4, -5, 0);
+                var v2 = new int3(2, -1, -2);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
         }
@@ -652,53 +652,53 @@ namespace  Atma.Math.Generated.Vec3
         public void TriangleInequality()
         {
             {
-                var v0 = new int3(-1, 5, -1);
-                var v1 = new int3(-3, 4, 2);
+                var v0 = new int3(9, -4, 0);
+                var v1 = new int3(0, -6, 6);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(3, 5, -3);
-                var v1 = new int3(2, -9, 7);
+                var v0 = new int3(-7, 2, -9);
+                var v1 = new int3(1, -7, -4);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(4, -2, 8);
-                var v1 = new int3(0, -9, -7);
+                var v0 = new int3(6, -1, -4);
+                var v1 = new int3(7, -4, 1);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(-1, -8, 6);
-                var v1 = new int3(8, 8, 1);
+                var v0 = new int3(-4, 2, -3);
+                var v1 = new int3(3, 4, -9);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(-5, 0, -7);
-                var v1 = new int3(1, -9, -8);
+                var v0 = new int3(-1, -6, -1);
+                var v1 = new int3(-5, 6, 6);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(9, -2, 9);
-                var v1 = new int3(7, -5, 9);
+                var v0 = new int3(-8, -2, -6);
+                var v1 = new int3(-8, -4, 0);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(6, -6, -4);
-                var v1 = new int3(-5, 0, -4);
+                var v0 = new int3(-5, 2, 6);
+                var v1 = new int3(-3, 8, 7);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(-4, -8, 0);
-                var v1 = new int3(3, 0, -4);
+                var v0 = new int3(-6, -5, 6);
+                var v1 = new int3(-3, -7, 8);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(-4, -1, -2);
-                var v1 = new int3(3, 2, -8);
+                var v0 = new int3(8, 3, -2);
+                var v1 = new int3(-3, -4, -3);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new int3(1, 2, -6);
-                var v1 = new int3(9, -8, 3);
+                var v0 = new int3(-5, 5, 8);
+                var v1 = new int3(0, 9, 0);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
         }
@@ -707,43 +707,43 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantNorm()
         {
             {
-                var v0 = new int3(6, -9, -2);
+                var v0 = new int3(-4, -7, 2);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(0, 4, 6);
+                var v0 = new int3(-3, 0, -8);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-9, -4, 2);
+                var v0 = new int3(1, -3, 4);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-3, -7, -4);
+                var v0 = new int3(6, -6, 0);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-5, 3, -9);
+                var v0 = new int3(-4, 7, -1);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(7, -7, -5);
+                var v0 = new int3(8, 1, 9);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-6, 1, 5);
+                var v0 = new int3(-1, 0, 5);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-8, -1, -9);
+                var v0 = new int3(-7, -6, 7);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(-2, -8, -3);
+                var v0 = new int3(-6, 5, -5);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new int3(5, 1, 0);
+                var v0 = new int3(7, 1, 3);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
         }
@@ -752,53 +752,53 @@ namespace  Atma.Math.Generated.Vec3
         public void InvariantCrossDot()
         {
             {
-                var v0 = new int3(5, 2, -2);
-                var v1 = new int3(7, 5, 8);
+                var v0 = new int3(8, -5, 6);
+                var v1 = new int3(0, 3, 7);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(-3, -3, -7);
-                var v1 = new int3(5, 2, 7);
+                var v0 = new int3(-7, 7, -3);
+                var v1 = new int3(-7, -6, 0);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(-8, 8, -8);
-                var v1 = new int3(-9, 3, -8);
+                var v0 = new int3(2, 3, 9);
+                var v1 = new int3(2, -8, 2);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(9, -6, -8);
-                var v1 = new int3(-1, -4, -6);
+                var v0 = new int3(-9, -6, -4);
+                var v1 = new int3(3, 0, 8);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(5, 8, 4);
-                var v1 = new int3(6, 9, -3);
+                var v0 = new int3(-8, -3, 3);
+                var v1 = new int3(4, 7, 9);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(7, -6, -2);
-                var v1 = new int3(2, 1, -2);
+                var v0 = new int3(-4, 5, 7);
+                var v1 = new int3(-3, -3, -6);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(-6, 7, -7);
-                var v1 = new int3(2, 5, -5);
+                var v0 = new int3(-6, -9, 7);
+                var v1 = new int3(-7, 6, 1);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(1, 3, -9);
-                var v1 = new int3(9, -7, -2);
+                var v0 = new int3(8, -6, 9);
+                var v1 = new int3(-8, 9, 2);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(7, 3, -4);
-                var v1 = new int3(-2, 7, -3);
+                var v0 = new int3(9, 8, 8);
+                var v1 = new int3(2, 1, 6);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
             {
-                var v0 = new int3(2, -5, 7);
-                var v1 = new int3(-5, 1, -6);
+                var v0 = new int3(-6, 4, -4);
+                var v1 = new int3(-8, 1, -1);
                 Assert.Less(glm.Abs(glm.Dot(v0, glm.Cross(v0, v1))), 0.1);
             }
         }
@@ -806,14 +806,14 @@ namespace  Atma.Math.Generated.Vec3
         [Test]
         public void RandomUniform0()
         {
-            var random = new Random(1780635494);
+            var random = new Random(717778136);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.Random(random, -3, 0);
+                var v = int3.Random(random, -3, 1);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -821,73 +821,19 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -2, 1.0);
-            Assert.AreEqual(avg.y, -2, 1.0);
-            Assert.AreEqual(avg.z, -2, 1.0);
+            Assert.AreEqual(avg.x, -1.5, 1.0);
+            Assert.AreEqual(avg.y, -1.5, 1.0);
+            Assert.AreEqual(avg.z, -1.5, 1.0);
             
-            Assert.AreEqual(variance.x, 0.6666666666666666, 3.0);
-            Assert.AreEqual(variance.y, 0.6666666666666666, 3.0);
-            Assert.AreEqual(variance.z, 0.6666666666666666, 3.0);
+            Assert.AreEqual(variance.x, 1.25, 3.0);
+            Assert.AreEqual(variance.y, 1.25, 3.0);
+            Assert.AreEqual(variance.z, 1.25, 3.0);
         }
 
         [Test]
         public void RandomUniform1()
         {
-            var random = new Random(2144337901);
-            var sum = new double3(0.0);
-            var sumSqr = new double3(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = int3.RandomUniform(random, -1, 3);
-                sum += (double3)v;
-                sumSqr += glm.Pow2((double3)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 0.5, 1.0);
-            Assert.AreEqual(avg.y, 0.5, 1.0);
-            Assert.AreEqual(avg.z, 0.5, 1.0);
-            
-            Assert.AreEqual(variance.x, 1.25, 3.0);
-            Assert.AreEqual(variance.y, 1.25, 3.0);
-            Assert.AreEqual(variance.z, 1.25, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform2()
-        {
-            var random = new Random(186654162);
-            var sum = new double3(0.0);
-            var sumSqr = new double3(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = int3.Random(random, -1, 3);
-                sum += (double3)v;
-                sumSqr += glm.Pow2((double3)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 0.5, 1.0);
-            Assert.AreEqual(avg.y, 0.5, 1.0);
-            Assert.AreEqual(avg.z, 0.5, 1.0);
-            
-            Assert.AreEqual(variance.x, 1.25, 3.0);
-            Assert.AreEqual(variance.y, 1.25, 3.0);
-            Assert.AreEqual(variance.z, 1.25, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform3()
-        {
-            var random = new Random(1958932776);
+            var random = new Random(949093070);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
@@ -912,16 +858,16 @@ namespace  Atma.Math.Generated.Vec3
         }
 
         [Test]
-        public void RandomUniform4()
+        public void RandomUniform2()
         {
-            var random = new Random(1700121967);
+            var random = new Random(217418614);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.Random(random, 0, 2);
+                var v = int3.Random(random, -2, 1);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -929,26 +875,80 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 0.5, 1.0);
-            Assert.AreEqual(avg.y, 0.5, 1.0);
-            Assert.AreEqual(avg.z, 0.5, 1.0);
+            Assert.AreEqual(avg.x, -1, 1.0);
+            Assert.AreEqual(avg.y, -1, 1.0);
+            Assert.AreEqual(avg.z, -1, 1.0);
             
-            Assert.AreEqual(variance.x, 0.25, 3.0);
-            Assert.AreEqual(variance.y, 0.25, 3.0);
-            Assert.AreEqual(variance.z, 0.25, 3.0);
+            Assert.AreEqual(variance.x, 0.6666666666666666, 3.0);
+            Assert.AreEqual(variance.y, 0.6666666666666666, 3.0);
+            Assert.AreEqual(variance.z, 0.6666666666666666, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform3()
+        {
+            var random = new Random(850059509);
+            var sum = new double3(0.0);
+            var sumSqr = new double3(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = int3.RandomUniform(random, 3, 7);
+                sum += (double3)v;
+                sumSqr += glm.Pow2((double3)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 4.5, 1.0);
+            Assert.AreEqual(avg.y, 4.5, 1.0);
+            Assert.AreEqual(avg.z, 4.5, 1.0);
+            
+            Assert.AreEqual(variance.x, 1.25, 3.0);
+            Assert.AreEqual(variance.y, 1.25, 3.0);
+            Assert.AreEqual(variance.z, 1.25, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform4()
+        {
+            var random = new Random(1893032463);
+            var sum = new double3(0.0);
+            var sumSqr = new double3(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = int3.Random(random, 4, 7);
+                sum += (double3)v;
+                sumSqr += glm.Pow2((double3)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 5, 1.0);
+            Assert.AreEqual(avg.y, 5, 1.0);
+            Assert.AreEqual(avg.z, 5, 1.0);
+            
+            Assert.AreEqual(variance.x, 0.6666666666666666, 3.0);
+            Assert.AreEqual(variance.y, 0.6666666666666666, 3.0);
+            Assert.AreEqual(variance.z, 0.6666666666666666, 3.0);
         }
 
         [Test]
         public void RandomPoisson0()
         {
-            var random = new Random(1159097561);
+            var random = new Random(434128247);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.RandomPoisson(random, 2.0790699494905165);
+                var v = int3.RandomPoisson(random, 0.6140042921127772);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -956,26 +956,26 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 2.0790699494905165, 1.0);
-            Assert.AreEqual(avg.y, 2.0790699494905165, 1.0);
-            Assert.AreEqual(avg.z, 2.0790699494905165, 1.0);
+            Assert.AreEqual(avg.x, 0.6140042921127772, 1.0);
+            Assert.AreEqual(avg.y, 0.6140042921127772, 1.0);
+            Assert.AreEqual(avg.z, 0.6140042921127772, 1.0);
             
-            Assert.AreEqual(variance.x, 2.0790699494905165, 3.0);
-            Assert.AreEqual(variance.y, 2.0790699494905165, 3.0);
-            Assert.AreEqual(variance.z, 2.0790699494905165, 3.0);
+            Assert.AreEqual(variance.x, 0.6140042921127772, 3.0);
+            Assert.AreEqual(variance.y, 0.6140042921127772, 3.0);
+            Assert.AreEqual(variance.z, 0.6140042921127772, 3.0);
         }
 
         [Test]
         public void RandomPoisson1()
         {
-            var random = new Random(917240767);
+            var random = new Random(1030759061);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.RandomPoisson(random, 3.024302597867466);
+                var v = int3.RandomPoisson(random, 3.34248948695254);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -983,26 +983,26 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 3.024302597867466, 1.0);
-            Assert.AreEqual(avg.y, 3.024302597867466, 1.0);
-            Assert.AreEqual(avg.z, 3.024302597867466, 1.0);
+            Assert.AreEqual(avg.x, 3.34248948695254, 1.0);
+            Assert.AreEqual(avg.y, 3.34248948695254, 1.0);
+            Assert.AreEqual(avg.z, 3.34248948695254, 1.0);
             
-            Assert.AreEqual(variance.x, 3.024302597867466, 3.0);
-            Assert.AreEqual(variance.y, 3.024302597867466, 3.0);
-            Assert.AreEqual(variance.z, 3.024302597867466, 3.0);
+            Assert.AreEqual(variance.x, 3.34248948695254, 3.0);
+            Assert.AreEqual(variance.y, 3.34248948695254, 3.0);
+            Assert.AreEqual(variance.z, 3.34248948695254, 3.0);
         }
 
         [Test]
         public void RandomPoisson2()
         {
-            var random = new Random(900081952);
+            var random = new Random(792254961);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.RandomPoisson(random, 1.0891061474518413);
+                var v = int3.RandomPoisson(random, 2.479324292847572);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -1010,26 +1010,26 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 1.0891061474518413, 1.0);
-            Assert.AreEqual(avg.y, 1.0891061474518413, 1.0);
-            Assert.AreEqual(avg.z, 1.0891061474518413, 1.0);
+            Assert.AreEqual(avg.x, 2.479324292847572, 1.0);
+            Assert.AreEqual(avg.y, 2.479324292847572, 1.0);
+            Assert.AreEqual(avg.z, 2.479324292847572, 1.0);
             
-            Assert.AreEqual(variance.x, 1.0891061474518413, 3.0);
-            Assert.AreEqual(variance.y, 1.0891061474518413, 3.0);
-            Assert.AreEqual(variance.z, 1.0891061474518413, 3.0);
+            Assert.AreEqual(variance.x, 2.479324292847572, 3.0);
+            Assert.AreEqual(variance.y, 2.479324292847572, 3.0);
+            Assert.AreEqual(variance.z, 2.479324292847572, 3.0);
         }
 
         [Test]
         public void RandomPoisson3()
         {
-            var random = new Random(493530742);
+            var random = new Random(1705128250);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.RandomPoisson(random, 2.6544238664928934);
+                var v = int3.RandomPoisson(random, 2.82191314842641);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -1037,26 +1037,26 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 2.6544238664928934, 1.0);
-            Assert.AreEqual(avg.y, 2.6544238664928934, 1.0);
-            Assert.AreEqual(avg.z, 2.6544238664928934, 1.0);
+            Assert.AreEqual(avg.x, 2.82191314842641, 1.0);
+            Assert.AreEqual(avg.y, 2.82191314842641, 1.0);
+            Assert.AreEqual(avg.z, 2.82191314842641, 1.0);
             
-            Assert.AreEqual(variance.x, 2.6544238664928934, 3.0);
-            Assert.AreEqual(variance.y, 2.6544238664928934, 3.0);
-            Assert.AreEqual(variance.z, 2.6544238664928934, 3.0);
+            Assert.AreEqual(variance.x, 2.82191314842641, 3.0);
+            Assert.AreEqual(variance.y, 2.82191314842641, 3.0);
+            Assert.AreEqual(variance.z, 2.82191314842641, 3.0);
         }
 
         [Test]
         public void RandomPoisson4()
         {
-            var random = new Random(1901556046);
+            var random = new Random(627776145);
             var sum = new double3(0.0);
             var sumSqr = new double3(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = int3.RandomPoisson(random, 2.124719613056965);
+                var v = int3.RandomPoisson(random, 0.5802227105387592);
                 sum += (double3)v;
                 sumSqr += glm.Pow2((double3)v);
             }
@@ -1064,13 +1064,13 @@ namespace  Atma.Math.Generated.Vec3
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 2.124719613056965, 1.0);
-            Assert.AreEqual(avg.y, 2.124719613056965, 1.0);
-            Assert.AreEqual(avg.z, 2.124719613056965, 1.0);
+            Assert.AreEqual(avg.x, 0.5802227105387592, 1.0);
+            Assert.AreEqual(avg.y, 0.5802227105387592, 1.0);
+            Assert.AreEqual(avg.z, 0.5802227105387592, 1.0);
             
-            Assert.AreEqual(variance.x, 2.124719613056965, 3.0);
-            Assert.AreEqual(variance.y, 2.124719613056965, 3.0);
-            Assert.AreEqual(variance.z, 2.124719613056965, 3.0);
+            Assert.AreEqual(variance.x, 0.5802227105387592, 3.0);
+            Assert.AreEqual(variance.y, 0.5802227105387592, 3.0);
+            Assert.AreEqual(variance.z, 0.5802227105387592, 3.0);
         }
 
     }

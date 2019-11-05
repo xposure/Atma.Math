@@ -22,50 +22,50 @@ namespace  Atma.Math.Generated.Vec4
         public void Constructors()
         {
             {
-                var v = new double4(0.5d);
-                Assert.AreEqual(0.5d, v.x);
-                Assert.AreEqual(0.5d, v.y);
-                Assert.AreEqual(0.5d, v.z);
-                Assert.AreEqual(0.5d, v.w);
+                var v = new double4(-9d);
+                Assert.AreEqual(-9d, v.x);
+                Assert.AreEqual(-9d, v.y);
+                Assert.AreEqual(-9d, v.z);
+                Assert.AreEqual(-9d, v.w);
             }
             {
-                var v = new double4(-2d, 8.5d, -6.5d, -2d);
+                var v = new double4(8.5d, -3.5d, 5d, 5.5d);
+                Assert.AreEqual(8.5d, v.x);
+                Assert.AreEqual(-3.5d, v.y);
+                Assert.AreEqual(5d, v.z);
+                Assert.AreEqual(5.5d, v.w);
+            }
+            {
+                var v = new double4(new double2(-2d, 7d));
                 Assert.AreEqual(-2d, v.x);
-                Assert.AreEqual(8.5d, v.y);
-                Assert.AreEqual(-6.5d, v.z);
-                Assert.AreEqual(-2d, v.w);
-            }
-            {
-                var v = new double4(new double2(8d, -5d));
-                Assert.AreEqual(8d, v.x);
-                Assert.AreEqual(-5d, v.y);
+                Assert.AreEqual(7d, v.y);
                 Assert.AreEqual(0.0, v.z);
                 Assert.AreEqual(0.0, v.w);
             }
             {
-                var v = new double4(new double3(8d, -1d, 0.0));
-                Assert.AreEqual(8d, v.x);
-                Assert.AreEqual(-1d, v.y);
-                Assert.AreEqual(0.0, v.z);
+                var v = new double4(new double3(8.5d, -3d, -4d));
+                Assert.AreEqual(8.5d, v.x);
+                Assert.AreEqual(-3d, v.y);
+                Assert.AreEqual(-4d, v.z);
                 Assert.AreEqual(0.0, v.w);
             }
             {
-                var v = new double4(new double4(-7.5d, -5d, 4.5d, 0.0));
-                Assert.AreEqual(-7.5d, v.x);
-                Assert.AreEqual(-5d, v.y);
-                Assert.AreEqual(4.5d, v.z);
-                Assert.AreEqual(0.0, v.w);
+                var v = new double4(new double4(-7d, -4d, -8d, -8.5d));
+                Assert.AreEqual(-7d, v.x);
+                Assert.AreEqual(-4d, v.y);
+                Assert.AreEqual(-8d, v.z);
+                Assert.AreEqual(-8.5d, v.w);
             }
         }
 
         [Test]
         public void Indexer()
         {
-            var v = new double4(-0.5d, 0.0, -4d, 1.0);
-            Assert.AreEqual(-0.5d, v[0]);
-            Assert.AreEqual(0.0, v[1]);
-            Assert.AreEqual(-4d, v[2]);
-            Assert.AreEqual(1.0, v[3]);
+            var v = new double4(-3d, -7d, -5.5d, -9d);
+            Assert.AreEqual(-3d, v[0]);
+            Assert.AreEqual(-7d, v[1]);
+            Assert.AreEqual(-5.5d, v[2]);
+            Assert.AreEqual(-9d, v[3]);
             
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[-2147483648]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[-2147483648] = 0.0; } );
@@ -78,95 +78,95 @@ namespace  Atma.Math.Generated.Vec4
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[5]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[5] = 0.0; } );
             
-            v[0] = 0.0;
-            Assert.AreEqual(0.0, v[0]);
-            v[2] = 1.0;
-            Assert.AreEqual(1.0, v[2]);
-            v[1] = 2d;
-            Assert.AreEqual(2d, v[1]);
-            v[0] = 3d;
-            Assert.AreEqual(3d, v[0]);
-            v[1] = 4d;
-            Assert.AreEqual(4d, v[1]);
-            v[1] = 5d;
-            Assert.AreEqual(5d, v[1]);
-            v[1] = 6d;
-            Assert.AreEqual(6d, v[1]);
-            v[1] = 7d;
-            Assert.AreEqual(7d, v[1]);
-            v[1] = 8d;
-            Assert.AreEqual(8d, v[1]);
-            v[0] = 9d;
-            Assert.AreEqual(9d, v[0]);
-            v[3] = -1d;
-            Assert.AreEqual(-1d, v[3]);
-            v[3] = -2d;
-            Assert.AreEqual(-2d, v[3]);
-            v[3] = -3d;
-            Assert.AreEqual(-3d, v[3]);
-            v[0] = -4d;
-            Assert.AreEqual(-4d, v[0]);
-            v[3] = -5d;
-            Assert.AreEqual(-5d, v[3]);
-            v[3] = -6d;
-            Assert.AreEqual(-6d, v[3]);
-            v[3] = -7d;
-            Assert.AreEqual(-7d, v[3]);
-            v[3] = -8d;
-            Assert.AreEqual(-8d, v[3]);
-            v[1] = -9d;
-            Assert.AreEqual(-9d, v[1]);
+            v[2] = 0.0;
+            Assert.AreEqual(0.0, v[2]);
+            v[1] = 1.0;
+            Assert.AreEqual(1.0, v[1]);
+            v[3] = 2d;
+            Assert.AreEqual(2d, v[3]);
+            v[3] = 3d;
+            Assert.AreEqual(3d, v[3]);
+            v[0] = 4d;
+            Assert.AreEqual(4d, v[0]);
+            v[0] = 5d;
+            Assert.AreEqual(5d, v[0]);
+            v[0] = 6d;
+            Assert.AreEqual(6d, v[0]);
+            v[2] = 7d;
+            Assert.AreEqual(7d, v[2]);
+            v[0] = 8d;
+            Assert.AreEqual(8d, v[0]);
+            v[3] = 9d;
+            Assert.AreEqual(9d, v[3]);
+            v[2] = -1d;
+            Assert.AreEqual(-1d, v[2]);
+            v[2] = -2d;
+            Assert.AreEqual(-2d, v[2]);
+            v[2] = -3d;
+            Assert.AreEqual(-3d, v[2]);
+            v[2] = -4d;
+            Assert.AreEqual(-4d, v[2]);
+            v[1] = -5d;
+            Assert.AreEqual(-5d, v[1]);
+            v[1] = -6d;
+            Assert.AreEqual(-6d, v[1]);
+            v[1] = -7d;
+            Assert.AreEqual(-7d, v[1]);
+            v[2] = -8d;
+            Assert.AreEqual(-8d, v[2]);
+            v[3] = -9d;
+            Assert.AreEqual(-9d, v[3]);
             v[3] = -9.5d;
             Assert.AreEqual(-9.5d, v[3]);
-            v[2] = -8.5d;
-            Assert.AreEqual(-8.5d, v[2]);
-            v[0] = -7.5d;
-            Assert.AreEqual(-7.5d, v[0]);
+            v[0] = -8.5d;
+            Assert.AreEqual(-8.5d, v[0]);
+            v[2] = -7.5d;
+            Assert.AreEqual(-7.5d, v[2]);
             v[0] = -6.5d;
             Assert.AreEqual(-6.5d, v[0]);
             v[3] = -5.5d;
             Assert.AreEqual(-5.5d, v[3]);
-            v[0] = -4.5d;
-            Assert.AreEqual(-4.5d, v[0]);
-            v[3] = -3.5d;
-            Assert.AreEqual(-3.5d, v[3]);
+            v[3] = -4.5d;
+            Assert.AreEqual(-4.5d, v[3]);
+            v[2] = -3.5d;
+            Assert.AreEqual(-3.5d, v[2]);
             v[0] = -2.5d;
             Assert.AreEqual(-2.5d, v[0]);
             v[3] = -1.5d;
             Assert.AreEqual(-1.5d, v[3]);
             v[3] = -0.5d;
             Assert.AreEqual(-0.5d, v[3]);
-            v[0] = 0.5d;
-            Assert.AreEqual(0.5d, v[0]);
-            v[3] = 1.5d;
-            Assert.AreEqual(1.5d, v[3]);
-            v[2] = 2.5d;
-            Assert.AreEqual(2.5d, v[2]);
-            v[0] = 3.5d;
-            Assert.AreEqual(3.5d, v[0]);
-            v[3] = 4.5d;
-            Assert.AreEqual(4.5d, v[3]);
-            v[0] = 5.5d;
-            Assert.AreEqual(5.5d, v[0]);
-            v[0] = 6.5d;
-            Assert.AreEqual(6.5d, v[0]);
-            v[0] = 7.5d;
-            Assert.AreEqual(7.5d, v[0]);
+            v[2] = 0.5d;
+            Assert.AreEqual(0.5d, v[2]);
+            v[0] = 1.5d;
+            Assert.AreEqual(1.5d, v[0]);
+            v[1] = 2.5d;
+            Assert.AreEqual(2.5d, v[1]);
+            v[1] = 3.5d;
+            Assert.AreEqual(3.5d, v[1]);
+            v[0] = 4.5d;
+            Assert.AreEqual(4.5d, v[0]);
+            v[3] = 5.5d;
+            Assert.AreEqual(5.5d, v[3]);
+            v[1] = 6.5d;
+            Assert.AreEqual(6.5d, v[1]);
+            v[1] = 7.5d;
+            Assert.AreEqual(7.5d, v[1]);
             v[1] = 8.5d;
             Assert.AreEqual(8.5d, v[1]);
-            v[3] = 9.5d;
-            Assert.AreEqual(9.5d, v[3]);
+            v[2] = 9.5d;
+            Assert.AreEqual(9.5d, v[2]);
         }
 
         [Test]
         public void PropertyValues()
         {
-            var v = new double4(8d, 4d, -1d, -3d);
+            var v = new double4(-5d, -3d, 1.5d, 9d);
             var vals = v.Values;
-            Assert.AreEqual(8d, vals[0]);
-            Assert.AreEqual(4d, vals[1]);
-            Assert.AreEqual(-1d, vals[2]);
-            Assert.AreEqual(-3d, vals[3]);
+            Assert.AreEqual(-5d, vals[0]);
+            Assert.AreEqual(-3d, vals[1]);
+            Assert.AreEqual(1.5d, vals[2]);
+            Assert.AreEqual(9d, vals[3]);
             Assert.That(vals.SequenceEqual(v.ToArray()));
         }
 
@@ -237,9 +237,9 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void Operators()
         {
-            var v1 = new double4(6.5d, 4d, -7d, -7d);
-            var v2 = new double4(6.5d, 4d, -7d, -7d);
-            var v3 = new double4(-7d, -7d, 4d, 6.5d);
+            var v1 = new double4(-4d, 4d, -2.5d, -1d);
+            var v2 = new double4(-4d, 4d, -2.5d, -1d);
+            var v3 = new double4(-1d, -2.5d, 4d, -4d);
             Assert.That(v1 == new double4(v1));
             Assert.That(v2 == new double4(v2));
             Assert.That(v3 == new double4(v3));
@@ -251,7 +251,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void StringInterop()
         {
-            var v = new double4(-0.5d, 2d, -3.5d, -9d);
+            var v = new double4(4.5d, -4d, -8.5d, -5d);
             
             var s0 = v.ToString();
             var s1 = v.ToString("#");
@@ -297,7 +297,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void SerializationJson()
         {
-            var v0 = new double4(-3d, -4.5d, -7.5d, 0.0);
+            var v0 = new double4(1.5d, 2d, 4.5d, 3.5d);
             var s0 = JsonConvert.SerializeObject(v0);
             
             var v1 = JsonConvert.DeserializeObject<double4>(s0);
@@ -311,43 +311,43 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantId()
         {
             {
-                var v0 = new double4(8.5d, -5.5d, -9d, -5d);
+                var v0 = new double4(3.5d, -2.5d, 6.5d, 7d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(7d, -3d, -9.5d, -7d);
+                var v0 = new double4(8.5d, 3.5d, 4.5d, 8d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(4.5d, -5.5d, 0.0, -0.5d);
+                var v0 = new double4(-9.5d, 3d, -7.5d, 6d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(-3d, -9.5d, -8.5d, -7d);
+                var v0 = new double4(-0.5d, -3.5d, -4d, -8.5d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(6.5d, 2.5d, -1d, 1.5d);
+                var v0 = new double4(5.5d, -5.5d, 5.5d, -9.5d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(-7d, -6.5d, -3.5d, -4d);
+                var v0 = new double4(1.5d, 4.5d, -2.5d, -9d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(3d, -4d, -9.5d, -5d);
+                var v0 = new double4(-9d, -3.5d, -6d, -5.5d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(0.0, -7d, -4d, -7.5d);
+                var v0 = new double4(2.5d, -6d, 9.5d, -9d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(3d, 2.5d, 7d, -0.5d);
+                var v0 = new double4(9.5d, 8.5d, -2d, 3d);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new double4(6.5d, -2d, -0.5d, -3.5d);
+                var v0 = new double4(5d, 8d, 4d, -9.5d);
                 Assert.AreEqual(v0, +v0);
             }
         }
@@ -356,43 +356,43 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantDouble()
         {
             {
-                var v0 = new double4(1.0, -9d, -2d, 9d);
+                var v0 = new double4(-8.5d, -5d, 4d, 5d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(3d, -1.5d, 9d, -1.5d);
+                var v0 = new double4(-8.5d, -4d, -2.5d, -3d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(-6.5d, -8d, 8.5d, 9.5d);
+                var v0 = new double4(-1d, -5d, -2d, 7d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(-5d, -5d, 4d, 2.5d);
+                var v0 = new double4(8.5d, -2d, 6.5d, -6d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(-5d, 8.5d, -1d, -4d);
+                var v0 = new double4(-6d, -9d, 5d, 2d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(6.5d, 7d, 9.5d, 8.5d);
+                var v0 = new double4(9d, 7d, 7.5d, 1.0);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(-5d, -3d, 0.5d, 1.5d);
+                var v0 = new double4(7.5d, 9d, -3d, 2d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(5d, 8.5d, 8d, 7.5d);
+                var v0 = new double4(6d, -7d, 6d, -3.5d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(-6d, -5d, 6d, 6.5d);
+                var v0 = new double4(-1.5d, -0.5d, 3d, 6d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new double4(1.5d, -2.5d, -1d, -4d);
+                var v0 = new double4(4.5d, 6d, -1d, -7d);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
         }
@@ -401,43 +401,43 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantTriple()
         {
             {
-                var v0 = new double4(-4d, -8.5d, 6d, -9.5d);
+                var v0 = new double4(-4d, -0.5d, 2d, -6d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-2d, 1.0, 1.0, -2d);
+                var v0 = new double4(-6d, -6.5d, -8.5d, -8.5d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-8.5d, 6d, 2d, 4.5d);
+                var v0 = new double4(9d, 2.5d, 8.5d, 3.5d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(8d, -9.5d, 4d, 8.5d);
+                var v0 = new double4(5d, -2d, -0.5d, -2d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-2.5d, 5.5d, 4.5d, -5d);
+                var v0 = new double4(-2d, 2d, 6.5d, 8d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-1d, 8.5d, -7d, -3d);
+                var v0 = new double4(2d, 0.0, 4d, -4.5d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-8d, -2.5d, -9d, 9.5d);
+                var v0 = new double4(9.5d, 3.5d, 3.5d, 0.0);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(1.0, -2d, -6d, 4d);
+                var v0 = new double4(9d, -4d, 9d, -8d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(-0.5d, -5.5d, -2d, 9.5d);
+                var v0 = new double4(-1.5d, -8d, -4.5d, -4.5d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new double4(1.0, -5.5d, 3d, -2.5d);
+                var v0 = new double4(3.5d, 7.5d, -7.5d, -2d);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
         }
@@ -446,53 +446,53 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantCommutative()
         {
             {
-                var v0 = new double4(-7.5d, -4.5d, -8d, -2.5d);
-                var v1 = new double4(-3d, -0.5d, -4.5d, -8.5d);
+                var v0 = new double4(-7.5d, -8.5d, 2d, 4d);
+                var v1 = new double4(6.5d, 3.5d, 7.5d, -2.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-1.5d, 9d, -2.5d, 6.5d);
-                var v1 = new double4(4d, -3d, -8.5d, 5d);
+                var v0 = new double4(0.0, 6.5d, 5.5d, -1.5d);
+                var v1 = new double4(4d, -5.5d, -7.5d, -0.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-2.5d, -5.5d, 7.5d, 7.5d);
-                var v1 = new double4(1.0, 2d, -2d, 6d);
+                var v0 = new double4(7d, -8d, 7d, -2d);
+                var v1 = new double4(8d, 5d, -2d, -8d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(7.5d, 7.5d, -6.5d, 1.0);
-                var v1 = new double4(8.5d, -4d, 0.0, 2.5d);
+                var v0 = new double4(-2d, -6.5d, 4d, 7d);
+                var v1 = new double4(-4d, 9d, -7d, 5.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-1d, -7d, 9d, -8.5d);
-                var v1 = new double4(-3d, -7.5d, -4.5d, 3d);
+                var v0 = new double4(-0.5d, -2.5d, -3.5d, 4d);
+                var v1 = new double4(0.0, 7.5d, 7.5d, -4.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-7d, -1d, -5.5d, -6d);
-                var v1 = new double4(-4.5d, 0.0, 9.5d, 5.5d);
+                var v0 = new double4(3.5d, 0.5d, -2d, -9.5d);
+                var v1 = new double4(2.5d, -7.5d, -9d, -7.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-4d, 7.5d, -8d, -4d);
-                var v1 = new double4(-5d, -5.5d, -6d, -9.5d);
+                var v0 = new double4(8d, 6.5d, 5.5d, -9.5d);
+                var v1 = new double4(7.5d, -6.5d, -8d, -7d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(-4d, -1d, -0.5d, -6d);
-                var v1 = new double4(5d, -6.5d, -7.5d, -5d);
+                var v0 = new double4(9d, -5.5d, 3.5d, -3d);
+                var v1 = new double4(-0.5d, -0.5d, -3d, 1.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(8d, 5.5d, -4.5d, -2.5d);
-                var v1 = new double4(3d, 9.5d, 2.5d, 5d);
+                var v0 = new double4(-9d, 9.5d, 8.5d, -7d);
+                var v1 = new double4(8.5d, -8d, -0.5d, -1d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new double4(9.5d, 4.5d, -8.5d, 1.5d);
-                var v1 = new double4(-9d, 5.5d, -7.5d, 6.5d);
+                var v0 = new double4(-8.5d, -7.5d, -8d, -8d);
+                var v1 = new double4(4.5d, 1.5d, -4.5d, -0.5d);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
         }
@@ -501,63 +501,63 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantAssociative()
         {
             {
-                var v0 = new double4(-9.5d, -1d, -9.5d, 6d);
-                var v1 = new double4(9.5d, 1.5d, 4d, -6d);
-                var v2 = new double4(1.5d, -9.5d, -6d, -2.5d);
+                var v0 = new double4(7d, -0.5d, -6d, 8.5d);
+                var v1 = new double4(-8d, 9d, 8d, -7d);
+                var v2 = new double4(-7.5d, 2.5d, 4.5d, -0.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-8d, -5.5d, -8.5d, 3.5d);
-                var v1 = new double4(-8d, 4.5d, -0.5d, 1.5d);
-                var v2 = new double4(-4d, 6.5d, -8.5d, 0.0);
+                var v0 = new double4(-4d, -4.5d, -0.5d, -2d);
+                var v1 = new double4(-1.5d, 1.5d, 3d, 3.5d);
+                var v2 = new double4(-9d, 5d, 2.5d, 2.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-5.5d, -3d, 7d, 0.0);
-                var v1 = new double4(-8d, -6.5d, -1d, -7d);
-                var v2 = new double4(4.5d, 4.5d, 1.5d, 9.5d);
+                var v0 = new double4(-2d, -4.5d, -6d, -7d);
+                var v1 = new double4(3.5d, -2.5d, 9d, -7d);
+                var v2 = new double4(-7d, -5d, 9d, -5.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-3.5d, 0.0, 7d, 7d);
-                var v1 = new double4(5.5d, -9.5d, 7d, -9d);
-                var v2 = new double4(8.5d, 2.5d, 1.5d, -1.5d);
+                var v0 = new double4(-3d, 0.5d, 3d, -3.5d);
+                var v1 = new double4(-2d, 3.5d, -4d, 4.5d);
+                var v2 = new double4(8.5d, -1d, -6.5d, -9d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(9.5d, -6.5d, 0.0, -5.5d);
-                var v1 = new double4(9.5d, -2d, -5.5d, -6.5d);
-                var v2 = new double4(0.5d, -9.5d, -7.5d, -3.5d);
+                var v0 = new double4(-9.5d, 6d, -1.5d, -3.5d);
+                var v1 = new double4(5d, -8d, -3d, 2d);
+                var v2 = new double4(7.5d, -6.5d, -2.5d, 2.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-6.5d, 3d, 7.5d, 8d);
-                var v1 = new double4(8d, 9.5d, 2.5d, -6.5d);
-                var v2 = new double4(2.5d, -7.5d, 6d, -7d);
+                var v0 = new double4(4.5d, 1.5d, -5.5d, 5.5d);
+                var v1 = new double4(-7.5d, -8d, -2d, 8.5d);
+                var v2 = new double4(-5d, 5d, 9.5d, 7.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-2.5d, -7.5d, 6.5d, 3.5d);
-                var v1 = new double4(-0.5d, 1.0, 2d, 1.5d);
-                var v2 = new double4(-7.5d, -9.5d, 0.0, 4.5d);
+                var v0 = new double4(-2.5d, -8d, -7.5d, -3.5d);
+                var v1 = new double4(2.5d, 8.5d, 3.5d, 1.0);
+                var v2 = new double4(2d, 7.5d, 6.5d, -3.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-7.5d, -3.5d, -7d, -7.5d);
-                var v1 = new double4(-1d, 7d, 9d, 6d);
-                var v2 = new double4(-8d, -7.5d, -4.5d, 1.5d);
+                var v0 = new double4(9.5d, -6.5d, -1d, 9.5d);
+                var v1 = new double4(2d, 7d, -2.5d, -0.5d);
+                var v2 = new double4(3d, -2d, 2.5d, -9.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-6.5d, 8.5d, 9d, 9.5d);
-                var v1 = new double4(0.0, 7d, 5.5d, -8d);
-                var v2 = new double4(-7d, -6.5d, 7.5d, -8d);
+                var v0 = new double4(8d, -8d, -2d, -8.5d);
+                var v1 = new double4(8.5d, -5.5d, 3d, -5d);
+                var v2 = new double4(7d, 0.5d, 9.5d, -1.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new double4(-6d, 0.5d, 4.5d, -1.5d);
-                var v1 = new double4(-8d, 1.5d, 3d, 3d);
-                var v2 = new double4(3d, 3d, -3.5d, -6.5d);
+                var v0 = new double4(6.5d, -3.5d, 9d, 9.5d);
+                var v1 = new double4(-0.5d, -4.5d, -0.5d, 6.5d);
+                var v2 = new double4(4.5d, 7.5d, 6.5d, 8.5d);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
         }
@@ -566,43 +566,43 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantIdNeg()
         {
             {
-                var v0 = new double4(-7.5d, -9.5d, -7d, 8d);
+                var v0 = new double4(4d, -5.5d, -8d, 9d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-7d, 6.5d, 1.0, -4d);
+                var v0 = new double4(-7d, -1.5d, 4.5d, 9.5d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-4d, -8d, 8d, -5d);
+                var v0 = new double4(-4d, -3d, 6.5d, 3d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-7d, 6d, -2.5d, -6.5d);
+                var v0 = new double4(-4d, 0.5d, 9d, 1.0);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(5.5d, -6.5d, -4.5d, 8d);
+                var v0 = new double4(-1d, 6d, -1d, 0.0);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-1.5d, 8d, 7.5d, -9.5d);
+                var v0 = new double4(6.5d, 4d, -4d, 7d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-5.5d, -4.5d, 4d, 0.5d);
+                var v0 = new double4(0.5d, 5.5d, 6.5d, 8.5d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-6.5d, -7.5d, 5.5d, 6d);
+                var v0 = new double4(6.5d, -5d, 0.0, -5d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(2d, 6d, -2d, 3d);
+                var v0 = new double4(2.5d, 1.5d, 2d, 6d);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new double4(-3d, -9d, 7d, -5.5d);
+                var v0 = new double4(9d, -3.5d, 7d, 0.0);
                 Assert.AreEqual(v0, -(-v0));
             }
         }
@@ -611,53 +611,53 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantCommutativeNeg()
         {
             {
-                var v0 = new double4(-3.5d, 8d, -4d, 4.5d);
-                var v1 = new double4(3d, -6d, -2.5d, 7d);
+                var v0 = new double4(9.5d, 0.0, -5.5d, 1.5d);
+                var v1 = new double4(-2.5d, -1.5d, -4d, 8.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(-4.5d, 7d, -8.5d, 6.5d);
-                var v1 = new double4(-3d, -2.5d, 2d, -7d);
+                var v0 = new double4(6.5d, -8.5d, 5d, -9.5d);
+                var v1 = new double4(0.5d, -0.5d, -1d, -1d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(0.5d, -2.5d, -6.5d, 6d);
-                var v1 = new double4(-7.5d, 3d, 4d, 4d);
+                var v0 = new double4(-3.5d, 6.5d, 5d, 0.0);
+                var v1 = new double4(-5.5d, -7.5d, 8d, 7d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(-2.5d, 9d, 8.5d, -0.5d);
-                var v1 = new double4(-3d, -6.5d, -2d, -2.5d);
+                var v0 = new double4(-9d, 8.5d, 6d, 5.5d);
+                var v1 = new double4(-3d, -4d, 7.5d, -1d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(-1d, 8d, -8d, 3.5d);
-                var v1 = new double4(3d, 6.5d, 6d, 7d);
+                var v0 = new double4(5.5d, -6d, 3.5d, -7d);
+                var v1 = new double4(0.0, 6.5d, 9.5d, -0.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(-8.5d, 7.5d, -4d, -8.5d);
-                var v1 = new double4(-6d, 5d, 2.5d, -3d);
+                var v0 = new double4(-7d, 5d, -4d, 4d);
+                var v1 = new double4(1.5d, 0.5d, 9d, 8.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(1.0, 7.5d, 4d, -2d);
-                var v1 = new double4(9.5d, 4d, -6d, -7.5d);
+                var v0 = new double4(-1.5d, 2d, -3.5d, -9d);
+                var v1 = new double4(9.5d, 4d, 3d, -8d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(3d, 8d, 7d, 3.5d);
-                var v1 = new double4(-8d, 8.5d, 4.5d, 2d);
+                var v0 = new double4(2.5d, -6d, -2d, -1.5d);
+                var v1 = new double4(-7.5d, -9d, -4.5d, -7.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(6.5d, 4.5d, -4.5d, 4d);
-                var v1 = new double4(9d, 9d, -3d, 3.5d);
+                var v0 = new double4(-5.5d, 4.5d, -5.5d, -5d);
+                var v1 = new double4(6.5d, 3.5d, -1d, -0.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new double4(-8.5d, -5d, -3.5d, -5.5d);
-                var v1 = new double4(0.5d, -5.5d, -1.5d, -8.5d);
+                var v0 = new double4(6.5d, -7d, -6.5d, -9d);
+                var v1 = new double4(8d, 3d, -6d, -0.5d);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
         }
@@ -666,63 +666,63 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantAssociativeNeg()
         {
             {
-                var v0 = new double4(5.5d, 9.5d, 7.5d, -5.5d);
-                var v1 = new double4(-6d, -3.5d, 1.0, 9.5d);
-                var v2 = new double4(7.5d, 4d, 2d, -1.5d);
+                var v0 = new double4(-4d, 5.5d, 5d, -6.5d);
+                var v1 = new double4(-9.5d, 7.5d, -7d, 1.0);
+                var v2 = new double4(0.0, -4.5d, -6d, 4d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(9.5d, 0.0, -1d, -9d);
-                var v1 = new double4(8.5d, -1.5d, -0.5d, -6.5d);
-                var v2 = new double4(-4d, -4d, 0.0, -8d);
+                var v0 = new double4(2.5d, 4.5d, 2.5d, 8.5d);
+                var v1 = new double4(1.0, 9d, -5.5d, -3.5d);
+                var v2 = new double4(3.5d, -5.5d, -1d, -3.5d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(4d, -2d, 6.5d, -9d);
-                var v1 = new double4(-4d, -9.5d, -5.5d, -4.5d);
-                var v2 = new double4(0.5d, 6d, 9d, 0.0);
+                var v0 = new double4(7d, -3.5d, 1.5d, -3.5d);
+                var v1 = new double4(6d, -5d, 7.5d, 8d);
+                var v2 = new double4(9.5d, 2.5d, -7d, -6d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(-3d, -5d, -5d, -1.5d);
-                var v1 = new double4(-9.5d, 2d, 6.5d, -7d);
-                var v2 = new double4(-3.5d, -1d, -9d, 0.0);
+                var v0 = new double4(9d, -4d, 1.0, 2d);
+                var v1 = new double4(2d, 4.5d, -9d, 9.5d);
+                var v2 = new double4(6d, -5.5d, -8d, 3.5d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(6d, 1.0, -8.5d, 7.5d);
-                var v1 = new double4(4d, 5.5d, 3d, -7.5d);
-                var v2 = new double4(8.5d, -9.5d, -9.5d, 3d);
+                var v0 = new double4(5d, -7.5d, -2.5d, -9d);
+                var v1 = new double4(-5.5d, 8.5d, -6.5d, 0.5d);
+                var v2 = new double4(-5.5d, -9.5d, -5d, 4.5d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(0.5d, -6.5d, -3.5d, -8d);
-                var v1 = new double4(-9.5d, -8d, 7.5d, 3.5d);
-                var v2 = new double4(1.5d, 9d, 6d, -6.5d);
+                var v0 = new double4(6d, 1.5d, 5.5d, -3.5d);
+                var v1 = new double4(-1.5d, 7d, 4d, 9.5d);
+                var v2 = new double4(-8d, -6d, -1.5d, -2.5d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(-4d, 0.0, 2d, -1d);
-                var v1 = new double4(-7d, -6.5d, 1.5d, 3.5d);
-                var v2 = new double4(3.5d, 5.5d, -3d, -3d);
+                var v0 = new double4(8d, -7.5d, -5.5d, 8.5d);
+                var v1 = new double4(4d, -1d, -9d, -5.5d);
+                var v2 = new double4(7d, 7.5d, -9.5d, -5.5d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(8.5d, -3.5d, -8.5d, 4.5d);
-                var v1 = new double4(2d, -2.5d, 2d, 2.5d);
-                var v2 = new double4(5.5d, -2d, 8.5d, 7.5d);
+                var v0 = new double4(-2.5d, -8d, -5.5d, 0.0);
+                var v1 = new double4(9d, -2.5d, 1.5d, -0.5d);
+                var v2 = new double4(9.5d, 6d, 6.5d, -2d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(-7d, -9d, 7.5d, 8d);
-                var v1 = new double4(-3d, -4.5d, 9d, 6.5d);
-                var v2 = new double4(4.5d, 8.5d, -5.5d, 3d);
+                var v0 = new double4(9.5d, 3.5d, -2d, 9.5d);
+                var v1 = new double4(-9d, -9d, -6d, -0.5d);
+                var v2 = new double4(3.5d, 0.0, -1d, 2d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new double4(3.5d, 2.5d, 4d, -5d);
-                var v1 = new double4(-0.5d, -3.5d, 9d, 5.5d);
-                var v2 = new double4(-1d, -4d, -9d, 4.5d);
+                var v0 = new double4(-5d, -5.5d, -3.5d, -4d);
+                var v1 = new double4(0.0, 0.5d, -2.5d, 8d);
+                var v2 = new double4(-1d, -1d, 9.5d, -1d);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
         }
@@ -731,53 +731,53 @@ namespace  Atma.Math.Generated.Vec4
         public void TriangleInequality()
         {
             {
-                var v0 = new double4(-7.5d, 7.5d, 1.0, -4d);
-                var v1 = new double4(5.5d, -5.5d, 8d, 6d);
+                var v0 = new double4(-9.5d, -6.5d, -2d, 0.5d);
+                var v1 = new double4(1.5d, -8d, 4.5d, -4d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(3d, -2d, -7.5d, -5d);
-                var v1 = new double4(-5d, -7.5d, -7d, -2.5d);
+                var v0 = new double4(8.5d, 8d, 1.5d, 3.5d);
+                var v1 = new double4(-5.5d, 4.5d, 3d, 3.5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(0.5d, 4d, 9.5d, 7d);
-                var v1 = new double4(-4d, -9.5d, -9d, 4d);
+                var v0 = new double4(7d, 7.5d, -7.5d, 0.5d);
+                var v1 = new double4(2d, -2.5d, 0.0, 0.0);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(6.5d, 0.5d, -9d, -9.5d);
-                var v1 = new double4(1.0, 8d, -5d, 2.5d);
+                var v0 = new double4(1.5d, -5d, 1.0, -8d);
+                var v1 = new double4(3d, -3d, -9d, 8.5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(6.5d, 6d, 9.5d, 2d);
-                var v1 = new double4(-9d, -5d, 0.0, -7d);
+                var v0 = new double4(8d, -4d, -8.5d, 2.5d);
+                var v1 = new double4(-5.5d, 1.0, 7d, 0.0);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(9d, 9.5d, 6d, 1.0);
-                var v1 = new double4(0.0, 6.5d, -9.5d, 3d);
+                var v0 = new double4(-8d, -0.5d, 3d, -9.5d);
+                var v1 = new double4(-1.5d, -2.5d, -7.5d, -5.5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(4d, 9d, -1.5d, 5d);
-                var v1 = new double4(8.5d, 2.5d, 9d, 1.0);
+                var v0 = new double4(7.5d, -8.5d, 6.5d, 8.5d);
+                var v1 = new double4(-5.5d, -4d, -1d, 3.5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(-9d, 7.5d, -7d, 4d);
-                var v1 = new double4(5d, -0.5d, 4d, 5.5d);
+                var v0 = new double4(-7.5d, -2d, 9.5d, -7d);
+                var v1 = new double4(-6d, -6d, -1d, -4.5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(7.5d, 0.5d, -8d, 7d);
-                var v1 = new double4(-6.5d, -5d, 8d, -5d);
+                var v0 = new double4(-0.5d, 2.5d, -5.5d, 9d);
+                var v1 = new double4(-3d, -1d, 9d, 5d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new double4(4d, -6.5d, 8.5d, -5d);
-                var v1 = new double4(-3d, -8d, 3d, 0.0);
+                var v0 = new double4(-0.5d, -7.5d, -2d, -3d);
+                var v1 = new double4(-6.5d, -8.5d, -2d, 4d);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
         }
@@ -786,43 +786,43 @@ namespace  Atma.Math.Generated.Vec4
         public void InvariantNorm()
         {
             {
-                var v0 = new double4(-7.5d, 3d, -2d, -8d);
+                var v0 = new double4(6d, 1.5d, -7.5d, 2.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-3d, 8.5d, 7d, 4.5d);
+                var v0 = new double4(4.5d, -6d, 2.5d, 9d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-5.5d, -1d, -9.5d, 5.5d);
+                var v0 = new double4(2d, -4d, -7d, -8.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(4d, 8d, 5d, -5.5d);
+                var v0 = new double4(-0.5d, -4d, 6d, -4d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-0.5d, -4d, 4.5d, -1.5d);
+                var v0 = new double4(5d, 4d, 7.5d, -9.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-0.5d, 9.5d, 4d, -2.5d);
+                var v0 = new double4(-7.5d, -5.5d, 8.5d, -7.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-0.5d, -6.5d, 5d, -0.5d);
+                var v0 = new double4(5.5d, -9d, -0.5d, -2.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(5.5d, 9.5d, 1.0, -4.5d);
+                var v0 = new double4(-6.5d, -7.5d, 7.5d, -4.5d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-7.5d, -9.5d, -6d, 4.5d);
+                var v0 = new double4(5.5d, -3d, -1d, -8d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new double4(-3d, -1d, 9d, -1d);
+                var v0 = new double4(-7d, -3.5d, -2.5d, -7d);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
         }
@@ -830,14 +830,14 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomUniform0()
         {
-            var random = new Random(1808264058);
+            var random = new Random(1110681453);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.Random(random, -4, -2);
+                var v = double4.Random(random, -2, 1);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -845,10 +845,68 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -3, 1.0);
-            Assert.AreEqual(avg.y, -3, 1.0);
-            Assert.AreEqual(avg.z, -3, 1.0);
-            Assert.AreEqual(avg.w, -3, 1.0);
+            Assert.AreEqual(avg.x, -0.5, 1.0);
+            Assert.AreEqual(avg.y, -0.5, 1.0);
+            Assert.AreEqual(avg.z, -0.5, 1.0);
+            Assert.AreEqual(avg.w, -0.5, 1.0);
+            
+            Assert.AreEqual(variance.x, 0.75, 3.0);
+            Assert.AreEqual(variance.y, 0.75, 3.0);
+            Assert.AreEqual(variance.z, 0.75, 3.0);
+            Assert.AreEqual(variance.w, 0.75, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform1()
+        {
+            var random = new Random(879366519);
+            var sum = new double4(0.0);
+            var sumSqr = new double4(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = double4.RandomUniform(random, 4, 5);
+                sum += (double4)v;
+                sumSqr += glm.Pow2((double4)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 4.5, 1.0);
+            Assert.AreEqual(avg.y, 4.5, 1.0);
+            Assert.AreEqual(avg.z, 4.5, 1.0);
+            Assert.AreEqual(avg.w, 4.5, 1.0);
+            
+            Assert.AreEqual(variance.x, 0.08333333333333333, 3.0);
+            Assert.AreEqual(variance.y, 0.08333333333333333, 3.0);
+            Assert.AreEqual(variance.z, 0.08333333333333333, 3.0);
+            Assert.AreEqual(variance.w, 0.08333333333333333, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform2()
+        {
+            var random = new Random(2141336325);
+            var sum = new double4(0.0);
+            var sumSqr = new double4(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = double4.Random(random, -2, 0);
+                sum += (double4)v;
+                sumSqr += glm.Pow2((double4)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, -1, 1.0);
+            Assert.AreEqual(avg.y, -1, 1.0);
+            Assert.AreEqual(avg.z, -1, 1.0);
+            Assert.AreEqual(avg.w, -1, 1.0);
             
             Assert.AreEqual(variance.x, 0.3333333333333333, 3.0);
             Assert.AreEqual(variance.y, 0.3333333333333333, 3.0);
@@ -857,16 +915,16 @@ namespace  Atma.Math.Generated.Vec4
         }
 
         [Test]
-        public void RandomUniform1()
+        public void RandomUniform3()
         {
-            var random = new Random(601460722);
+            var random = new Random(978400080);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomUniform(random, -3, 0);
+                var v = double4.RandomUniform(random, -2, -1);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -879,64 +937,6 @@ namespace  Atma.Math.Generated.Vec4
             Assert.AreEqual(avg.z, -1.5, 1.0);
             Assert.AreEqual(avg.w, -1.5, 1.0);
             
-            Assert.AreEqual(variance.x, 0.75, 3.0);
-            Assert.AreEqual(variance.y, 0.75, 3.0);
-            Assert.AreEqual(variance.z, 0.75, 3.0);
-            Assert.AreEqual(variance.w, 0.75, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform2()
-        {
-            var random = new Random(1864429349);
-            var sum = new double4(0.0);
-            var sumSqr = new double4(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = double4.Random(random, 1, 4);
-                sum += (double4)v;
-                sumSqr += glm.Pow2((double4)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 2.5, 1.0);
-            Assert.AreEqual(avg.y, 2.5, 1.0);
-            Assert.AreEqual(avg.z, 2.5, 1.0);
-            Assert.AreEqual(avg.w, 2.5, 1.0);
-            
-            Assert.AreEqual(variance.x, 0.75, 3.0);
-            Assert.AreEqual(variance.y, 0.75, 3.0);
-            Assert.AreEqual(variance.z, 0.75, 3.0);
-            Assert.AreEqual(variance.w, 0.75, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform3()
-        {
-            var random = new Random(1489224316);
-            var sum = new double4(0.0);
-            var sumSqr = new double4(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = double4.RandomUniform(random, 0, 1);
-                sum += (double4)v;
-                sumSqr += glm.Pow2((double4)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 0.5, 1.0);
-            Assert.AreEqual(avg.y, 0.5, 1.0);
-            Assert.AreEqual(avg.z, 0.5, 1.0);
-            Assert.AreEqual(avg.w, 0.5, 1.0);
-            
             Assert.AreEqual(variance.x, 0.08333333333333333, 3.0);
             Assert.AreEqual(variance.y, 0.08333333333333333, 3.0);
             Assert.AreEqual(variance.z, 0.08333333333333333, 3.0);
@@ -946,14 +946,14 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomUniform4()
         {
-            var random = new Random(1888777585);
+            var random = new Random(2082910773);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.Random(random, -1, 1);
+                var v = double4.Random(random, 1, 3);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -961,10 +961,10 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 0, 1.0);
-            Assert.AreEqual(avg.y, 0, 1.0);
-            Assert.AreEqual(avg.z, 0, 1.0);
-            Assert.AreEqual(avg.w, 0, 1.0);
+            Assert.AreEqual(avg.x, 2, 1.0);
+            Assert.AreEqual(avg.y, 2, 1.0);
+            Assert.AreEqual(avg.z, 2, 1.0);
+            Assert.AreEqual(avg.w, 2, 1.0);
             
             Assert.AreEqual(variance.x, 0.3333333333333333, 3.0);
             Assert.AreEqual(variance.y, 0.3333333333333333, 3.0);
@@ -975,14 +975,14 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomGaussian0()
         {
-            var random = new Random(307826155);
+            var random = new Random(1630999038);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomNormal(random, -0.9933218206247882d, 6.2955080141758115d);
+                var v = double4.RandomNormal(random, 0.46429724919809834d, 7.92215274550121d);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -990,28 +990,28 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -0.9933218206247882, 1.0);
-            Assert.AreEqual(avg.y, -0.9933218206247882, 1.0);
-            Assert.AreEqual(avg.z, -0.9933218206247882, 1.0);
-            Assert.AreEqual(avg.w, -0.9933218206247882, 1.0);
+            Assert.AreEqual(avg.x, 0.46429724919809834, 1.0);
+            Assert.AreEqual(avg.y, 0.46429724919809834, 1.0);
+            Assert.AreEqual(avg.z, 0.46429724919809834, 1.0);
+            Assert.AreEqual(avg.w, 0.46429724919809834, 1.0);
             
-            Assert.AreEqual(variance.x, 6.2955080141758115, 3.0);
-            Assert.AreEqual(variance.y, 6.2955080141758115, 3.0);
-            Assert.AreEqual(variance.z, 6.2955080141758115, 3.0);
-            Assert.AreEqual(variance.w, 6.2955080141758115, 3.0);
+            Assert.AreEqual(variance.x, 7.92215274550121, 3.0);
+            Assert.AreEqual(variance.y, 7.92215274550121, 3.0);
+            Assert.AreEqual(variance.z, 7.92215274550121, 3.0);
+            Assert.AreEqual(variance.w, 7.92215274550121, 3.0);
         }
 
         [Test]
         public void RandomGaussian1()
         {
-            var random = new Random(153839475);
+            var random = new Random(52930709);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomGaussian(random, -0.9136950070567871d, 3.613417671813358d);
+                var v = double4.RandomGaussian(random, -1.514179995057257d, 9.357131072020685d);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -1019,28 +1019,28 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -0.9136950070567871, 1.0);
-            Assert.AreEqual(avg.y, -0.9136950070567871, 1.0);
-            Assert.AreEqual(avg.z, -0.9136950070567871, 1.0);
-            Assert.AreEqual(avg.w, -0.9136950070567871, 1.0);
+            Assert.AreEqual(avg.x, -1.514179995057257, 1.0);
+            Assert.AreEqual(avg.y, -1.514179995057257, 1.0);
+            Assert.AreEqual(avg.z, -1.514179995057257, 1.0);
+            Assert.AreEqual(avg.w, -1.514179995057257, 1.0);
             
-            Assert.AreEqual(variance.x, 3.613417671813358, 3.0);
-            Assert.AreEqual(variance.y, 3.613417671813358, 3.0);
-            Assert.AreEqual(variance.z, 3.613417671813358, 3.0);
-            Assert.AreEqual(variance.w, 3.613417671813358, 3.0);
+            Assert.AreEqual(variance.x, 9.357131072020685, 3.0);
+            Assert.AreEqual(variance.y, 9.357131072020685, 3.0);
+            Assert.AreEqual(variance.z, 9.357131072020685, 3.0);
+            Assert.AreEqual(variance.w, 9.357131072020685, 3.0);
         }
 
         [Test]
         public void RandomGaussian2()
         {
-            var random = new Random(1973935831);
+            var random = new Random(1402778502);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomNormal(random, 1.276556763461119d, 6.303853749439052d);
+                var v = double4.RandomNormal(random, 1.9756242632752397d, 4.8434214037113925d);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -1048,28 +1048,28 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 1.276556763461119, 1.0);
-            Assert.AreEqual(avg.y, 1.276556763461119, 1.0);
-            Assert.AreEqual(avg.z, 1.276556763461119, 1.0);
-            Assert.AreEqual(avg.w, 1.276556763461119, 1.0);
+            Assert.AreEqual(avg.x, 1.9756242632752397, 1.0);
+            Assert.AreEqual(avg.y, 1.9756242632752397, 1.0);
+            Assert.AreEqual(avg.z, 1.9756242632752397, 1.0);
+            Assert.AreEqual(avg.w, 1.9756242632752397, 1.0);
             
-            Assert.AreEqual(variance.x, 6.303853749439052, 3.0);
-            Assert.AreEqual(variance.y, 6.303853749439052, 3.0);
-            Assert.AreEqual(variance.z, 6.303853749439052, 3.0);
-            Assert.AreEqual(variance.w, 6.303853749439052, 3.0);
+            Assert.AreEqual(variance.x, 4.8434214037113925, 3.0);
+            Assert.AreEqual(variance.y, 4.8434214037113925, 3.0);
+            Assert.AreEqual(variance.z, 4.8434214037113925, 3.0);
+            Assert.AreEqual(variance.w, 4.8434214037113925, 3.0);
         }
 
         [Test]
         public void RandomGaussian3()
         {
-            var random = new Random(562116067);
+            var random = new Random(1990973679);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomGaussian(random, 0.7244639055451674d, 0.1446415903720267d);
+                var v = double4.RandomGaussian(random, -0.5705350444514934d, 3.425727488205641d);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -1077,28 +1077,28 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 0.7244639055451674, 1.0);
-            Assert.AreEqual(avg.y, 0.7244639055451674, 1.0);
-            Assert.AreEqual(avg.z, 0.7244639055451674, 1.0);
-            Assert.AreEqual(avg.w, 0.7244639055451674, 1.0);
+            Assert.AreEqual(avg.x, -0.5705350444514934, 1.0);
+            Assert.AreEqual(avg.y, -0.5705350444514934, 1.0);
+            Assert.AreEqual(avg.z, -0.5705350444514934, 1.0);
+            Assert.AreEqual(avg.w, -0.5705350444514934, 1.0);
             
-            Assert.AreEqual(variance.x, 0.1446415903720267, 3.0);
-            Assert.AreEqual(variance.y, 0.1446415903720267, 3.0);
-            Assert.AreEqual(variance.z, 0.1446415903720267, 3.0);
-            Assert.AreEqual(variance.w, 0.1446415903720267, 3.0);
+            Assert.AreEqual(variance.x, 3.425727488205641, 3.0);
+            Assert.AreEqual(variance.y, 3.425727488205641, 3.0);
+            Assert.AreEqual(variance.z, 3.425727488205641, 3.0);
+            Assert.AreEqual(variance.w, 3.425727488205641, 3.0);
         }
 
         [Test]
         public void RandomGaussian4()
         {
-            var random = new Random(1862896974);
+            var random = new Random(1248089331);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = double4.RandomNormal(random, -0.23267331078307385d, 4.1857988639668555d);
+                var v = double4.RandomNormal(random, 0.9179878080813157d, 6.046043702422662d);
                 sum += (double4)v;
                 sumSqr += glm.Pow2((double4)v);
             }
@@ -1106,21 +1106,21 @@ namespace  Atma.Math.Generated.Vec4
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -0.23267331078307385, 1.0);
-            Assert.AreEqual(avg.y, -0.23267331078307385, 1.0);
-            Assert.AreEqual(avg.z, -0.23267331078307385, 1.0);
-            Assert.AreEqual(avg.w, -0.23267331078307385, 1.0);
+            Assert.AreEqual(avg.x, 0.9179878080813157, 1.0);
+            Assert.AreEqual(avg.y, 0.9179878080813157, 1.0);
+            Assert.AreEqual(avg.z, 0.9179878080813157, 1.0);
+            Assert.AreEqual(avg.w, 0.9179878080813157, 1.0);
             
-            Assert.AreEqual(variance.x, 4.1857988639668555, 3.0);
-            Assert.AreEqual(variance.y, 4.1857988639668555, 3.0);
-            Assert.AreEqual(variance.z, 4.1857988639668555, 3.0);
-            Assert.AreEqual(variance.w, 4.1857988639668555, 3.0);
+            Assert.AreEqual(variance.x, 6.046043702422662, 3.0);
+            Assert.AreEqual(variance.y, 6.046043702422662, 3.0);
+            Assert.AreEqual(variance.z, 6.046043702422662, 3.0);
+            Assert.AreEqual(variance.w, 6.046043702422662, 3.0);
         }
 
         [Test]
         public void RandomNormal0()
         {
-            var random = new Random(799836175);
+            var random = new Random(1682445366);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
@@ -1149,7 +1149,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomNormal1()
         {
-            var random = new Random(1597530394);
+            var random = new Random(1456327094);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
@@ -1178,7 +1178,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomNormal2()
         {
-            var random = new Random(991407967);
+            var random = new Random(1183312591);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
@@ -1207,7 +1207,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomNormal3()
         {
-            var random = new Random(661450474);
+            var random = new Random(1135912934);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             
@@ -1236,7 +1236,7 @@ namespace  Atma.Math.Generated.Vec4
         [Test]
         public void RandomNormal4()
         {
-            var random = new Random(371495708);
+            var random = new Random(724599841);
             var sum = new double4(0.0);
             var sumSqr = new double4(0.0);
             

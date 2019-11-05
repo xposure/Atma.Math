@@ -22,20 +22,20 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
         public void XYZW()
         {
             {
-                var ov = new uint4(4u, 4u, 3u, 6u);
+                var ov = new uint4(6u, 9u, 1u, 5u);
                 var v = ov.swizzle.xx;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
             }
             {
-                var ov = new uint4(0u, 0u, 4u, 0u);
+                var ov = new uint4(3u, 5u, 1u, 3u);
                 var v = ov.swizzle.xxx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(2u, 6u, 7u, 7u);
+                var ov = new uint4(2u, 2u, 3u, 5u);
                 var v = ov.swizzle.xxxx;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(2u, v.y);
@@ -43,2575 +43,2575 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(7u, 4u, 2u, 9u);
+                var ov = new uint4(4u, 2u, 5u, 3u);
                 var v = ov.swizzle.xxxy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 5u, 5u, 4u);
-                var v = ov.swizzle.xxxz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 4u, 7u);
-                var v = ov.swizzle.xxxw;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 3u, 9u, 4u);
-                var v = ov.swizzle.xxy;
                 Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(6u, 6u, 9u, 5u);
-                var v = ov.swizzle.xxyx;
+                var ov = new uint4(6u, 9u, 7u, 4u);
+                var v = ov.swizzle.xxxz;
                 Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
+                Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(7u, 5u, 8u, 2u);
+                var ov = new uint4(1u, 0u, 0u, 2u);
+                var v = ov.swizzle.xxxw;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 6u, 9u, 8u);
+                var v = ov.swizzle.xxy;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 0u, 9u, 8u);
+                var v = ov.swizzle.xxyx;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 6u, 0u);
                 var v = ov.swizzle.xxyy;
                 Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(0u, 7u, 5u, 5u);
+                var ov = new uint4(8u, 2u, 3u, 0u);
                 var v = ov.swizzle.xxyz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 4u, 5u, 5u);
-                var v = ov.swizzle.xxyw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 5u, 2u, 0u);
-                var v = ov.swizzle.xxz;
                 Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(6u, 0u, 6u, 7u);
+                var ov = new uint4(2u, 9u, 9u, 9u);
+                var v = ov.swizzle.xxyw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 7u, 6u);
+                var v = ov.swizzle.xxz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 1u, 3u, 9u);
                 var v = ov.swizzle.xxzx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 4u, 8u, 6u);
+                var v = ov.swizzle.xxzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 9u, 6u, 6u);
+                var v = ov.swizzle.xxzz;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(4u, 0u, 2u, 4u);
-                var v = ov.swizzle.xxzy;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 5u, 2u, 6u);
-                var v = ov.swizzle.xxzz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
+                var ov = new uint4(6u, 3u, 0u, 2u);
+                var v = ov.swizzle.xxzw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(1u, 0u, 4u, 6u);
-                var v = ov.swizzle.xxzw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
+                var ov = new uint4(2u, 5u, 7u, 1u);
+                var v = ov.swizzle.xxw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 5u, 5u, 4u);
+                var v = ov.swizzle.xxwx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(6u, 2u, 9u, 2u);
-                var v = ov.swizzle.xxw;
+                var ov = new uint4(6u, 6u, 1u, 1u);
+                var v = ov.swizzle.xxwy;
                 Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 0u, 9u, 0u);
-                var v = ov.swizzle.xxwx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 0u, 2u, 1u);
-                var v = ov.swizzle.xxwy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 9u, 8u);
-                var v = ov.swizzle.xxwz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 8u, 7u, 5u);
-                var v = ov.swizzle.xxww;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 1u, 7u);
-                var v = ov.swizzle.xy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
-            }
-            {
-                var ov = new uint4(2u, 4u, 3u, 4u);
-                var v = ov.swizzle.xyx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 9u, 3u, 2u);
-                var v = ov.swizzle.xyxx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 8u, 6u);
-                var v = ov.swizzle.xyxy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 5u, 6u);
-                var v = ov.swizzle.xyxz;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 7u, 3u);
-                var v = ov.swizzle.xyxw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 1u, 9u, 0u);
-                var v = ov.swizzle.xyy;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 3u, 6u, 2u);
-                var v = ov.swizzle.xyyx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(2u, 9u, 6u, 5u);
-                var v = ov.swizzle.xyyy;
+                var ov = new uint4(0u, 1u, 8u, 5u);
+                var v = ov.swizzle.xxwz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 3u, 4u, 1u);
+                var v = ov.swizzle.xxww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 9u, 1u, 2u);
+                var v = ov.swizzle.xy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+            }
+            {
+                var ov = new uint4(4u, 9u, 1u, 8u);
+                var v = ov.swizzle.xyx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 7u, 4u, 8u);
+                var v = ov.swizzle.xyxx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 6u, 8u);
+                var v = ov.swizzle.xyxy;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 5u, 9u, 8u);
+                var v = ov.swizzle.xyxz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 8u, 3u, 0u);
+                var v = ov.swizzle.xyxw;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 6u, 5u, 8u);
+                var v = ov.swizzle.xyy;
                 Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 0u, 6u, 2u);
+                var v = ov.swizzle.xyyx;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 9u, 4u, 3u);
+                var v = ov.swizzle.xyyy;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(9u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(0u, 2u, 9u, 0u);
+                var ov = new uint4(4u, 4u, 6u, 6u);
                 var v = ov.swizzle.xyyz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 8u, 9u);
+                var v = ov.swizzle.xyyw;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(6u, 5u, 5u, 0u);
-                var v = ov.swizzle.xyyw;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 2u, 5u);
+                var ov = new uint4(1u, 3u, 2u, 2u);
                 var v = ov.swizzle.xyz;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 2u, 2u, 0u);
-                var v = ov.swizzle.xyzx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 0u, 3u, 4u);
-                var v = ov.swizzle.xyzy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 7u, 8u, 1u);
-                var v = ov.swizzle.xyzz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 3u, 7u, 1u);
-                var v = ov.swizzle.xyzw;
-                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(2u, v.z);
             }
             {
-                var ov = new uint4(3u, 0u, 9u, 0u);
-                var v = ov.swizzle.xyw;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(4u, 0u, 0u, 4u);
+                var v = ov.swizzle.xyzx;
+                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 3u, 5u, 3u);
-                var v = ov.swizzle.xywx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 0u, 6u);
-                var v = ov.swizzle.xywy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(9u, 6u, 7u, 7u);
+                var ov = new uint4(3u, 5u, 5u, 9u);
+                var v = ov.swizzle.xyzy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 0u, 0u, 8u);
+                var v = ov.swizzle.xyzz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 3u, 7u, 5u);
+                var v = ov.swizzle.xyzw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 9u, 9u);
+                var v = ov.swizzle.xyw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 2u, 3u, 1u);
+                var v = ov.swizzle.xywx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 5u, 9u);
+                var v = ov.swizzle.xywy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 4u, 8u, 9u);
                 var v = ov.swizzle.xywz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 2u, 3u, 0u);
+                var v = ov.swizzle.xyww;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 9u, 3u);
+                var v = ov.swizzle.xz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(9u, v.y);
+            }
+            {
+                var ov = new uint4(4u, 5u, 7u, 3u);
+                var v = ov.swizzle.xzx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 8u, 2u, 0u);
+                var v = ov.swizzle.xzxx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 3u, 8u, 0u);
+                var v = ov.swizzle.xzxy;
                 Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 9u, 1u);
+                var v = ov.swizzle.xzxz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 8u, 6u, 9u);
+                var v = ov.swizzle.xzxw;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 6u, 8u, 1u);
+                var v = ov.swizzle.xzy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 0u, 5u, 1u);
+                var v = ov.swizzle.xzyx;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 5u, 8u);
+                var v = ov.swizzle.xzyy;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(9u, 4u, 9u, 3u);
-                var v = ov.swizzle.xyww;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
+                var ov = new uint4(2u, 6u, 5u, 8u);
+                var v = ov.swizzle.xzyz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(1u, 5u, 9u, 2u);
-                var v = ov.swizzle.xz;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(9u, v.y);
-            }
-            {
-                var ov = new uint4(5u, 1u, 0u, 3u);
-                var v = ov.swizzle.xzx;
+                var ov = new uint4(5u, 0u, 7u, 0u);
+                var v = ov.swizzle.xzyw;
                 Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 8u, 4u, 3u);
-                var v = ov.swizzle.xzxx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 4u, 7u, 5u);
-                var v = ov.swizzle.xzxy;
-                Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 1u, 7u);
-                var v = ov.swizzle.xzxz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 8u, 9u, 8u);
-                var v = ov.swizzle.xzxw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 4u, 7u);
-                var v = ov.swizzle.xzy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 0u, 1u, 1u);
-                var v = ov.swizzle.xzyx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(3u, 3u, 9u, 7u);
-                var v = ov.swizzle.xzyy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 6u, 4u, 1u);
-                var v = ov.swizzle.xzyz;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 1u, 9u, 2u);
-                var v = ov.swizzle.xzyw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 6u, 9u, 5u);
+                var ov = new uint4(1u, 4u, 0u, 6u);
                 var v = ov.swizzle.xzz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 1u, 6u, 7u);
-                var v = ov.swizzle.xzzx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 2u, 6u, 2u);
-                var v = ov.swizzle.xzzy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 1u, 8u);
-                var v = ov.swizzle.xzzz;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 3u, 3u, 2u);
-                var v = ov.swizzle.xzzw;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 3u, 0u, 3u);
-                var v = ov.swizzle.xzw;
-                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(0u, v.z);
             }
             {
-                var ov = new uint4(5u, 0u, 3u, 4u);
-                var v = ov.swizzle.xzwx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 9u, 4u, 5u);
-                var v = ov.swizzle.xzwy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 9u, 4u);
-                var v = ov.swizzle.xzwz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 9u, 8u, 8u);
-                var v = ov.swizzle.xzww;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 4u, 9u, 1u);
-                var v = ov.swizzle.xw;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(1u, v.y);
-            }
-            {
-                var ov = new uint4(7u, 6u, 1u, 1u);
-                var v = ov.swizzle.xwx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 6u, 5u, 8u);
-                var v = ov.swizzle.xwxx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 5u, 6u);
-                var v = ov.swizzle.xwxy;
-                Assert.AreEqual(8u, v.x);
+                var ov = new uint4(6u, 8u, 6u, 0u);
+                var v = ov.swizzle.xzzx;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(5u, 6u, 9u, 8u);
-                var v = ov.swizzle.xwxz;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(9u, v.w);
+                var ov = new uint4(3u, 1u, 3u, 1u);
+                var v = ov.swizzle.xzzy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(7u, 2u, 9u, 2u);
-                var v = ov.swizzle.xwxw;
-                Assert.AreEqual(7u, v.x);
+                var ov = new uint4(5u, 9u, 2u, 7u);
+                var v = ov.swizzle.xzzz;
+                Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(7u, 0u, 3u, 8u);
-                var v = ov.swizzle.xwy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 7u, 0u, 6u);
-                var v = ov.swizzle.xwyx;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 5u, 8u, 2u);
-                var v = ov.swizzle.xwyy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 5u, 8u);
-                var v = ov.swizzle.xwyz;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 2u, 8u, 0u);
-                var v = ov.swizzle.xwyw;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 6u, 7u, 2u);
-                var v = ov.swizzle.xwz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 2u, 8u, 2u);
-                var v = ov.swizzle.xwzx;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 0u, 1u);
-                var v = ov.swizzle.xwzy;
-                Assert.AreEqual(9u, v.x);
+                var ov = new uint4(6u, 6u, 1u, 4u);
+                var v = ov.swizzle.xzzw;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 6u, 4u, 6u);
-                var v = ov.swizzle.xwzz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(3u, 3u, 0u, 8u);
-                var v = ov.swizzle.xwzw;
+                var ov = new uint4(3u, 0u, 0u, 1u);
+                var v = ov.swizzle.xzw;
                 Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 9u, 7u, 6u);
+                var v = ov.swizzle.xzwx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(6u, 8u, 3u, 3u);
-                var v = ov.swizzle.xww;
+                var ov = new uint4(7u, 0u, 6u, 6u);
+                var v = ov.swizzle.xzwy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 6u, 8u, 5u);
+                var v = ov.swizzle.xzwz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 4u, 3u);
+                var v = ov.swizzle.xzww;
                 Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 7u, 8u);
+                var v = ov.swizzle.xw;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+            }
+            {
+                var ov = new uint4(3u, 3u, 3u, 2u);
+                var v = ov.swizzle.xwx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
                 Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(8u, 3u, 2u, 7u);
-                var v = ov.swizzle.xwwx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
+                var ov = new uint4(3u, 7u, 2u, 8u);
+                var v = ov.swizzle.xwxx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 2u, 6u, 0u);
+                var v = ov.swizzle.xwxy;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 8u, 8u, 6u);
+                var v = ov.swizzle.xwxz;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(0u, 1u, 0u, 5u);
+                var ov = new uint4(0u, 9u, 2u, 3u);
+                var v = ov.swizzle.xwxw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 7u, 0u, 9u);
+                var v = ov.swizzle.xwy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 7u, 1u, 4u);
+                var v = ov.swizzle.xwyx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 7u, 0u, 8u);
+                var v = ov.swizzle.xwyy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 2u, 8u, 4u);
+                var v = ov.swizzle.xwyz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 5u, 3u, 0u);
+                var v = ov.swizzle.xwyw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 8u, 7u, 8u);
+                var v = ov.swizzle.xwz;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 7u, 1u, 7u);
+                var v = ov.swizzle.xwzx;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 7u, 2u, 3u);
+                var v = ov.swizzle.xwzy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 3u, 5u);
+                var v = ov.swizzle.xwzz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 3u, 1u, 6u);
+                var v = ov.swizzle.xwzw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 6u, 1u);
+                var v = ov.swizzle.xww;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 8u, 7u, 1u);
+                var v = ov.swizzle.xwwx;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 3u, 0u, 5u);
                 var v = ov.swizzle.xwwy;
                 Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(4u, 8u, 8u, 0u);
+                var ov = new uint4(6u, 2u, 4u, 6u);
                 var v = ov.swizzle.xwwz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 1u, 6u, 8u);
-                var v = ov.swizzle.xwww;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 8u, 7u, 6u);
-                var v = ov.swizzle.yx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-            }
-            {
-                var ov = new uint4(4u, 7u, 7u, 7u);
-                var v = ov.swizzle.yxx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 9u, 4u, 5u);
-                var v = ov.swizzle.yxxx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(1u, 0u, 4u, 6u);
-                var v = ov.swizzle.yxxy;
+                var ov = new uint4(0u, 1u, 0u, 3u);
+                var v = ov.swizzle.xwww;
                 Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 4u, 4u, 8u);
-                var v = ov.swizzle.yxxz;
-                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(9u, 1u, 1u, 8u);
-                var v = ov.swizzle.yxxw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
+                var ov = new uint4(5u, 4u, 1u, 3u);
+                var v = ov.swizzle.yx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(5u, v.y);
             }
             {
-                var ov = new uint4(9u, 5u, 6u, 5u);
-                var v = ov.swizzle.yxy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
+                var ov = new uint4(5u, 6u, 6u, 8u);
+                var v = ov.swizzle.yxx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(5u, v.z);
             }
             {
-                var ov = new uint4(8u, 3u, 2u, 2u);
-                var v = ov.swizzle.yxyx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 2u, 9u, 8u);
-                var v = ov.swizzle.yxyy;
+                var ov = new uint4(9u, 2u, 1u, 2u);
+                var v = ov.swizzle.yxxx;
                 Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(1u, 6u, 9u, 0u);
-                var v = ov.swizzle.yxyz;
+                var ov = new uint4(4u, 6u, 4u, 0u);
+                var v = ov.swizzle.yxxy;
                 Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 5u, 6u, 0u);
+                var v = ov.swizzle.yxxz;
+                Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 9u, 7u, 9u);
+                var v = ov.swizzle.yxxw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 7u, 7u, 9u);
+                var v = ov.swizzle.yxy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 6u, 5u, 1u);
+                var v = ov.swizzle.yxyx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(6u, 5u, 2u, 0u);
-                var v = ov.swizzle.yxyw;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 4u, 3u, 3u);
-                var v = ov.swizzle.yxz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 2u, 7u, 9u);
-                var v = ov.swizzle.yxzx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 8u, 7u);
-                var v = ov.swizzle.yxzy;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 7u, 8u);
-                var v = ov.swizzle.yxzz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(6u, v.y);
+                var ov = new uint4(3u, 7u, 0u, 1u);
+                var v = ov.swizzle.yxyy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(1u, 1u, 9u, 0u);
-                var v = ov.swizzle.yxzw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 2u, 8u, 9u);
-                var v = ov.swizzle.yxw;
+                var ov = new uint4(6u, 2u, 6u, 5u);
+                var v = ov.swizzle.yxyz;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 9u, 2u, 8u);
+                var v = ov.swizzle.yxyw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(0u, 6u, 4u, 6u);
-                var v = ov.swizzle.yxwx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(0u, v.w);
+                var ov = new uint4(2u, 7u, 1u, 9u);
+                var v = ov.swizzle.yxz;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(1u, v.z);
             }
             {
-                var ov = new uint4(5u, 4u, 1u, 4u);
-                var v = ov.swizzle.yxwy;
-                Assert.AreEqual(4u, v.x);
+                var ov = new uint4(7u, 3u, 4u, 4u);
+                var v = ov.swizzle.yxzx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 4u, 6u);
+                var v = ov.swizzle.yxzy;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(8u, 1u, 1u, 4u);
-                var v = ov.swizzle.yxwz;
+                var ov = new uint4(6u, 1u, 6u, 7u);
+                var v = ov.swizzle.yxzz;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 2u, 1u, 6u);
-                var v = ov.swizzle.yxww;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(6u, 3u, 5u, 8u);
-                var v = ov.swizzle.yy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-            }
-            {
-                var ov = new uint4(3u, 2u, 2u, 2u);
-                var v = ov.swizzle.yyx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 0u, 9u, 4u);
-                var v = ov.swizzle.yyxx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 2u, 4u, 4u);
-                var v = ov.swizzle.yyxy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(6u, v.z);
+                var ov = new uint4(9u, 6u, 8u, 2u);
+                var v = ov.swizzle.yxzw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(5u, 4u, 3u, 8u);
+                var ov = new uint4(6u, 0u, 9u, 6u);
+                var v = ov.swizzle.yxw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 3u, 3u, 8u);
+                var v = ov.swizzle.yxwx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 1u, 9u, 0u);
+                var v = ov.swizzle.yxwy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 9u, 7u, 9u);
+                var v = ov.swizzle.yxwz;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 2u, 5u);
+                var v = ov.swizzle.yxww;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 0u, 6u, 3u);
+                var v = ov.swizzle.yy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+            }
+            {
+                var ov = new uint4(2u, 3u, 4u, 5u);
+                var v = ov.swizzle.yyx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 8u, 5u, 5u);
+                var v = ov.swizzle.yyxx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 0u, 1u, 1u);
+                var v = ov.swizzle.yyxy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 4u, 3u, 4u);
                 var v = ov.swizzle.yyxz;
                 Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(7u, 0u, 3u, 2u);
+                var ov = new uint4(0u, 6u, 4u, 3u);
                 var v = ov.swizzle.yyxw;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 4u, 8u, 4u);
-                var v = ov.swizzle.yyy;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 3u, 6u, 8u);
-                var v = ov.swizzle.yyyx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 3u, 4u, 2u);
-                var v = ov.swizzle.yyyy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(7u, 0u, 6u, 7u);
-                var v = ov.swizzle.yyyz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
+                var ov = new uint4(0u, 3u, 0u, 7u);
+                var v = ov.swizzle.yyy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(3u, 2u, 7u, 4u);
-                var v = ov.swizzle.yyyw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
+                var ov = new uint4(4u, 6u, 1u, 1u);
+                var v = ov.swizzle.yyyx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(4u, 7u, 8u, 6u);
-                var v = ov.swizzle.yyz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
+                var ov = new uint4(4u, 2u, 0u, 5u);
+                var v = ov.swizzle.yyyy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(6u, 7u, 8u, 7u);
-                var v = ov.swizzle.yyzx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 8u, 5u);
-                var v = ov.swizzle.yyzy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
+                var ov = new uint4(4u, 6u, 3u, 2u);
+                var v = ov.swizzle.yyyz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(0u, 2u, 1u, 8u);
+                var ov = new uint4(8u, 8u, 1u, 1u);
+                var v = ov.swizzle.yyyw;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 9u, 5u);
+                var v = ov.swizzle.yyz;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 5u, 1u, 1u);
+                var v = ov.swizzle.yyzx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 8u, 5u, 5u);
+                var v = ov.swizzle.yyzy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 3u, 9u);
                 var v = ov.swizzle.yyzz;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 7u, 0u, 9u);
+                var v = ov.swizzle.yyzw;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 4u, 0u, 7u);
+                var v = ov.swizzle.yyw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 5u, 6u, 2u);
+                var v = ov.swizzle.yywx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 5u, 1u);
+                var v = ov.swizzle.yywy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(4u, 7u, 4u, 6u);
-                var v = ov.swizzle.yyzw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 0u, 3u, 2u);
-                var v = ov.swizzle.yyw;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 1u, 6u, 5u);
-                var v = ov.swizzle.yywx;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 5u, 4u, 4u);
-                var v = ov.swizzle.yywy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 9u, 8u, 8u);
+                var ov = new uint4(4u, 3u, 8u, 6u);
                 var v = ov.swizzle.yywz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 2u, 7u, 0u);
-                var v = ov.swizzle.yyww;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 8u, 9u, 7u);
-                var v = ov.swizzle.yz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(9u, v.y);
-            }
-            {
-                var ov = new uint4(4u, 9u, 2u, 5u);
-                var v = ov.swizzle.yzx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 7u, 3u, 6u);
-                var v = ov.swizzle.yzxx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 1u, 0u, 4u);
-                var v = ov.swizzle.yzxy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 5u, 8u, 5u);
-                var v = ov.swizzle.yzxz;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 3u, 9u, 3u);
-                var v = ov.swizzle.yzxw;
                 Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 4u, 2u, 0u);
-                var v = ov.swizzle.yzy;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 2u, 2u, 1u);
-                var v = ov.swizzle.yzyx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 4u, 1u, 4u);
-                var v = ov.swizzle.yzyy;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 6u, 8u, 7u);
-                var v = ov.swizzle.yzyz;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(9u, 1u, 6u, 0u);
-                var v = ov.swizzle.yzyw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 7u, 7u, 1u);
-                var v = ov.swizzle.yzz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 3u, 5u, 0u);
-                var v = ov.swizzle.yzzx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 2u, 9u, 1u);
-                var v = ov.swizzle.yzzy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 5u, 8u, 9u);
-                var v = ov.swizzle.yzzz;
+                var ov = new uint4(4u, 5u, 9u, 8u);
+                var v = ov.swizzle.yyww;
                 Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(7u, 1u, 1u, 5u);
-                var v = ov.swizzle.yzzw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 2u, 6u, 2u);
-                var v = ov.swizzle.yzw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 5u, 2u, 7u);
-                var v = ov.swizzle.yzwx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 6u, 9u);
-                var v = ov.swizzle.yzwy;
+                var ov = new uint4(5u, 0u, 7u, 6u);
+                var v = ov.swizzle.yz;
                 Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 9u, 1u, 0u);
-                var v = ov.swizzle.yzwz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 2u, 0u);
-                var v = ov.swizzle.yzww;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 2u, 8u, 7u);
-                var v = ov.swizzle.yw;
-                Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(7u, v.y);
             }
             {
-                var ov = new uint4(5u, 9u, 5u, 5u);
-                var v = ov.swizzle.ywx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 8u, 0u, 7u);
-                var v = ov.swizzle.ywxx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 1u, 5u, 9u);
-                var v = ov.swizzle.ywxy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 1u, 2u);
-                var v = ov.swizzle.ywxz;
+                var ov = new uint4(6u, 4u, 9u, 2u);
+                var v = ov.swizzle.yzx;
                 Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(6u, v.z);
             }
             {
-                var ov = new uint4(0u, 8u, 3u, 2u);
-                var v = ov.swizzle.ywxw;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
+                var ov = new uint4(2u, 4u, 8u, 0u);
+                var v = ov.swizzle.yzxx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(2u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(6u, 9u, 5u, 9u);
-                var v = ov.swizzle.ywy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 7u, 3u, 7u);
-                var v = ov.swizzle.ywyx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 0u, 8u, 2u);
-                var v = ov.swizzle.ywyy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 9u, 7u, 0u);
-                var v = ov.swizzle.ywyz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 9u, 7u);
-                var v = ov.swizzle.ywyw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 8u, 9u, 5u);
-                var v = ov.swizzle.ywz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 2u, 9u, 1u);
-                var v = ov.swizzle.ywzx;
+                var ov = new uint4(7u, 2u, 5u, 0u);
+                var v = ov.swizzle.yzxy;
                 Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 1u, 4u, 2u);
+                var v = ov.swizzle.yzxz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(3u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(8u, 0u, 9u, 9u);
-                var v = ov.swizzle.ywzy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(9u, v.y);
+                var ov = new uint4(9u, 9u, 1u, 2u);
+                var v = ov.swizzle.yzxw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(8u, 5u, 0u, 5u);
-                var v = ov.swizzle.ywzz;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
+                var ov = new uint4(2u, 4u, 1u, 2u);
+                var v = ov.swizzle.yzy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(4u, v.z);
             }
             {
-                var ov = new uint4(4u, 6u, 2u, 0u);
-                var v = ov.swizzle.ywzw;
+                var ov = new uint4(3u, 6u, 5u, 8u);
+                var v = ov.swizzle.yzyx;
                 Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(5u, 3u, 8u, 9u);
-                var v = ov.swizzle.yww;
+                var ov = new uint4(8u, 1u, 4u, 6u);
+                var v = ov.swizzle.yzyy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 4u, 1u, 6u);
+                var v = ov.swizzle.yzyz;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 3u, 9u, 5u);
+                var v = ov.swizzle.yzyw;
                 Assert.AreEqual(3u, v.x);
                 Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(3u, 2u, 5u, 1u);
-                var v = ov.swizzle.ywwx;
+                var ov = new uint4(2u, 4u, 3u, 2u);
+                var v = ov.swizzle.yzz;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 7u, 2u, 2u);
+                var v = ov.swizzle.yzzx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 7u, 9u, 6u);
+                var v = ov.swizzle.yzzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 4u, 4u, 2u);
+                var v = ov.swizzle.yzzz;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 8u, 6u);
+                var v = ov.swizzle.yzzw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 0u, 2u, 6u);
+                var v = ov.swizzle.yzw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 8u, 3u, 9u);
+                var v = ov.swizzle.yzwx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 5u, 5u);
+                var v = ov.swizzle.yzwy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 5u, 0u, 7u);
+                var v = ov.swizzle.yzwz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 9u, 4u, 6u);
+                var v = ov.swizzle.yzww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 2u, 7u, 1u);
+                var v = ov.swizzle.yw;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(2u, 7u, 6u, 3u);
+                var v = ov.swizzle.ywx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 8u, 3u, 9u);
+                var v = ov.swizzle.ywxx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 3u, 5u, 2u);
+                var v = ov.swizzle.ywxy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 3u, 9u);
+                var v = ov.swizzle.ywxz;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 1u, 2u);
+                var v = ov.swizzle.ywxw;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 6u, 3u);
+                var v = ov.swizzle.ywy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 6u, 2u, 3u);
+                var v = ov.swizzle.ywyx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 2u, 1u, 7u);
+                var v = ov.swizzle.ywyy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 1u, 3u, 0u);
+                var v = ov.swizzle.ywyz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(7u, 1u, 2u, 3u);
-                var v = ov.swizzle.ywwy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 6u, 2u, 7u);
-                var v = ov.swizzle.ywwz;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
+                var ov = new uint4(2u, 0u, 9u, 2u);
+                var v = ov.swizzle.ywyw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(9u, 9u, 4u, 1u);
+                var ov = new uint4(4u, 6u, 0u, 6u);
+                var v = ov.swizzle.ywz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 7u, 5u, 2u);
+                var v = ov.swizzle.ywzx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 5u, 2u, 0u);
+                var v = ov.swizzle.ywzy;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 5u, 0u, 8u);
+                var v = ov.swizzle.ywzz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 2u, 9u, 3u);
+                var v = ov.swizzle.ywzw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 7u, 2u);
+                var v = ov.swizzle.yww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 8u, 9u, 0u);
+                var v = ov.swizzle.ywwx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 7u, 3u);
+                var v = ov.swizzle.ywwy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 7u, 5u);
+                var v = ov.swizzle.ywwz;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 4u, 5u);
                 var v = ov.swizzle.ywww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 9u, 8u, 6u);
+                var v = ov.swizzle.zx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(0u, 1u, 6u, 7u);
+                var v = ov.swizzle.zxx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 5u, 9u, 9u);
+                var v = ov.swizzle.zxxx;
                 Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(7u, 1u, 8u, 8u);
-                var v = ov.swizzle.zx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-            }
-            {
-                var ov = new uint4(0u, 8u, 3u, 8u);
-                var v = ov.swizzle.zxx;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(0u, 6u, 7u, 5u);
+                var v = ov.swizzle.zxxy;
+                Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(8u, 1u, 5u, 3u);
-                var v = ov.swizzle.zxxx;
+                var ov = new uint4(8u, 8u, 5u, 0u);
+                var v = ov.swizzle.zxxz;
                 Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 4u, 8u, 1u);
+                var v = ov.swizzle.zxxw;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 8u, 7u, 1u);
+                var v = ov.swizzle.zxy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 5u, 4u, 1u);
+                var v = ov.swizzle.zxyx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 1u, 5u);
+                var v = ov.swizzle.zxyy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 1u, 0u);
+                var v = ov.swizzle.zxyz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 2u, 9u, 8u);
+                var v = ov.swizzle.zxyw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
                 var ov = new uint4(4u, 8u, 2u, 7u);
-                var v = ov.swizzle.zxxy;
+                var v = ov.swizzle.zxz;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(8u, v.w);
+                Assert.AreEqual(2u, v.z);
             }
             {
-                var ov = new uint4(0u, 0u, 2u, 1u);
-                var v = ov.swizzle.zxxz;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
+                var ov = new uint4(2u, 2u, 6u, 5u);
+                var v = ov.swizzle.zxzx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(6u, 8u, 4u, 7u);
-                var v = ov.swizzle.zxxw;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 9u, 2u);
-                var v = ov.swizzle.zxy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 3u, 5u, 5u);
-                var v = ov.swizzle.zxyx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
+                var ov = new uint4(4u, 3u, 7u, 6u);
+                var v = ov.swizzle.zxzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(2u, 0u, 2u, 3u);
-                var v = ov.swizzle.zxyy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 8u, 4u);
-                var v = ov.swizzle.zxyz;
+                var ov = new uint4(0u, 6u, 8u, 1u);
+                var v = ov.swizzle.zxzz;
                 Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(9u, 7u, 2u, 5u);
-                var v = ov.swizzle.zxyw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
+                var ov = new uint4(3u, 4u, 9u, 6u);
+                var v = ov.swizzle.zxzw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 0u, 7u);
+                var v = ov.swizzle.zxw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(6u, 8u, 8u, 0u);
-                var v = ov.swizzle.zxz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 4u, 7u, 9u);
-                var v = ov.swizzle.zxzx;
-                Assert.AreEqual(7u, v.x);
+                var ov = new uint4(4u, 1u, 4u, 7u);
+                var v = ov.swizzle.zxwx;
+                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(7u, 2u, 5u, 9u);
-                var v = ov.swizzle.zxzy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(7u, v.y);
+                var ov = new uint4(6u, 5u, 7u, 5u);
+                var v = ov.swizzle.zxwy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 0u, 0u, 4u);
-                var v = ov.swizzle.zxzz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 1u, 4u, 5u);
-                var v = ov.swizzle.zxzw;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(6u, 0u, 1u, 4u);
-                var v = ov.swizzle.zxw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 8u, 2u, 0u);
-                var v = ov.swizzle.zxwx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 8u, 2u, 8u);
-                var v = ov.swizzle.zxwy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 8u, 1u, 9u);
+                var ov = new uint4(5u, 0u, 7u, 9u);
                 var v = ov.swizzle.zxwz;
-                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 9u, 5u);
+                var v = ov.swizzle.zxww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 9u, 6u, 4u);
+                var v = ov.swizzle.zy;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+            }
+            {
+                var ov = new uint4(5u, 5u, 5u, 4u);
+                var v = ov.swizzle.zyx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 9u, 6u, 8u);
+                var v = ov.swizzle.zyxx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 3u, 8u, 5u);
+                var v = ov.swizzle.zyxy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 5u, 2u, 0u);
+                var v = ov.swizzle.zyxz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 9u, 8u, 9u);
+                var v = ov.swizzle.zyxw;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 2u, 1u, 0u);
+                var v = ov.swizzle.zyy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 9u, 6u, 3u);
+                var v = ov.swizzle.zyyx;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 4u, 8u, 0u);
+                var v = ov.swizzle.zyyy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 5u, 1u, 9u);
+                var v = ov.swizzle.zyyz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(7u, 9u, 8u, 8u);
-                var v = ov.swizzle.zxww;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
+                var ov = new uint4(6u, 0u, 5u, 6u);
+                var v = ov.swizzle.zyyw;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 9u, 2u, 1u);
+                var v = ov.swizzle.zyz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 1u, 2u, 0u);
+                var v = ov.swizzle.zyzx;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 8u, 7u, 8u);
+                var v = ov.swizzle.zyzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(5u, 6u, 7u, 9u);
-                var v = ov.swizzle.zy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-            }
-            {
-                var ov = new uint4(5u, 3u, 6u, 4u);
-                var v = ov.swizzle.zyx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 3u, 5u, 8u);
-                var v = ov.swizzle.zyxx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(3u, v.y);
+                var ov = new uint4(0u, 7u, 9u, 3u);
+                var v = ov.swizzle.zyzz;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(9u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(3u, 7u, 9u, 5u);
-                var v = ov.swizzle.zyxy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 4u, 3u, 5u);
-                var v = ov.swizzle.zyxz;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(3u, 4u, 4u, 3u);
+                var v = ov.swizzle.zyzw;
+                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(2u, 7u, 6u, 9u);
-                var v = ov.swizzle.zyxw;
-                Assert.AreEqual(6u, v.x);
+                var ov = new uint4(3u, 2u, 4u, 8u);
+                var v = ov.swizzle.zyw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 7u, 4u, 2u);
+                var v = ov.swizzle.zywx;
+                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 6u, 3u, 9u);
-                var v = ov.swizzle.zyy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 0u, 7u, 9u);
-                var v = ov.swizzle.zyyx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 5u, 9u, 9u);
-                var v = ov.swizzle.zyyy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(2u, 2u, 9u, 3u);
-                var v = ov.swizzle.zyyz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 0u, 9u);
-                var v = ov.swizzle.zyyw;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 4u, 5u, 8u);
-                var v = ov.swizzle.zyz;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 5u, 1u, 2u);
-                var v = ov.swizzle.zyzx;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 2u, 6u, 8u);
-                var v = ov.swizzle.zyzy;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 8u, 8u);
-                var v = ov.swizzle.zyzz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 6u, 5u, 8u);
-                var v = ov.swizzle.zyzw;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 5u, 5u, 7u);
-                var v = ov.swizzle.zyw;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 9u, 2u, 5u);
-                var v = ov.swizzle.zywx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 3u, 4u);
+                var ov = new uint4(4u, 3u, 4u, 7u);
                 var v = ov.swizzle.zywy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 7u, 6u, 6u);
-                var v = ov.swizzle.zywz;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 0u, 3u);
-                var v = ov.swizzle.zyww;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(9u, 4u, 3u, 0u);
-                var v = ov.swizzle.zz;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
+                var ov = new uint4(4u, 2u, 0u, 6u);
+                var v = ov.swizzle.zywz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(9u, 1u, 0u, 5u);
+                var ov = new uint4(9u, 0u, 8u, 7u);
+                var v = ov.swizzle.zyww;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 6u, 6u, 5u);
+                var v = ov.swizzle.zz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+            }
+            {
+                var ov = new uint4(6u, 9u, 0u, 4u);
                 var v = ov.swizzle.zzx;
                 Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(6u, v.z);
             }
             {
-                var ov = new uint4(3u, 0u, 4u, 5u);
+                var ov = new uint4(6u, 8u, 6u, 1u);
                 var v = ov.swizzle.zzxx;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(2u, 1u, 3u, 7u);
+                var ov = new uint4(5u, 2u, 3u, 6u);
                 var v = ov.swizzle.zzxy;
                 Assert.AreEqual(3u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(9u, 8u, 0u, 8u);
+                var ov = new uint4(5u, 3u, 6u, 4u);
                 var v = ov.swizzle.zzxz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(2u, 6u, 7u, 4u);
+                var ov = new uint4(7u, 9u, 5u, 3u);
                 var v = ov.swizzle.zzxw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 1u, 1u, 1u);
-                var v = ov.swizzle.zzy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 1u, 7u, 3u);
-                var v = ov.swizzle.zzyx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 2u, 9u, 0u);
-                var v = ov.swizzle.zzyy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 7u, 6u);
-                var v = ov.swizzle.zzyz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 1u, 4u);
-                var v = ov.swizzle.zzyw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 2u, 5u);
-                var v = ov.swizzle.zzz;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 9u, 7u, 2u);
-                var v = ov.swizzle.zzzx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 2u, 0u, 2u);
-                var v = ov.swizzle.zzzy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 8u, 2u, 8u);
-                var v = ov.swizzle.zzzz;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 8u, 4u, 1u);
-                var v = ov.swizzle.zzzw;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 0u, 9u, 9u);
-                var v = ov.swizzle.zzw;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 2u, 5u, 4u);
-                var v = ov.swizzle.zzwx;
                 Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 9u, 5u);
-                var v = ov.swizzle.zzwy;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 2u, 8u, 9u);
-                var v = ov.swizzle.zzwz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 7u, 1u);
-                var v = ov.swizzle.zzww;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 4u, 8u, 3u);
-                var v = ov.swizzle.zw;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(3u, v.y);
-            }
-            {
-                var ov = new uint4(2u, 7u, 3u, 3u);
-                var v = ov.swizzle.zwx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 8u, 6u, 0u);
-                var v = ov.swizzle.zwxx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 9u, 1u, 5u);
-                var v = ov.swizzle.zwxy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 2u, 4u, 1u);
-                var v = ov.swizzle.zwxz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 2u, 1u, 0u);
-                var v = ov.swizzle.zwxw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 4u, 7u, 4u);
-                var v = ov.swizzle.zwy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 2u, 0u, 3u);
-                var v = ov.swizzle.zwyx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 2u, 7u, 8u);
-                var v = ov.swizzle.zwyy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 5u, 7u, 3u);
-                var v = ov.swizzle.zwyz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 2u, 2u, 2u);
-                var v = ov.swizzle.zwyw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 8u, 1u, 4u);
-                var v = ov.swizzle.zwz;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 3u, 0u, 5u);
-                var v = ov.swizzle.zwzx;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 7u, 1u);
-                var v = ov.swizzle.zwzy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 0u, 7u);
-                var v = ov.swizzle.zwzz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 2u, 9u);
-                var v = ov.swizzle.zwzw;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 9u, 0u);
-                var v = ov.swizzle.zww;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 2u, 3u, 3u);
-                var v = ov.swizzle.zwwx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 0u, 2u, 2u);
-                var v = ov.swizzle.zwwy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 8u, 3u, 4u);
-                var v = ov.swizzle.zwwz;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(3u, 3u, 2u, 7u);
-                var v = ov.swizzle.zwww;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
+                var ov = new uint4(4u, 0u, 4u, 8u);
+                var v = ov.swizzle.zzy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 2u, 3u, 3u);
+                var v = ov.swizzle.zzyx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 6u, 7u);
+                var v = ov.swizzle.zzyy;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(1u, 4u, 1u, 5u);
+                var ov = new uint4(5u, 8u, 2u, 5u);
+                var v = ov.swizzle.zzyz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 9u, 5u, 5u);
+                var v = ov.swizzle.zzyw;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 1u, 2u);
+                var v = ov.swizzle.zzz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 3u, 1u, 5u);
+                var v = ov.swizzle.zzzx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 9u, 7u);
+                var v = ov.swizzle.zzzy;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 3u, 1u, 6u);
+                var v = ov.swizzle.zzzz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 1u, 7u, 3u);
+                var v = ov.swizzle.zzzw;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 2u, 6u, 7u);
+                var v = ov.swizzle.zzw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 5u, 1u, 6u);
+                var v = ov.swizzle.zzwx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 0u, 7u, 8u);
+                var v = ov.swizzle.zzwy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 0u, 6u, 1u);
+                var v = ov.swizzle.zzwz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 1u, 9u, 3u);
+                var v = ov.swizzle.zzww;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 7u, 9u, 0u);
+                var v = ov.swizzle.zw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(0u, v.y);
+            }
+            {
+                var ov = new uint4(8u, 8u, 7u, 2u);
+                var v = ov.swizzle.zwx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 5u, 0u, 5u);
+                var v = ov.swizzle.zwxx;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 2u, 0u, 4u);
+                var v = ov.swizzle.zwxy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 4u, 6u, 3u);
+                var v = ov.swizzle.zwxz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 5u, 4u, 2u);
+                var v = ov.swizzle.zwxw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 2u, 0u);
+                var v = ov.swizzle.zwy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 0u, 8u, 3u);
+                var v = ov.swizzle.zwyx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 1u, 7u);
+                var v = ov.swizzle.zwyy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 5u, 9u, 7u);
+                var v = ov.swizzle.zwyz;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 8u, 8u, 6u);
+                var v = ov.swizzle.zwyw;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 5u, 1u);
+                var v = ov.swizzle.zwz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 1u, 4u, 4u);
+                var v = ov.swizzle.zwzx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 6u, 0u, 6u);
+                var v = ov.swizzle.zwzy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 7u, 3u, 6u);
+                var v = ov.swizzle.zwzz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 7u, 5u, 7u);
+                var v = ov.swizzle.zwzw;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 6u, 3u, 8u);
+                var v = ov.swizzle.zww;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 3u, 1u, 1u);
+                var v = ov.swizzle.zwwx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 9u, 4u, 3u);
+                var v = ov.swizzle.zwwy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 7u, 1u, 5u);
+                var v = ov.swizzle.zwwz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 1u, 0u, 4u);
+                var v = ov.swizzle.zwww;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 3u, 8u, 5u);
                 var v = ov.swizzle.wx;
                 Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(5u, v.y);
             }
             {
-                var ov = new uint4(5u, 5u, 6u, 4u);
+                var ov = new uint4(3u, 5u, 4u, 5u);
                 var v = ov.swizzle.wxx;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(5u, 0u, 4u, 9u);
+                var ov = new uint4(2u, 3u, 1u, 1u);
                 var v = ov.swizzle.wxxx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(9u, 2u, 4u, 4u);
+                var ov = new uint4(3u, 1u, 8u, 3u);
                 var v = ov.swizzle.wxxy;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(2u, v.w);
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(9u, 0u, 1u, 9u);
+                var ov = new uint4(8u, 7u, 0u, 5u);
                 var v = ov.swizzle.wxxz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 1u, 1u);
-                var v = ov.swizzle.wxxw;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 5u, 1u, 3u);
-                var v = ov.swizzle.wxy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 6u, 3u, 6u);
-                var v = ov.swizzle.wxyx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 5u, 8u, 3u);
-                var v = ov.swizzle.wxyy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 3u, 5u, 7u);
-                var v = ov.swizzle.wxyz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 7u, 3u);
-                var v = ov.swizzle.wxyw;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 3u, 3u, 7u);
-                var v = ov.swizzle.wxz;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 9u, 4u, 2u);
-                var v = ov.swizzle.wxzx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 3u, 7u, 3u);
-                var v = ov.swizzle.wxzy;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 0u, 3u, 0u);
-                var v = ov.swizzle.wxzz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 2u, 9u, 8u);
-                var v = ov.swizzle.wxzw;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 3u, 3u);
-                var v = ov.swizzle.wxw;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 0u, 2u, 5u);
-                var v = ov.swizzle.wxwx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 4u, 3u, 1u);
-                var v = ov.swizzle.wxwy;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 5u, 9u);
-                var v = ov.swizzle.wxwz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 4u, 9u, 5u);
-                var v = ov.swizzle.wxww;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 1u, 4u, 2u);
-                var v = ov.swizzle.wy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(1u, v.y);
-            }
-            {
-                var ov = new uint4(8u, 4u, 0u, 1u);
-                var v = ov.swizzle.wyx;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 5u, 4u, 3u);
-                var v = ov.swizzle.wyxx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 7u, 7u);
-                var v = ov.swizzle.wyxy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 3u, 4u);
-                var v = ov.swizzle.wyxz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 7u, 7u);
-                var v = ov.swizzle.wyxw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 5u, 3u, 6u);
-                var v = ov.swizzle.wyy;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 3u, 8u, 9u);
-                var v = ov.swizzle.wyyx;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 6u, 5u);
-                var v = ov.swizzle.wyyy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 0u, 4u, 9u);
-                var v = ov.swizzle.wyyz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 0u, 5u, 9u);
-                var v = ov.swizzle.wyyw;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 9u, 2u, 0u);
-                var v = ov.swizzle.wyz;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 8u, 9u, 2u);
-                var v = ov.swizzle.wyzx;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 8u, 2u);
-                var v = ov.swizzle.wyzy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 7u, 2u, 3u);
-                var v = ov.swizzle.wyzz;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 6u, 6u);
-                var v = ov.swizzle.wyzw;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 4u, 0u, 5u);
-                var v = ov.swizzle.wyw;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 1u, 3u, 8u);
-                var v = ov.swizzle.wywx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 4u, 4u, 5u);
-                var v = ov.swizzle.wywy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 7u, 7u, 1u);
-                var v = ov.swizzle.wywz;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 6u, 6u);
-                var v = ov.swizzle.wyww;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 6u, 8u, 8u);
-                var v = ov.swizzle.wz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-            }
-            {
-                var ov = new uint4(5u, 3u, 0u, 6u);
-                var v = ov.swizzle.wzx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 1u, 8u, 5u);
-                var v = ov.swizzle.wzxx;
                 Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 8u, 2u, 5u);
-                var v = ov.swizzle.wzxy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 8u, 8u);
-                var v = ov.swizzle.wzxz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 1u, 6u, 6u);
-                var v = ov.swizzle.wzxw;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 3u, 9u, 7u);
-                var v = ov.swizzle.wzy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 0u, 9u, 8u);
-                var v = ov.swizzle.wzyx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 0u, 3u, 0u);
-                var v = ov.swizzle.wzyy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 2u, 0u, 8u);
-                var v = ov.swizzle.wzyz;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 7u, 9u, 4u);
-                var v = ov.swizzle.wzyw;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 1u, 4u);
-                var v = ov.swizzle.wzz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 1u, 2u, 6u);
-                var v = ov.swizzle.wzzx;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 8u, 1u, 2u);
-                var v = ov.swizzle.wzzy;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 2u, 7u, 2u);
-                var v = ov.swizzle.wzzz;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 3u, 6u, 7u);
-                var v = ov.swizzle.wzzw;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 0u, 8u, 3u);
-                var v = ov.swizzle.wzw;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 1u, 9u, 5u);
-                var v = ov.swizzle.wzwx;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 7u, 7u);
-                var v = ov.swizzle.wzwy;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 2u, 0u, 1u);
-                var v = ov.swizzle.wzwz;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 2u, 8u);
-                var v = ov.swizzle.wzww;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 2u, 3u, 9u);
-                var v = ov.swizzle.ww;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-            }
-            {
-                var ov = new uint4(9u, 0u, 1u, 3u);
-                var v = ov.swizzle.wwx;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 8u, 4u, 7u);
-                var v = ov.swizzle.wwxx;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 2u, 5u);
-                var v = ov.swizzle.wwxy;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 8u, 2u);
-                var v = ov.swizzle.wwxz;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 9u, 4u);
-                var v = ov.swizzle.wwxw;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(4u, v.w);
             }
             {
                 var ov = new uint4(0u, 3u, 0u, 6u);
-                var v = ov.swizzle.wwy;
+                var v = ov.swizzle.wxxw;
                 Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(2u, 5u, 0u, 8u);
-                var v = ov.swizzle.wwyx;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 7u, 9u, 8u);
-                var v = ov.swizzle.wwyy;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 8u, 4u, 4u);
-                var v = ov.swizzle.wwyz;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 5u, 0u, 8u);
-                var v = ov.swizzle.wwyw;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 9u, 6u, 9u);
-                var v = ov.swizzle.wwz;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
+                var ov = new uint4(1u, 6u, 0u, 5u);
+                var v = ov.swizzle.wxy;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(6u, v.z);
             }
             {
-                var ov = new uint4(0u, 4u, 1u, 3u);
-                var v = ov.swizzle.wwzx;
+                var ov = new uint4(5u, 7u, 0u, 4u);
+                var v = ov.swizzle.wxyx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 0u, 1u, 3u);
+                var v = ov.swizzle.wxyy;
                 Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(7u, 9u, 5u, 0u);
-                var v = ov.swizzle.wwzy;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(9u, v.w);
+                var ov = new uint4(8u, 7u, 4u, 5u);
+                var v = ov.swizzle.wxyz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(2u, 8u, 8u, 5u);
-                var v = ov.swizzle.wwzz;
+                var ov = new uint4(9u, 5u, 9u, 0u);
+                var v = ov.swizzle.wxyw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 0u, 5u);
+                var v = ov.swizzle.wxz;
                 Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 8u, 7u, 8u);
+                var v = ov.swizzle.wxzx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(0u, 5u, 0u, 9u);
-                var v = ov.swizzle.wwzw;
-                Assert.AreEqual(9u, v.x);
+                var ov = new uint4(0u, 5u, 4u, 2u);
+                var v = ov.swizzle.wxzy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 2u, 4u, 7u);
+                var v = ov.swizzle.wxzz;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 8u, 0u, 4u);
+                var v = ov.swizzle.wxzw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 6u, 5u, 3u);
+                var v = ov.swizzle.wxw;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 5u, 5u, 0u);
+                var v = ov.swizzle.wxwx;
+                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(7u, 5u, 6u, 3u);
-                var v = ov.swizzle.www;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(3u, 4u, 6u, 4u);
+                var v = ov.swizzle.wxwy;
+                Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(2u, 3u, 9u, 2u);
-                var v = ov.swizzle.wwwx;
-                Assert.AreEqual(2u, v.x);
+                var ov = new uint4(3u, 9u, 7u, 7u);
+                var v = ov.swizzle.wxwz;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 7u, 7u);
+                var v = ov.swizzle.wxww;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 2u, 3u, 0u);
+                var v = ov.swizzle.wy;
+                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(2u, v.y);
+            }
+            {
+                var ov = new uint4(6u, 9u, 9u, 5u);
+                var v = ov.swizzle.wyx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 7u, 0u, 1u);
+                var v = ov.swizzle.wyxx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 8u, 1u);
+                var v = ov.swizzle.wyxy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 7u, 6u, 3u);
+                var v = ov.swizzle.wyxz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 5u, 6u);
+                var v = ov.swizzle.wyxw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 9u, 8u, 4u);
+                var v = ov.swizzle.wyy;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 6u, 1u, 0u);
+                var v = ov.swizzle.wyyx;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 3u, 4u, 0u);
+                var v = ov.swizzle.wyyy;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 7u, 0u);
+                var v = ov.swizzle.wyyz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 9u, 6u, 5u);
+                var v = ov.swizzle.wyyw;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 5u, 9u, 8u);
+                var v = ov.swizzle.wyz;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 6u, 9u, 8u);
+                var v = ov.swizzle.wyzx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 4u, 1u);
+                var v = ov.swizzle.wyzy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 7u, 2u, 6u);
+                var v = ov.swizzle.wyzz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(2u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(3u, 3u, 2u, 6u);
-                var v = ov.swizzle.wwwy;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
+                var ov = new uint4(0u, 4u, 1u, 7u);
+                var v = ov.swizzle.wyzw;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 0u, 9u, 2u);
+                var v = ov.swizzle.wyw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 7u, 8u, 4u);
+                var v = ov.swizzle.wywx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 5u, 7u, 2u);
+                var v = ov.swizzle.wywy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 9u, 2u, 3u);
+                var v = ov.swizzle.wywz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 0u, 3u, 8u);
+                var v = ov.swizzle.wyww;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 2u, 1u, 7u);
+                var v = ov.swizzle.wz;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(8u, 2u, 3u, 5u);
+                var v = ov.swizzle.wzx;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 0u, 9u, 1u);
+                var v = ov.swizzle.wzxx;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 8u, 9u, 3u);
+                var v = ov.swizzle.wzxy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 9u, 3u);
+                var v = ov.swizzle.wzxz;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 4u, 8u, 2u);
+                var v = ov.swizzle.wzxw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 0u, 7u);
+                var v = ov.swizzle.wzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 9u, 7u, 0u);
+                var v = ov.swizzle.wzyx;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 3u, 0u, 3u);
+                var v = ov.swizzle.wzyy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(3u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(6u, 1u, 8u, 1u);
-                var v = ov.swizzle.wwwz;
+                var ov = new uint4(9u, 2u, 3u, 6u);
+                var v = ov.swizzle.wzyz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 2u, 0u);
+                var v = ov.swizzle.wzyw;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 5u, 4u, 2u);
+                var v = ov.swizzle.wzz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 8u, 7u, 1u);
+                var v = ov.swizzle.wzzx;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 9u, 0u, 2u);
+                var v = ov.swizzle.wzzy;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 8u, 0u, 6u);
+                var v = ov.swizzle.wzzz;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 5u, 0u, 2u);
+                var v = ov.swizzle.wzzw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 9u, 4u);
+                var v = ov.swizzle.wzw;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 6u, 4u, 3u);
+                var v = ov.swizzle.wzwx;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(3u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(6u, 0u, 5u, 8u);
-                var v = ov.swizzle.wwww;
+                var ov = new uint4(3u, 2u, 9u, 3u);
+                var v = ov.swizzle.wzwy;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 7u, 6u, 0u);
+                var v = ov.swizzle.wzwz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 8u, 8u, 6u);
+                var v = ov.swizzle.wzww;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 5u, 9u, 1u);
+                var v = ov.swizzle.ww;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(2u, 7u, 8u, 0u);
+                var v = ov.swizzle.wwx;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 7u, 4u, 8u);
+                var v = ov.swizzle.wwxx;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 0u, 6u, 6u);
+                var v = ov.swizzle.wwxy;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 4u, 2u);
+                var v = ov.swizzle.wwxz;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 4u, 8u, 9u);
+                var v = ov.swizzle.wwxw;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 6u, 0u, 6u);
+                var v = ov.swizzle.wwy;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 9u, 8u, 4u);
+                var v = ov.swizzle.wwyx;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 0u, 8u);
+                var v = ov.swizzle.wwyy;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 2u, 0u);
+                var v = ov.swizzle.wwyz;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 1u, 6u);
+                var v = ov.swizzle.wwyw;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 0u, 1u);
+                var v = ov.swizzle.wwz;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 0u, 4u, 7u);
+                var v = ov.swizzle.wwzx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 5u, 1u, 7u);
+                var v = ov.swizzle.wwzy;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 0u, 1u, 5u);
+                var v = ov.swizzle.wwzz;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 8u, 2u);
+                var v = ov.swizzle.wwzw;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 0u, 0u, 9u);
+                var v = ov.swizzle.www;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 8u, 5u, 7u);
+                var v = ov.swizzle.wwwx;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 3u, 1u);
+                var v = ov.swizzle.wwwy;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 2u, 1u, 8u);
+                var v = ov.swizzle.wwwz;
                 Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 8u, 5u, 1u);
+                var v = ov.swizzle.wwww;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
         }
 
@@ -2619,1849 +2619,1849 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
         public void RGBA()
         {
             {
-                var ov = new uint4(9u, 9u, 1u, 4u);
+                var ov = new uint4(3u, 3u, 9u, 3u);
                 var v = ov.swizzle.rr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
             }
             {
-                var ov = new uint4(9u, 4u, 4u, 4u);
+                var ov = new uint4(6u, 3u, 5u, 3u);
                 var v = ov.swizzle.rrr;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 4u, 3u, 0u);
+                var v = ov.swizzle.rrrr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 1u, 0u, 1u);
+                var v = ov.swizzle.rrrg;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 5u, 6u, 2u);
+                var v = ov.swizzle.rrrb;
                 Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(4u, 6u, 7u, 5u);
-                var v = ov.swizzle.rrrr;
+                var ov = new uint4(1u, 8u, 3u, 9u);
+                var v = ov.swizzle.rrra;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 3u, 3u, 7u);
+                var v = ov.swizzle.rrg;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 0u, 5u, 8u);
+                var v = ov.swizzle.rrgr;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 8u, 6u);
+                var v = ov.swizzle.rrgg;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 0u, 3u, 6u);
+                var v = ov.swizzle.rrgb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 7u, 3u, 9u);
+                var v = ov.swizzle.rrga;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 4u, 5u);
+                var v = ov.swizzle.rrb;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 6u, 4u, 4u);
+                var v = ov.swizzle.rrbr;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 2u, 5u, 4u);
+                var v = ov.swizzle.rrbg;
                 Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 9u, 4u, 2u);
+                var v = ov.swizzle.rrbb;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 2u, 4u);
+                var v = ov.swizzle.rrba;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 4u, 1u, 5u);
+                var v = ov.swizzle.rra;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 3u, 4u, 9u);
+                var v = ov.swizzle.rrar;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 9u, 5u, 4u);
+                var v = ov.swizzle.rrag;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 4u, 6u, 4u);
+                var v = ov.swizzle.rrab;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 7u, 9u, 4u);
+                var v = ov.swizzle.rraa;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 1u, 4u, 6u);
+                var v = ov.swizzle.rg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(8u, 4u, 6u, 7u);
+                var v = ov.swizzle.rgr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 0u, 6u, 8u);
+                var v = ov.swizzle.rgrr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 1u, 8u);
+                var v = ov.swizzle.rgrg;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 3u, 4u);
+                var v = ov.swizzle.rgrb;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 5u, 1u, 5u);
+                var v = ov.swizzle.rgra;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 9u, 5u);
+                var v = ov.swizzle.rgg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 9u, 4u, 2u);
+                var v = ov.swizzle.rggr;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 8u, 7u);
+                var v = ov.swizzle.rggg;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 4u, 6u, 8u);
+                var v = ov.swizzle.rggb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 7u, 3u, 2u);
+                var v = ov.swizzle.rgga;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 8u, 5u);
+                var v = ov.swizzle.rgb;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 8u, 1u, 9u);
+                var v = ov.swizzle.rgbr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 4u, 2u, 1u);
+                var v = ov.swizzle.rgbg;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 8u, 9u, 7u);
+                var v = ov.swizzle.rgbb;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 0u, 3u, 6u);
+                var v = ov.swizzle.rgba;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 9u, 7u);
+                var v = ov.swizzle.rga;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 4u, 8u, 8u);
+                var v = ov.swizzle.rgar;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 7u, 4u);
+                var v = ov.swizzle.rgag;
+                Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(6u, 9u, 4u, 2u);
-                var v = ov.swizzle.rrrg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(9u, v.w);
+                var ov = new uint4(2u, 8u, 2u, 0u);
+                var v = ov.swizzle.rgab;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(1u, 5u, 6u, 7u);
-                var v = ov.swizzle.rrrb;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 2u, 0u, 5u);
-                var v = ov.swizzle.rrra;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(2u, 3u, 3u, 5u);
+                var v = ov.swizzle.rgaa;
+                Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 5u, 7u, 4u);
+                var v = ov.swizzle.rb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+            }
+            {
+                var ov = new uint4(4u, 6u, 7u, 1u);
+                var v = ov.swizzle.rbr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 9u, 3u, 5u);
+                var v = ov.swizzle.rbrr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 7u, 8u);
+                var v = ov.swizzle.rbrg;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(5u, v.w);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(7u, 0u, 3u, 7u);
-                var v = ov.swizzle.rrg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 8u, 6u, 3u);
-                var v = ov.swizzle.rrgr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 9u, 3u, 2u);
-                var v = ov.swizzle.rrgg;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 2u, 4u);
-                var v = ov.swizzle.rrgb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 3u, 1u);
-                var v = ov.swizzle.rrga;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 1u, 2u, 2u);
-                var v = ov.swizzle.rrb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 0u, 0u, 9u);
-                var v = ov.swizzle.rrbr;
+                var ov = new uint4(6u, 1u, 4u, 8u);
+                var v = ov.swizzle.rbrb;
                 Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 4u, 8u, 6u);
-                var v = ov.swizzle.rrbg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(9u, 5u, 7u, 8u);
-                var v = ov.swizzle.rrbb;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 6u, 5u, 5u);
-                var v = ov.swizzle.rrba;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 5u, 7u);
-                var v = ov.swizzle.rra;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 1u, 7u, 1u);
-                var v = ov.swizzle.rrar;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 1u, 6u, 8u);
-                var v = ov.swizzle.rrag;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 9u, 1u, 5u);
-                var v = ov.swizzle.rrab;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 0u, 1u, 8u);
-                var v = ov.swizzle.rraa;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 7u, 5u, 5u);
-                var v = ov.swizzle.rg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-            }
-            {
-                var ov = new uint4(0u, 6u, 3u, 9u);
-                var v = ov.swizzle.rgr;
+                var ov = new uint4(0u, 3u, 6u, 0u);
+                var v = ov.swizzle.rbra;
                 Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(2u, 3u, 4u, 4u);
-                var v = ov.swizzle.rgrr;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 8u, 1u, 0u);
-                var v = ov.swizzle.rgrg;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 5u, 6u, 4u);
-                var v = ov.swizzle.rgrb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 8u, 5u, 7u);
-                var v = ov.swizzle.rgra;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 0u, 7u, 9u);
-                var v = ov.swizzle.rgg;
+                var ov = new uint4(7u, 8u, 8u, 0u);
+                var v = ov.swizzle.rbg;
                 Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
             }
             {
-                var ov = new uint4(4u, 1u, 0u, 0u);
-                var v = ov.swizzle.rggr;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 7u, 6u, 2u);
-                var v = ov.swizzle.rggg;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 6u, 9u);
-                var v = ov.swizzle.rggb;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
+                var ov = new uint4(6u, 8u, 4u, 0u);
+                var v = ov.swizzle.rbgr;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
                 var ov = new uint4(7u, 8u, 9u, 0u);
-                var v = ov.swizzle.rgga;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 1u, 9u, 0u);
-                var v = ov.swizzle.rgb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 1u, 0u, 2u);
-                var v = ov.swizzle.rgbr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 6u, 6u, 0u);
-                var v = ov.swizzle.rgbg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 7u, 7u, 0u);
-                var v = ov.swizzle.rgbb;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 4u, 4u, 0u);
-                var v = ov.swizzle.rgba;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 4u, 9u, 1u);
-                var v = ov.swizzle.rga;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 8u, 0u, 5u);
-                var v = ov.swizzle.rgar;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 7u, 3u);
-                var v = ov.swizzle.rgag;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 5u, 0u, 5u);
-                var v = ov.swizzle.rgab;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 1u, 3u);
-                var v = ov.swizzle.rgaa;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 8u, 6u, 8u);
-                var v = ov.swizzle.rb;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(6u, v.y);
-            }
-            {
-                var ov = new uint4(0u, 6u, 1u, 1u);
-                var v = ov.swizzle.rbr;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 6u, 0u, 3u);
-                var v = ov.swizzle.rbrr;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 8u, 2u);
-                var v = ov.swizzle.rbrg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 8u, 9u);
-                var v = ov.swizzle.rbrb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 3u, 6u);
-                var v = ov.swizzle.rbra;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 2u, 0u, 6u);
-                var v = ov.swizzle.rbg;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 2u, 9u, 1u);
-                var v = ov.swizzle.rbgr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 1u, 9u, 3u);
                 var v = ov.swizzle.rbgg;
-                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(7u, 0u, 1u, 5u);
+                var ov = new uint4(6u, 5u, 3u, 4u);
                 var v = ov.swizzle.rbgb;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(7u, 8u, 3u, 3u);
+                var ov = new uint4(6u, 6u, 3u, 2u);
                 var v = ov.swizzle.rbga;
-                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(6u, 3u, 9u, 0u);
+                var ov = new uint4(1u, 1u, 0u, 5u);
                 var v = ov.swizzle.rbb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
             }
             {
-                var ov = new uint4(7u, 7u, 3u, 2u);
+                var ov = new uint4(1u, 3u, 4u, 1u);
                 var v = ov.swizzle.rbbr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(8u, 1u, 2u, 7u);
+                var ov = new uint4(9u, 4u, 5u, 4u);
                 var v = ov.swizzle.rbbg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(5u, 9u, 9u, 7u);
+                var ov = new uint4(8u, 7u, 7u, 6u);
                 var v = ov.swizzle.rbbb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(5u, 4u, 4u, 9u);
+                var ov = new uint4(8u, 6u, 5u, 6u);
                 var v = ov.swizzle.rbba;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(9u, v.w);
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(6u, 9u, 0u, 2u);
+                var ov = new uint4(5u, 2u, 7u, 5u);
                 var v = ov.swizzle.rba;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
             }
             {
-                var ov = new uint4(9u, 4u, 4u, 2u);
+                var ov = new uint4(7u, 6u, 1u, 1u);
                 var v = ov.swizzle.rbar;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(6u, 3u, 2u, 1u);
+                var ov = new uint4(8u, 9u, 2u, 3u);
                 var v = ov.swizzle.rbag;
-                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(0u, 9u, 0u, 6u);
+                var ov = new uint4(9u, 3u, 8u, 5u);
                 var v = ov.swizzle.rbab;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 8u, 9u);
+                var ov = new uint4(7u, 2u, 9u, 2u);
                 var v = ov.swizzle.rbaa;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(8u, 6u, 3u, 1u);
+                var ov = new uint4(4u, 3u, 1u, 3u);
                 var v = ov.swizzle.ra;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
             }
             {
-                var ov = new uint4(8u, 1u, 8u, 8u);
+                var ov = new uint4(3u, 4u, 1u, 9u);
                 var v = ov.swizzle.rar;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(0u, 3u, 9u, 2u);
+                var ov = new uint4(7u, 6u, 6u, 9u);
                 var v = ov.swizzle.rarr;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(4u, 3u, 7u, 7u);
+                var ov = new uint4(0u, 6u, 7u, 8u);
                 var v = ov.swizzle.rarg;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(2u, 7u, 1u, 3u);
+                var ov = new uint4(4u, 5u, 8u, 5u);
                 var v = ov.swizzle.rarb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(2u, 0u, 6u, 4u);
+                var ov = new uint4(1u, 2u, 2u, 9u);
                 var v = ov.swizzle.rara;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(8u, 1u, 6u, 5u);
+                var ov = new uint4(2u, 1u, 4u, 4u);
                 var v = ov.swizzle.rag;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(1u, v.z);
             }
             {
-                var ov = new uint4(9u, 3u, 4u, 6u);
+                var ov = new uint4(8u, 2u, 9u, 5u);
                 var v = ov.swizzle.ragr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(9u, v.w);
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(6u, 4u, 0u, 9u);
+                var ov = new uint4(7u, 3u, 2u, 1u);
                 var v = ov.swizzle.ragg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(6u, 9u, 4u, 7u);
+                var ov = new uint4(1u, 4u, 1u, 2u);
                 var v = ov.swizzle.ragb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(5u, 6u, 1u, 2u);
+                var ov = new uint4(4u, 2u, 3u, 1u);
                 var v = ov.swizzle.raga;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 0u, 6u, 6u);
-                var v = ov.swizzle.rab;
                 Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 2u, 3u, 6u);
-                var v = ov.swizzle.rabr;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 5u, 7u, 8u);
-                var v = ov.swizzle.rabg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 8u, 2u, 6u);
-                var v = ov.swizzle.rabb;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 2u, 8u, 7u);
-                var v = ov.swizzle.raba;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 6u, 0u);
-                var v = ov.swizzle.raa;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 7u, 1u, 3u);
-                var v = ov.swizzle.raar;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 4u, 7u, 5u);
-                var v = ov.swizzle.raag;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 0u, 8u);
-                var v = ov.swizzle.raab;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 0u, 2u, 6u);
-                var v = ov.swizzle.raaa;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 8u, 7u, 0u);
-                var v = ov.swizzle.gr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(9u, v.y);
-            }
-            {
-                var ov = new uint4(7u, 2u, 9u, 8u);
-                var v = ov.swizzle.grr;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 7u, 2u, 2u);
-                var v = ov.swizzle.grrr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 3u, 0u);
-                var v = ov.swizzle.grrg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 6u, 3u, 5u);
-                var v = ov.swizzle.grrb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 0u, 2u, 4u);
-                var v = ov.swizzle.grra;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 1u, 9u, 6u);
-                var v = ov.swizzle.grg;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 3u, 2u, 4u);
-                var v = ov.swizzle.grgr;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 7u, 0u);
-                var v = ov.swizzle.grgg;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 5u, 3u, 0u);
-                var v = ov.swizzle.grgb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 2u, 6u, 5u);
-                var v = ov.swizzle.grga;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 7u, 5u);
-                var v = ov.swizzle.grb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 9u, 4u, 8u);
-                var v = ov.swizzle.grbr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 7u, 5u, 9u);
-                var v = ov.swizzle.grbg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 3u, 2u, 5u);
-                var v = ov.swizzle.grbb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 2u, 0u, 2u);
-                var v = ov.swizzle.grba;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 7u, 2u, 6u);
-                var v = ov.swizzle.gra;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 3u, 5u, 8u);
-                var v = ov.swizzle.grar;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 6u, 8u);
-                var v = ov.swizzle.grag;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 6u, 2u, 2u);
-                var v = ov.swizzle.grab;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 6u, 7u);
-                var v = ov.swizzle.graa;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 7u, 2u);
-                var v = ov.swizzle.gg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-            }
-            {
-                var ov = new uint4(6u, 8u, 4u, 1u);
-                var v = ov.swizzle.ggr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 7u, 6u, 6u);
-                var v = ov.swizzle.ggrr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 3u, 0u, 3u);
-                var v = ov.swizzle.ggrg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 1u, 9u, 6u);
-                var v = ov.swizzle.ggrb;
-                Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 6u, 5u, 3u);
-                var v = ov.swizzle.ggra;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 6u, 4u, 8u);
-                var v = ov.swizzle.ggg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 9u, 1u, 9u);
-                var v = ov.swizzle.gggr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 3u, 4u, 1u);
-                var v = ov.swizzle.gggg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 9u, 9u, 7u);
-                var v = ov.swizzle.gggb;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 4u, 5u);
-                var v = ov.swizzle.ggga;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 6u, 0u);
-                var v = ov.swizzle.ggb;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 8u, 0u, 2u);
-                var v = ov.swizzle.ggbr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 0u, 3u, 2u);
-                var v = ov.swizzle.ggbg;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 1u, 0u);
-                var v = ov.swizzle.ggbb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 5u, 0u, 3u);
-                var v = ov.swizzle.ggba;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 6u, 9u, 9u);
-                var v = ov.swizzle.gga;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 9u, 3u, 2u);
-                var v = ov.swizzle.ggar;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 1u, 7u, 0u);
-                var v = ov.swizzle.ggag;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 9u, 7u, 1u);
-                var v = ov.swizzle.ggab;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 2u, 2u);
-                var v = ov.swizzle.ggaa;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 9u, 5u, 6u);
-                var v = ov.swizzle.gb;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(5u, v.y);
-            }
-            {
-                var ov = new uint4(9u, 1u, 2u, 6u);
-                var v = ov.swizzle.gbr;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 8u, 3u, 2u);
-                var v = ov.swizzle.gbrr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 1u, 8u, 9u);
-                var v = ov.swizzle.gbrg;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 7u, 1u, 6u);
-                var v = ov.swizzle.gbrb;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 7u, 9u, 2u);
-                var v = ov.swizzle.gbra;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 2u, 0u, 8u);
-                var v = ov.swizzle.gbg;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 0u, 0u, 9u);
-                var v = ov.swizzle.gbgr;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 3u, 6u);
-                var v = ov.swizzle.gbgg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 3u, 9u, 7u);
-                var v = ov.swizzle.gbgb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 7u, 4u, 3u);
-                var v = ov.swizzle.gbga;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 4u, 7u, 0u);
-                var v = ov.swizzle.gbb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 7u, 0u, 2u);
-                var v = ov.swizzle.gbbr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 6u, 7u, 2u);
-                var v = ov.swizzle.gbbg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 2u, 3u, 7u);
-                var v = ov.swizzle.gbbb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 9u, 8u);
-                var v = ov.swizzle.gbba;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 9u, 3u);
-                var v = ov.swizzle.gba;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 2u, 8u, 6u);
-                var v = ov.swizzle.gbar;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 4u, 9u, 7u);
-                var v = ov.swizzle.gbag;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 6u, 4u, 8u);
-                var v = ov.swizzle.gbab;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 7u, 8u);
-                var v = ov.swizzle.gbaa;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 7u, 6u);
-                var v = ov.swizzle.ga;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-            }
-            {
-                var ov = new uint4(1u, 0u, 7u, 8u);
-                var v = ov.swizzle.gar;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(0u, 1u, 5u, 2u);
-                var v = ov.swizzle.garr;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 5u, 4u);
-                var v = ov.swizzle.garg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 4u, 2u, 8u);
-                var v = ov.swizzle.garb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 4u, 4u, 8u);
-                var v = ov.swizzle.gara;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 9u, 0u, 2u);
-                var v = ov.swizzle.gag;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 5u, 2u, 2u);
-                var v = ov.swizzle.gagr;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 8u, 0u);
-                var v = ov.swizzle.gagg;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 2u, 2u, 7u);
-                var v = ov.swizzle.gagb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 6u, 6u);
-                var v = ov.swizzle.gaga;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 6u, 8u, 5u);
-                var v = ov.swizzle.gab;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 9u, 3u, 0u);
-                var v = ov.swizzle.gabr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 8u, 8u, 5u);
-                var v = ov.swizzle.gabg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 0u, 2u);
-                var v = ov.swizzle.gabb;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 9u, 4u);
-                var v = ov.swizzle.gaba;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 6u, 7u);
-                var v = ov.swizzle.gaa;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 4u, 8u, 2u);
-                var v = ov.swizzle.gaar;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 4u, 9u);
-                var v = ov.swizzle.gaag;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 8u, 9u, 9u);
-                var v = ov.swizzle.gaab;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 1u, 9u);
-                var v = ov.swizzle.gaaa;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 2u, 4u, 8u);
-                var v = ov.swizzle.br;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-            }
-            {
-                var ov = new uint4(1u, 2u, 7u, 7u);
-                var v = ov.swizzle.brr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 9u, 6u, 9u);
-                var v = ov.swizzle.brrr;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 6u, 5u);
-                var v = ov.swizzle.brrg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 7u, 6u);
-                var v = ov.swizzle.brrb;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 1u, 8u, 2u);
-                var v = ov.swizzle.brra;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 8u, 7u, 4u);
-                var v = ov.swizzle.brg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 0u, 1u, 6u);
-                var v = ov.swizzle.brgr;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 0u, 2u, 7u);
-                var v = ov.swizzle.brgg;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 8u, 5u, 5u);
-                var v = ov.swizzle.brgb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 0u, 9u, 1u);
-                var v = ov.swizzle.brga;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 4u, 9u, 5u);
-                var v = ov.swizzle.brb;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 4u, 8u, 9u);
-                var v = ov.swizzle.brbr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 5u, 7u, 1u);
-                var v = ov.swizzle.brbg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
             }
             {
                 var ov = new uint4(3u, 2u, 3u, 3u);
-                var v = ov.swizzle.brbb;
+                var v = ov.swizzle.rab;
                 Assert.AreEqual(3u, v.x);
                 Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(4u, 3u, 8u, 2u);
-                var v = ov.swizzle.brba;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 9u, 7u, 9u);
-                var v = ov.swizzle.bra;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 9u, 6u, 2u);
-                var v = ov.swizzle.brar;
+                var ov = new uint4(6u, 0u, 1u, 2u);
+                var v = ov.swizzle.rabr;
                 Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 2u, 9u, 0u);
-                var v = ov.swizzle.brag;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 6u, 3u, 9u);
-                var v = ov.swizzle.brab;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 2u, 2u, 4u);
-                var v = ov.swizzle.braa;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 2u, 0u, 7u);
-                var v = ov.swizzle.bg;
-                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(2u, v.y);
-            }
-            {
-                var ov = new uint4(3u, 0u, 3u, 6u);
-                var v = ov.swizzle.bgr;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 2u, 0u, 4u);
-                var v = ov.swizzle.bgrr;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 3u, 9u);
-                var v = ov.swizzle.bgrg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 0u, 6u, 1u);
-                var v = ov.swizzle.bgrb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(7u, 6u, 3u, 3u);
-                var v = ov.swizzle.bgra;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 6u, 9u, 6u);
-                var v = ov.swizzle.bgg;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 4u, 4u, 2u);
-                var v = ov.swizzle.bggr;
+                var ov = new uint4(4u, 3u, 0u, 1u);
+                var v = ov.swizzle.rabg;
                 Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 3u, 0u, 6u);
-                var v = ov.swizzle.bggg;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(9u, 9u, 6u, 8u);
-                var v = ov.swizzle.bggb;
+                var ov = new uint4(0u, 1u, 1u, 1u);
+                var v = ov.swizzle.rabb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 1u, 5u);
+                var v = ov.swizzle.raba;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 1u, 2u, 7u);
+                var v = ov.swizzle.raa;
                 Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 5u, 7u, 9u);
+                var v = ov.swizzle.raar;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 5u, 0u, 9u);
+                var v = ov.swizzle.raag;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 0u, 6u, 9u);
+                var v = ov.swizzle.raab;
+                Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(9u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(6u, 0u, 8u, 3u);
-                var v = ov.swizzle.bgga;
+                var ov = new uint4(8u, 1u, 8u, 8u);
+                var v = ov.swizzle.raaa;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 7u, 0u, 3u);
+                var v = ov.swizzle.gr;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(2u, 0u, 0u, 9u);
+                var v = ov.swizzle.grr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 0u, 3u, 7u);
+                var v = ov.swizzle.grrr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 5u, 2u);
+                var v = ov.swizzle.grrg;
                 Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(2u, 5u, 8u, 4u);
-                var v = ov.swizzle.bgb;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(8u, v.z);
+                var ov = new uint4(9u, 5u, 9u, 0u);
+                var v = ov.swizzle.grrb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(3u, 3u, 1u, 8u);
-                var v = ov.swizzle.bgbr;
+                var ov = new uint4(2u, 1u, 8u, 8u);
+                var v = ov.swizzle.grra;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 1u, 2u, 9u);
+                var v = ov.swizzle.grg;
                 Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 1u, 3u, 8u);
+                var v = ov.swizzle.grgr;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 3u, 4u, 9u);
+                var v = ov.swizzle.grgg;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(5u, 0u, 6u, 5u);
-                var v = ov.swizzle.bgbg;
+                var ov = new uint4(0u, 8u, 5u, 3u);
+                var v = ov.swizzle.grgb;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 7u, 3u);
+                var v = ov.swizzle.grga;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 3u, 8u, 0u);
+                var v = ov.swizzle.grb;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 3u, 9u, 2u);
+                var v = ov.swizzle.grbr;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 5u, 9u);
+                var v = ov.swizzle.grbg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 1u, 0u, 0u);
+                var v = ov.swizzle.grbb;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 0u, 4u, 0u);
+                var v = ov.swizzle.grba;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 4u, 8u, 7u);
+                var v = ov.swizzle.gra;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 5u, 1u, 1u);
+                var v = ov.swizzle.grar;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 5u, 5u, 4u);
+                var v = ov.swizzle.grag;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 5u, 6u, 0u);
+                var v = ov.swizzle.grab;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 2u, 3u, 1u);
+                var v = ov.swizzle.graa;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 1u, 6u, 1u);
+                var v = ov.swizzle.gg;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+            }
+            {
+                var ov = new uint4(7u, 4u, 1u, 8u);
+                var v = ov.swizzle.ggr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 4u, 5u, 4u);
+                var v = ov.swizzle.ggrr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 6u, 7u);
+                var v = ov.swizzle.ggrg;
                 Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 1u, 5u, 0u);
+                var v = ov.swizzle.ggrb;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 8u, 1u, 6u);
+                var v = ov.swizzle.ggra;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 0u, 5u, 2u);
+                var v = ov.swizzle.ggg;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 0u, 7u, 5u);
+                var v = ov.swizzle.gggr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 9u, 5u);
+                var v = ov.swizzle.gggg;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 6u, 9u, 0u);
+                var v = ov.swizzle.gggb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 2u, 3u, 6u);
+                var v = ov.swizzle.ggga;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 0u, 1u, 8u);
+                var v = ov.swizzle.ggb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 8u, 5u, 1u);
+                var v = ov.swizzle.ggbr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 9u, 3u);
+                var v = ov.swizzle.ggbg;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 0u, 9u, 6u);
+                var v = ov.swizzle.ggbb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 8u, 3u, 7u);
+                var v = ov.swizzle.ggba;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 0u, 7u, 0u);
+                var v = ov.swizzle.gga;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 1u, 9u, 8u);
+                var v = ov.swizzle.ggar;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 6u, 9u);
+                var v = ov.swizzle.ggag;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 5u, 5u, 1u);
+                var v = ov.swizzle.ggab;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 4u, 7u);
+                var v = ov.swizzle.ggaa;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 6u, 7u, 3u);
+                var v = ov.swizzle.gb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+            }
+            {
+                var ov = new uint4(3u, 5u, 5u, 7u);
+                var v = ov.swizzle.gbr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 2u, 1u, 6u);
+                var v = ov.swizzle.gbrr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 6u, 0u, 9u);
+                var v = ov.swizzle.gbrg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 1u, 1u, 6u);
+                var v = ov.swizzle.gbrb;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 6u, 9u, 2u);
+                var v = ov.swizzle.gbra;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 0u, 8u, 4u);
+                var v = ov.swizzle.gbg;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 7u, 7u, 1u);
+                var v = ov.swizzle.gbgr;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 5u, 2u, 9u);
+                var v = ov.swizzle.gbgg;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 7u, 1u);
+                var v = ov.swizzle.gbgb;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 0u, 9u);
+                var v = ov.swizzle.gbga;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 0u, 9u, 8u);
+                var v = ov.swizzle.gbb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 5u, 8u, 8u);
+                var v = ov.swizzle.gbbr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 8u, 8u);
+                var v = ov.swizzle.gbbg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 4u, 6u, 2u);
+                var v = ov.swizzle.gbbb;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 3u, 9u);
+                var v = ov.swizzle.gbba;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 0u, 2u, 4u);
+                var v = ov.swizzle.gba;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 0u, 6u, 8u);
+                var v = ov.swizzle.gbar;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 0u, 0u, 6u);
+                var v = ov.swizzle.gbag;
+                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(8u, 6u, 1u, 6u);
-                var v = ov.swizzle.bgbb;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 6u, 6u, 9u);
-                var v = ov.swizzle.bgba;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(6u, v.z);
+                var ov = new uint4(6u, 0u, 9u, 7u);
+                var v = ov.swizzle.gbab;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(8u, 7u, 3u, 8u);
-                var v = ov.swizzle.bga;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(6u, 6u, 0u, 8u);
-                var v = ov.swizzle.bgar;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 7u, 5u, 7u);
-                var v = ov.swizzle.bgag;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 9u, 1u, 0u);
-                var v = ov.swizzle.bgab;
-                Assert.AreEqual(1u, v.x);
+                var ov = new uint4(1u, 9u, 9u, 8u);
+                var v = ov.swizzle.gbaa;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(1u, v.w);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(8u, 5u, 3u, 5u);
-                var v = ov.swizzle.bgaa;
-                Assert.AreEqual(3u, v.x);
+                var ov = new uint4(8u, 9u, 5u, 5u);
+                var v = ov.swizzle.ga;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(5u, v.y);
+            }
+            {
+                var ov = new uint4(6u, 3u, 3u, 8u);
+                var v = ov.swizzle.gar;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 4u, 3u, 5u);
+                var v = ov.swizzle.garr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 0u, 4u, 2u);
+                var v = ov.swizzle.garg;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 5u, 5u, 4u);
+                var v = ov.swizzle.garb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 0u, 4u, 5u);
+                var v = ov.swizzle.gara;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 2u, 2u, 6u);
+                var v = ov.swizzle.gag;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(2u, v.z);
+            }
+            {
+                var ov = new uint4(4u, 9u, 1u, 7u);
+                var v = ov.swizzle.gagr;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 5u, 1u, 4u);
+                var v = ov.swizzle.gagg;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(2u, 5u, 7u, 9u);
-                var v = ov.swizzle.bb;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-            }
-            {
-                var ov = new uint4(6u, 5u, 7u, 2u);
-                var v = ov.swizzle.bbr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
+                var ov = new uint4(5u, 6u, 7u, 0u);
+                var v = ov.swizzle.gagb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(7u, 9u, 7u, 9u);
-                var v = ov.swizzle.bbrr;
+                var ov = new uint4(7u, 8u, 9u, 9u);
+                var v = ov.swizzle.gaga;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 5u, 7u, 5u);
+                var v = ov.swizzle.gab;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 7u, 9u, 5u);
+                var v = ov.swizzle.gabr;
                 Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 4u, 9u, 7u);
+                var v = ov.swizzle.gabg;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 9u, 8u, 4u);
+                var v = ov.swizzle.gabb;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 6u, 3u, 9u);
+                var v = ov.swizzle.gaba;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 6u, 3u, 3u);
+                var v = ov.swizzle.gaa;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 9u, 7u, 0u);
+                var v = ov.swizzle.gaar;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 4u, 6u, 0u);
+                var v = ov.swizzle.gaag;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 9u, 2u);
+                var v = ov.swizzle.gaab;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 6u, 9u, 7u);
+                var v = ov.swizzle.gaaa;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 5u, 4u);
-                var v = ov.swizzle.bbrg;
-                Assert.AreEqual(5u, v.x);
+                var ov = new uint4(9u, 5u, 3u, 7u);
+                var v = ov.swizzle.br;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+            }
+            {
+                var ov = new uint4(5u, 3u, 9u, 5u);
+                var v = ov.swizzle.brr;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 2u, 8u, 0u);
+                var v = ov.swizzle.brrr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 0u, 6u, 0u);
+                var v = ov.swizzle.brrg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 5u, 6u);
+                var v = ov.swizzle.brrb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 8u, 7u, 9u);
+                var v = ov.swizzle.brra;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(1u, 9u, 7u, 6u);
-                var v = ov.swizzle.bbrb;
-                Assert.AreEqual(7u, v.x);
+                var ov = new uint4(7u, 9u, 6u, 0u);
+                var v = ov.swizzle.brg;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 4u, 7u);
-                var v = ov.swizzle.bbra;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 8u, 9u);
-                var v = ov.swizzle.bbg;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(9u, v.z);
             }
             {
-                var ov = new uint4(5u, 1u, 8u, 6u);
-                var v = ov.swizzle.bbgr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
+                var ov = new uint4(0u, 6u, 9u, 4u);
+                var v = ov.swizzle.brgr;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 5u, 9u, 7u);
+                var v = ov.swizzle.brgg;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 6u, 7u, 5u);
+                var v = ov.swizzle.brgb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 2u, 5u);
+                var v = ov.swizzle.brga;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(3u, 1u, 6u, 2u);
-                var v = ov.swizzle.bbgg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(1u, v.w);
+                var ov = new uint4(5u, 6u, 4u, 0u);
+                var v = ov.swizzle.brb;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(4u, v.z);
             }
             {
-                var ov = new uint4(0u, 3u, 2u, 1u);
-                var v = ov.swizzle.bbgb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(3u, v.z);
+                var ov = new uint4(8u, 9u, 0u, 0u);
+                var v = ov.swizzle.brbr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 2u, 7u, 1u);
+                var v = ov.swizzle.brbg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(8u, 8u, 1u, 4u);
-                var v = ov.swizzle.bbga;
-                Assert.AreEqual(1u, v.x);
+                var ov = new uint4(7u, 3u, 9u, 6u);
+                var v = ov.swizzle.brbb;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 8u, 5u, 2u);
+                var v = ov.swizzle.brba;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 3u, 0u);
+                var v = ov.swizzle.bra;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(0u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 9u, 7u, 6u);
+                var v = ov.swizzle.brar;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 9u, 6u, 8u);
+                var v = ov.swizzle.brag;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 2u, 3u, 1u);
+                var v = ov.swizzle.brab;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 5u, 2u, 0u);
+                var v = ov.swizzle.braa;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 8u, 3u, 4u);
+                var v = ov.swizzle.bg;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+            }
+            {
+                var ov = new uint4(8u, 8u, 9u, 9u);
+                var v = ov.swizzle.bgr;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 1u, 8u, 2u);
+                var v = ov.swizzle.bgrr;
+                Assert.AreEqual(8u, v.x);
                 Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 0u, 1u, 1u);
+                var v = ov.swizzle.bgrg;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 0u, 9u);
+                var v = ov.swizzle.bgrb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 3u, 4u, 1u);
+                var v = ov.swizzle.bgra;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 9u, 5u, 4u);
+                var v = ov.swizzle.bgg;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 7u, 1u, 1u);
+                var v = ov.swizzle.bggr;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 6u, 5u);
+                var v = ov.swizzle.bggg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 9u, 2u, 2u);
+                var v = ov.swizzle.bggb;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 8u, 9u, 4u);
+                var v = ov.swizzle.bgga;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(0u, 6u, 4u, 8u);
+                var ov = new uint4(1u, 4u, 1u, 5u);
+                var v = ov.swizzle.bgb;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 2u, 8u, 0u);
+                var v = ov.swizzle.bgbr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 3u, 8u, 2u);
+                var v = ov.swizzle.bgbg;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 2u, 7u, 8u);
+                var v = ov.swizzle.bgbb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 9u, 9u);
+                var v = ov.swizzle.bgba;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 7u, 6u, 1u);
+                var v = ov.swizzle.bga;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 5u, 0u, 3u);
+                var v = ov.swizzle.bgar;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 0u, 3u);
+                var v = ov.swizzle.bgag;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 0u, 9u, 2u);
+                var v = ov.swizzle.bgab;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 9u, 3u, 7u);
+                var v = ov.swizzle.bgaa;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 1u, 5u, 2u);
+                var v = ov.swizzle.bb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+            }
+            {
+                var ov = new uint4(6u, 4u, 2u, 8u);
+                var v = ov.swizzle.bbr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 3u, 8u, 4u);
+                var v = ov.swizzle.bbrr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 9u, 4u, 3u);
+                var v = ov.swizzle.bbrg;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 9u, 2u, 5u);
+                var v = ov.swizzle.bbrb;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 8u, 7u);
+                var v = ov.swizzle.bbra;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 4u, 7u, 3u);
+                var v = ov.swizzle.bbg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 5u, 0u, 4u);
+                var v = ov.swizzle.bbgr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 1u, 0u, 8u);
+                var v = ov.swizzle.bbgg;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 3u, 5u, 9u);
+                var v = ov.swizzle.bbgb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 2u, 1u, 8u);
+                var v = ov.swizzle.bbga;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 5u, 4u, 5u);
                 var v = ov.swizzle.bbb;
                 Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(4u, v.z);
             }
             {
-                var ov = new uint4(4u, 7u, 9u, 8u);
+                var ov = new uint4(5u, 6u, 3u, 8u);
                 var v = ov.swizzle.bbbr;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 7u, 6u, 4u);
+                var v = ov.swizzle.bbbg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 9u, 2u);
+                var v = ov.swizzle.bbbb;
                 Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(9u, v.y);
                 Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(4u, v.w);
+                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(7u, 6u, 2u, 9u);
-                var v = ov.swizzle.bbbg;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
+                var ov = new uint4(6u, 9u, 5u, 6u);
+                var v = ov.swizzle.bbba;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(0u, 9u, 5u, 7u);
-                var v = ov.swizzle.bbbb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
+                var ov = new uint4(2u, 4u, 3u, 7u);
+                var v = ov.swizzle.bba;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(9u, 5u, 0u, 4u);
+                var v = ov.swizzle.bbar;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 2u, 2u, 8u);
+                var v = ov.swizzle.bbag;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 9u, 8u, 7u);
+                var v = ov.swizzle.bbab;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 2u, 7u, 5u);
+                var v = ov.swizzle.bbaa;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(7u, 8u, 7u, 6u);
-                var v = ov.swizzle.bbba;
+                var ov = new uint4(1u, 2u, 7u, 3u);
+                var v = ov.swizzle.ba;
                 Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 0u, 5u, 2u);
-                var v = ov.swizzle.bba;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(2u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 2u, 3u, 7u);
-                var v = ov.swizzle.bbar;
-                Assert.AreEqual(3u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(7u, 6u, 8u, 4u);
-                var v = ov.swizzle.bbag;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(6u, v.w);
+                var ov = new uint4(5u, 6u, 6u, 5u);
+                var v = ov.swizzle.bar;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
             }
             {
-                var ov = new uint4(2u, 0u, 7u, 7u);
-                var v = ov.swizzle.bbab;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
+                var ov = new uint4(3u, 2u, 2u, 4u);
+                var v = ov.swizzle.barr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(5u, 0u, 4u, 7u);
-                var v = ov.swizzle.bbaa;
-                Assert.AreEqual(4u, v.x);
+                var ov = new uint4(7u, 5u, 6u, 4u);
+                var v = ov.swizzle.barg;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 0u, 8u, 7u);
-                var v = ov.swizzle.ba;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
-            }
-            {
-                var ov = new uint4(8u, 7u, 2u, 1u);
-                var v = ov.swizzle.bar;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(8u, 5u, 3u, 9u);
-                var v = ov.swizzle.barr;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 4u, 3u, 9u);
-                var v = ov.swizzle.barg;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 1u, 5u, 1u);
-                var v = ov.swizzle.barb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(3u, 2u, 1u, 0u);
-                var v = ov.swizzle.bara;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 7u, 6u, 9u);
-                var v = ov.swizzle.bag;
-                Assert.AreEqual(6u, v.x);
+                var ov = new uint4(2u, 7u, 5u, 9u);
+                var v = ov.swizzle.barb;
+                Assert.AreEqual(5u, v.x);
                 Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(2u, 7u, 1u, 7u);
-                var v = ov.swizzle.bagr;
+                var ov = new uint4(6u, 8u, 3u, 4u);
+                var v = ov.swizzle.bara;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 1u, 3u);
+                var v = ov.swizzle.bag;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(4u, 9u, 4u, 0u);
+                var ov = new uint4(8u, 2u, 2u, 4u);
+                var v = ov.swizzle.bagr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 9u, 4u, 0u);
                 var v = ov.swizzle.bagg;
                 Assert.AreEqual(4u, v.x);
                 Assert.AreEqual(0u, v.y);
@@ -4469,746 +4469,746 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(2u, 8u, 3u, 4u);
+                var ov = new uint4(7u, 9u, 1u, 2u);
                 var v = ov.swizzle.bagb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 5u, 1u, 1u);
+                var v = ov.swizzle.baga;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 7u, 1u, 7u);
+                var v = ov.swizzle.bab;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(3u, 3u, 4u, 2u);
+                var v = ov.swizzle.babr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(9u, 2u, 8u, 2u);
-                var v = ov.swizzle.baga;
-                Assert.AreEqual(8u, v.x);
+                var ov = new uint4(6u, 7u, 9u, 2u);
+                var v = ov.swizzle.babg;
+                Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 3u, 7u);
-                var v = ov.swizzle.bab;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 7u, 6u, 3u);
-                var v = ov.swizzle.babr;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(9u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(4u, 2u, 4u, 9u);
-                var v = ov.swizzle.babg;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 8u, 8u, 1u);
+                var ov = new uint4(8u, 3u, 8u, 8u);
                 var v = ov.swizzle.babb;
                 Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(8u, v.y);
                 Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(1u, 2u, 8u, 1u);
+                var ov = new uint4(4u, 2u, 6u, 1u);
                 var v = ov.swizzle.baba;
-                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(3u, 6u, 5u, 1u);
+                var ov = new uint4(0u, 8u, 2u, 7u);
                 var v = ov.swizzle.baa;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
             }
             {
-                var ov = new uint4(0u, 2u, 7u, 3u);
+                var ov = new uint4(1u, 6u, 7u, 3u);
                 var v = ov.swizzle.baar;
                 Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 1u, 2u, 0u);
-                var v = ov.swizzle.baag;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 7u, 0u);
-                var v = ov.swizzle.baab;
-                Assert.AreEqual(7u, v.x);
+                var ov = new uint4(5u, 2u, 0u, 0u);
+                var v = ov.swizzle.baag;
+                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(0u, v.y);
                 Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(7u, v.w);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 2u, 4u);
+                var ov = new uint4(7u, 2u, 4u, 7u);
+                var v = ov.swizzle.baab;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 4u, 0u, 4u);
                 var v = ov.swizzle.baaa;
-                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(0u, 8u, 2u, 1u);
+                var ov = new uint4(7u, 0u, 7u, 3u);
                 var v = ov.swizzle.ar;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(0u, v.y);
-            }
-            {
-                var ov = new uint4(4u, 4u, 1u, 3u);
-                var v = ov.swizzle.arr;
                 Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 2u, 3u, 7u);
-                var v = ov.swizzle.arrr;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 6u, 8u, 6u);
-                var v = ov.swizzle.arrg;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 2u, 6u, 4u);
-                var v = ov.swizzle.arrb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 4u, 3u);
-                var v = ov.swizzle.arra;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 6u, 9u);
-                var v = ov.swizzle.arg;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(1u, 8u, 7u, 1u);
-                var v = ov.swizzle.argr;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 3u, 0u, 4u);
-                var v = ov.swizzle.argg;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 4u, 6u, 6u);
-                var v = ov.swizzle.argb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 3u, 3u, 6u);
-                var v = ov.swizzle.arga;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(6u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 5u, 6u, 6u);
-                var v = ov.swizzle.arb;
-                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(6u, v.z);
             }
             {
-                var ov = new uint4(0u, 0u, 7u, 1u);
-                var v = ov.swizzle.arbr;
-                Assert.AreEqual(1u, v.x);
+                var ov = new uint4(9u, 1u, 1u, 4u);
+                var v = ov.swizzle.arr;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 3u, 8u, 6u);
+                var v = ov.swizzle.arrr;
+                Assert.AreEqual(6u, v.x);
                 Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(2u, 8u, 5u, 7u);
-                var v = ov.swizzle.arbg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(2u, v.y);
+                var ov = new uint4(9u, 0u, 1u, 1u);
+                var v = ov.swizzle.arrg;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 3u, 5u, 6u);
+                var v = ov.swizzle.arrb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 1u, 7u, 3u);
+                var v = ov.swizzle.arra;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 9u, 5u, 6u);
+                var v = ov.swizzle.arg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 0u, 2u, 0u);
+                var v = ov.swizzle.argr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(0u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 0u, 0u);
+                var ov = new uint4(2u, 1u, 3u, 9u);
+                var v = ov.swizzle.argg;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 9u, 8u, 0u);
+                var v = ov.swizzle.argb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 3u, 2u, 1u);
+                var v = ov.swizzle.arga;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 3u, 1u, 7u);
+                var v = ov.swizzle.arb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+            }
+            {
+                var ov = new uint4(0u, 2u, 2u, 2u);
+                var v = ov.swizzle.arbr;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 3u, 8u, 6u);
+                var v = ov.swizzle.arbg;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 3u, 6u, 0u);
                 var v = ov.swizzle.arbb;
                 Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 2u, 2u, 0u);
-                var v = ov.swizzle.arba;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 1u, 7u, 0u);
-                var v = ov.swizzle.ara;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(0u, v.z);
-            }
-            {
-                var ov = new uint4(5u, 4u, 3u, 7u);
-                var v = ov.swizzle.arar;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 3u, 5u);
-                var v = ov.swizzle.arag;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 8u, 5u, 5u);
-                var v = ov.swizzle.arab;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(5u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 9u, 9u, 0u);
-                var v = ov.swizzle.araa;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 5u, 9u, 1u);
-                var v = ov.swizzle.ag;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-            }
-            {
-                var ov = new uint4(8u, 3u, 1u, 3u);
-                var v = ov.swizzle.agr;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 6u, 7u, 8u);
-                var v = ov.swizzle.agrr;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 2u, 1u, 5u);
-                var v = ov.swizzle.agrg;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(1u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 5u, 0u, 6u);
-                var v = ov.swizzle.agrb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(7u, 9u, 6u, 1u);
-                var v = ov.swizzle.agra;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(4u, 9u, 7u, 4u);
-                var v = ov.swizzle.agg;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(4u, 4u, 2u, 9u);
-                var v = ov.swizzle.aggr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 2u, 9u, 9u);
-                var v = ov.swizzle.aggg;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 5u, 1u, 2u);
-                var v = ov.swizzle.aggb;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(1u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 9u, 3u, 8u);
-                var v = ov.swizzle.agga;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 4u, 4u, 7u);
-                var v = ov.swizzle.agb;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 9u, 7u, 2u);
-                var v = ov.swizzle.agbr;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 3u, 2u, 1u);
-                var v = ov.swizzle.agbg;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 7u, 6u, 8u);
-                var v = ov.swizzle.agbb;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(7u, v.y);
                 Assert.AreEqual(6u, v.z);
                 Assert.AreEqual(6u, v.w);
             }
             {
-                var ov = new uint4(6u, 6u, 9u, 9u);
-                var v = ov.swizzle.agba;
+                var ov = new uint4(6u, 4u, 5u, 9u);
+                var v = ov.swizzle.arba;
                 Assert.AreEqual(9u, v.x);
                 Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(4u, 8u, 5u, 8u);
-                var v = ov.swizzle.aga;
-                Assert.AreEqual(8u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
+                var ov = new uint4(1u, 7u, 4u, 7u);
+                var v = ov.swizzle.ara;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(7u, v.z);
             }
             {
-                var ov = new uint4(3u, 1u, 3u, 1u);
-                var v = ov.swizzle.agar;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
+                var ov = new uint4(7u, 2u, 1u, 5u);
+                var v = ov.swizzle.arar;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 5u, 1u, 2u);
+                var v = ov.swizzle.arag;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 5u, 9u, 4u);
+                var v = ov.swizzle.arab;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 7u, 6u, 6u);
+                var v = ov.swizzle.araa;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 9u, 1u, 9u);
+                var v = ov.swizzle.ag;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(9u, v.y);
+            }
+            {
+                var ov = new uint4(3u, 6u, 6u, 6u);
+                var v = ov.swizzle.agr;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(2u, 7u, 3u, 0u);
+                var v = ov.swizzle.agrr;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 2u, 0u, 7u);
+                var v = ov.swizzle.agrg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 4u, 0u, 8u);
+                var v = ov.swizzle.agrb;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(0u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 6u, 6u, 3u);
+                var v = ov.swizzle.agra;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(6u, v.y);
                 Assert.AreEqual(1u, v.z);
                 Assert.AreEqual(3u, v.w);
             }
             {
-                var ov = new uint4(3u, 8u, 3u, 7u);
-                var v = ov.swizzle.agag;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 7u, 8u, 9u);
-                var v = ov.swizzle.agab;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 0u, 6u, 4u);
-                var v = ov.swizzle.agaa;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 9u, 0u, 9u);
-                var v = ov.swizzle.ab;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-            }
-            {
-                var ov = new uint4(9u, 8u, 0u, 4u);
-                var v = ov.swizzle.abr;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(9u, v.z);
-            }
-            {
-                var ov = new uint4(9u, 3u, 6u, 5u);
-                var v = ov.swizzle.abrr;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 4u, 4u, 5u);
-                var v = ov.swizzle.abrg;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(4u, v.w);
-            }
-            {
-                var ov = new uint4(8u, 5u, 3u, 6u);
-                var v = ov.swizzle.abrb;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 6u, 8u, 9u);
-                var v = ov.swizzle.abra;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(8u, v.y);
+                var ov = new uint4(1u, 5u, 8u, 8u);
+                var v = ov.swizzle.agg;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(9u, 5u, 5u, 1u);
-                var v = ov.swizzle.abg;
+                var ov = new uint4(4u, 1u, 2u, 9u);
+                var v = ov.swizzle.aggr;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 8u, 1u, 1u);
+                var v = ov.swizzle.aggg;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(9u, 6u, 3u, 5u);
-                var v = ov.swizzle.abgr;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 4u, 2u, 4u);
-                var v = ov.swizzle.abgg;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(2u, v.y);
+                var ov = new uint4(5u, 4u, 4u, 0u);
+                var v = ov.swizzle.aggb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(4u, v.y);
                 Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(4u, v.w);
             }
             {
-                var ov = new uint4(7u, 6u, 9u, 5u);
-                var v = ov.swizzle.abgb;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 8u, 2u, 0u);
-                var v = ov.swizzle.abga;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 7u, 7u, 0u);
-                var v = ov.swizzle.abb;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-            }
-            {
-                var ov = new uint4(3u, 3u, 0u, 9u);
-                var v = ov.swizzle.abbr;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 0u, 8u, 0u);
-                var v = ov.swizzle.abbg;
-                Assert.AreEqual(0u, v.x);
-                Assert.AreEqual(8u, v.y);
-                Assert.AreEqual(8u, v.z);
-                Assert.AreEqual(0u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 9u, 4u);
-                var v = ov.swizzle.abbb;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(9u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(2u, 9u, 5u, 2u);
-                var v = ov.swizzle.abba;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 0u, 5u, 5u);
-                var v = ov.swizzle.aba;
-                Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 9u, 7u, 2u);
-                var v = ov.swizzle.abar;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(5u, 8u, 5u, 7u);
-                var v = ov.swizzle.abag;
+                var ov = new uint4(6u, 4u, 2u, 7u);
+                var v = ov.swizzle.agga;
                 Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(5u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(8u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 8u, 7u, 2u);
-                var v = ov.swizzle.abab;
-                Assert.AreEqual(2u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(8u, 5u, 7u, 5u);
-                var v = ov.swizzle.abaa;
+                var ov = new uint4(1u, 1u, 4u, 5u);
+                var v = ov.swizzle.agb;
                 Assert.AreEqual(5u, v.x);
-                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 1u, 5u, 3u);
+                var v = ov.swizzle.agbr;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(5u, 3u, 8u, 9u);
-                var v = ov.swizzle.aa;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-            }
-            {
-                var ov = new uint4(5u, 1u, 4u, 6u);
-                var v = ov.swizzle.aar;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(5u, v.z);
-            }
-            {
-                var ov = new uint4(7u, 5u, 2u, 1u);
-                var v = ov.swizzle.aarr;
+                var ov = new uint4(6u, 7u, 5u, 1u);
+                var v = ov.swizzle.agbg;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(5u, v.z);
                 Assert.AreEqual(7u, v.w);
             }
             {
-                var ov = new uint4(3u, 9u, 0u, 1u);
-                var v = ov.swizzle.aarg;
-                Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 1u, 8u, 3u);
-                var v = ov.swizzle.aarb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(1u, v.z);
+                var ov = new uint4(3u, 8u, 8u, 7u);
+                var v = ov.swizzle.agbb;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
                 Assert.AreEqual(8u, v.w);
             }
             {
-                var ov = new uint4(5u, 8u, 3u, 7u);
-                var v = ov.swizzle.aara;
-                Assert.AreEqual(7u, v.x);
+                var ov = new uint4(8u, 7u, 1u, 1u);
+                var v = ov.swizzle.agba;
+                Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(5u, v.z);
-                Assert.AreEqual(7u, v.w);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(5u, 1u, 7u, 2u);
-                var v = ov.swizzle.aag;
+                var ov = new uint4(5u, 4u, 2u, 9u);
+                var v = ov.swizzle.aga;
+                Assert.AreEqual(9u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+            }
+            {
+                var ov = new uint4(1u, 8u, 1u, 4u);
+                var v = ov.swizzle.agar;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 9u, 2u, 7u);
+                var v = ov.swizzle.agag;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 1u, 0u);
+                var v = ov.swizzle.agab;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 2u, 2u, 2u);
+                var v = ov.swizzle.agaa;
                 Assert.AreEqual(2u, v.x);
                 Assert.AreEqual(2u, v.y);
-                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
             }
             {
-                var ov = new uint4(3u, 7u, 6u, 7u);
-                var v = ov.swizzle.aagr;
+                var ov = new uint4(6u, 8u, 2u, 0u);
+                var v = ov.swizzle.ab;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(2u, v.y);
+            }
+            {
+                var ov = new uint4(3u, 9u, 8u, 7u);
+                var v = ov.swizzle.abr;
                 Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(3u, v.w);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(1u, 9u, 7u, 5u);
-                var v = ov.swizzle.aagg;
+                var ov = new uint4(6u, 6u, 2u, 8u);
+                var v = ov.swizzle.abrr;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 1u, 2u, 7u);
+                var v = ov.swizzle.abrg;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(1u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 5u, 4u, 6u);
+                var v = ov.swizzle.abrb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 0u, 3u, 6u);
+                var v = ov.swizzle.abra;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 7u, 8u, 4u);
+                var v = ov.swizzle.abg;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(7u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 8u, 6u, 5u);
+                var v = ov.swizzle.abgr;
                 Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 9u, 5u, 7u);
+                var v = ov.swizzle.abgg;
+                Assert.AreEqual(7u, v.x);
                 Assert.AreEqual(5u, v.y);
                 Assert.AreEqual(9u, v.z);
                 Assert.AreEqual(9u, v.w);
             }
             {
-                var ov = new uint4(1u, 6u, 0u, 1u);
-                var v = ov.swizzle.aagb;
+                var ov = new uint4(2u, 1u, 5u, 1u);
+                var v = ov.swizzle.abgb;
                 Assert.AreEqual(1u, v.x);
-                Assert.AreEqual(1u, v.y);
-                Assert.AreEqual(6u, v.z);
-                Assert.AreEqual(0u, v.w);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(5u, v.w);
             }
             {
-                var ov = new uint4(5u, 1u, 5u, 0u);
+                var ov = new uint4(0u, 3u, 8u, 3u);
+                var v = ov.swizzle.abga;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 3u, 4u, 2u);
+                var v = ov.swizzle.abb;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 4u, 0u, 5u);
+                var v = ov.swizzle.abbr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 6u, 2u, 5u);
+                var v = ov.swizzle.abbg;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 5u, 4u, 5u);
+                var v = ov.swizzle.abbb;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 4u, 0u, 8u);
+                var v = ov.swizzle.abba;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 6u, 3u, 3u);
+                var v = ov.swizzle.aba;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+            }
+            {
+                var ov = new uint4(6u, 4u, 4u, 7u);
+                var v = ov.swizzle.abar;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 3u, 5u, 6u);
+                var v = ov.swizzle.abag;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(3u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 0u, 9u, 2u);
+                var v = ov.swizzle.abab;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(9u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 6u, 7u, 2u);
+                var v = ov.swizzle.abaa;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(2u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 1u, 8u, 8u);
+                var v = ov.swizzle.aa;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+            }
+            {
+                var ov = new uint4(6u, 9u, 2u, 7u);
+                var v = ov.swizzle.aar;
+                Assert.AreEqual(7u, v.x);
+                Assert.AreEqual(7u, v.y);
+                Assert.AreEqual(6u, v.z);
+            }
+            {
+                var ov = new uint4(7u, 9u, 0u, 6u);
+                var v = ov.swizzle.aarr;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 9u, 3u, 0u);
+                var v = ov.swizzle.aarg;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 1u, 5u, 1u);
+                var v = ov.swizzle.aarb;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(0u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(9u, 3u, 5u, 4u);
+                var v = ov.swizzle.aara;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(9u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(1u, 5u, 2u, 4u);
+                var v = ov.swizzle.aag;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(5u, 2u, 2u, 5u);
+                var v = ov.swizzle.aagr;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(2u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 8u, 1u, 8u);
+                var v = ov.swizzle.aagg;
+                Assert.AreEqual(8u, v.x);
+                Assert.AreEqual(8u, v.y);
+                Assert.AreEqual(8u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(8u, 4u, 6u, 6u);
+                var v = ov.swizzle.aagb;
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(4u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(2u, 7u, 0u, 0u);
                 var v = ov.swizzle.aaga;
                 Assert.AreEqual(0u, v.x);
                 Assert.AreEqual(0u, v.y);
-                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(7u, v.z);
                 Assert.AreEqual(0u, v.w);
             }
             {
-                var ov = new uint4(6u, 3u, 3u, 3u);
+                var ov = new uint4(3u, 8u, 3u, 3u);
                 var v = ov.swizzle.aab;
                 Assert.AreEqual(3u, v.x);
                 Assert.AreEqual(3u, v.y);
                 Assert.AreEqual(3u, v.z);
             }
             {
-                var ov = new uint4(7u, 6u, 0u, 6u);
+                var ov = new uint4(6u, 8u, 1u, 1u);
                 var v = ov.swizzle.aabr;
-                Assert.AreEqual(6u, v.x);
-                Assert.AreEqual(6u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(6u, 3u, 0u, 7u);
-                var v = ov.swizzle.aabg;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(0u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(0u, 1u, 3u, 3u);
-                var v = ov.swizzle.aabb;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(3u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 1u, 2u, 9u);
-                var v = ov.swizzle.aaba;
-                Assert.AreEqual(9u, v.x);
-                Assert.AreEqual(9u, v.y);
-                Assert.AreEqual(2u, v.z);
-                Assert.AreEqual(9u, v.w);
-            }
-            {
-                var ov = new uint4(9u, 5u, 0u, 3u);
-                var v = ov.swizzle.aaa;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-            }
-            {
-                var ov = new uint4(2u, 5u, 9u, 4u);
-                var v = ov.swizzle.aaar;
-                Assert.AreEqual(4u, v.x);
-                Assert.AreEqual(4u, v.y);
-                Assert.AreEqual(4u, v.z);
-                Assert.AreEqual(2u, v.w);
-            }
-            {
-                var ov = new uint4(1u, 7u, 8u, 3u);
-                var v = ov.swizzle.aaag;
-                Assert.AreEqual(3u, v.x);
-                Assert.AreEqual(3u, v.y);
-                Assert.AreEqual(3u, v.z);
-                Assert.AreEqual(7u, v.w);
-            }
-            {
-                var ov = new uint4(3u, 3u, 1u, 1u);
-                var v = ov.swizzle.aaab;
                 Assert.AreEqual(1u, v.x);
                 Assert.AreEqual(1u, v.y);
                 Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(6u, v.w);
+            }
+            {
+                var ov = new uint4(0u, 5u, 3u, 3u);
+                var v = ov.swizzle.aabg;
+                Assert.AreEqual(3u, v.x);
+                Assert.AreEqual(3u, v.y);
+                Assert.AreEqual(3u, v.z);
+                Assert.AreEqual(5u, v.w);
+            }
+            {
+                var ov = new uint4(5u, 3u, 7u, 0u);
+                var v = ov.swizzle.aabb;
+                Assert.AreEqual(0u, v.x);
+                Assert.AreEqual(0u, v.y);
+                Assert.AreEqual(7u, v.z);
+                Assert.AreEqual(7u, v.w);
+            }
+            {
+                var ov = new uint4(7u, 8u, 1u, 4u);
+                var v = ov.swizzle.aaba;
+                Assert.AreEqual(4u, v.x);
+                Assert.AreEqual(4u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(4u, v.w);
+            }
+            {
+                var ov = new uint4(6u, 4u, 9u, 5u);
+                var v = ov.swizzle.aaa;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+            }
+            {
+                var ov = new uint4(8u, 4u, 2u, 5u);
+                var v = ov.swizzle.aaar;
+                Assert.AreEqual(5u, v.x);
+                Assert.AreEqual(5u, v.y);
+                Assert.AreEqual(5u, v.z);
+                Assert.AreEqual(8u, v.w);
+            }
+            {
+                var ov = new uint4(4u, 9u, 9u, 1u);
+                var v = ov.swizzle.aaag;
+                Assert.AreEqual(1u, v.x);
+                Assert.AreEqual(1u, v.y);
+                Assert.AreEqual(1u, v.z);
+                Assert.AreEqual(9u, v.w);
+            }
+            {
+                var ov = new uint4(3u, 4u, 1u, 2u);
+                var v = ov.swizzle.aaab;
+                Assert.AreEqual(2u, v.x);
+                Assert.AreEqual(2u, v.y);
+                Assert.AreEqual(2u, v.z);
                 Assert.AreEqual(1u, v.w);
             }
             {
-                var ov = new uint4(7u, 3u, 4u, 7u);
+                var ov = new uint4(2u, 8u, 7u, 6u);
                 var v = ov.swizzle.aaaa;
-                Assert.AreEqual(7u, v.x);
-                Assert.AreEqual(7u, v.y);
-                Assert.AreEqual(7u, v.z);
-                Assert.AreEqual(7u, v.w);
+                Assert.AreEqual(6u, v.x);
+                Assert.AreEqual(6u, v.y);
+                Assert.AreEqual(6u, v.z);
+                Assert.AreEqual(6u, v.w);
             }
         }
 
@@ -5216,8 +5216,8 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
         public void InlineXYZW()
         {
             {
-                var v0 = new uint4(2u, 5u, 1u, 0u);
-                var v1 = new uint2(3u, 6u);
+                var v0 = new uint4(9u, 8u, 9u, 9u);
+                var v1 = new uint2(3u, 4u);
                 var v2 = v0.xy;
                 v0.xy = v1;
                 var v3 = v0.xy;
@@ -5225,137 +5225,137 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(v1, v3);
             
                 Assert.AreEqual(3u, v0.x);
-                Assert.AreEqual(6u, v0.y);
-                Assert.AreEqual(1u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(4u, v0.y);
+                Assert.AreEqual(9u, v0.z);
+                Assert.AreEqual(9u, v0.w);
             
-                Assert.AreEqual(2u, v2.x);
-                Assert.AreEqual(5u, v2.y);
+                Assert.AreEqual(9u, v2.x);
+                Assert.AreEqual(8u, v2.y);
             }
             {
-                var v0 = new uint4(7u, 6u, 1u, 2u);
-                var v1 = new uint2(0u, 9u);
+                var v0 = new uint4(3u, 5u, 9u, 6u);
+                var v1 = new uint2(6u, 9u);
                 var v2 = v0.xz;
                 v0.xz = v1;
                 var v3 = v0.xz;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(0u, v0.x);
-                Assert.AreEqual(6u, v0.y);
+                Assert.AreEqual(6u, v0.x);
+                Assert.AreEqual(5u, v0.y);
                 Assert.AreEqual(9u, v0.z);
-                Assert.AreEqual(2u, v0.w);
+                Assert.AreEqual(6u, v0.w);
             
-                Assert.AreEqual(7u, v2.x);
-                Assert.AreEqual(1u, v2.y);
+                Assert.AreEqual(3u, v2.x);
+                Assert.AreEqual(9u, v2.y);
             }
             {
-                var v0 = new uint4(9u, 0u, 8u, 3u);
-                var v1 = new uint2(9u, 4u);
+                var v0 = new uint4(3u, 3u, 9u, 8u);
+                var v1 = new uint2(4u, 0u);
                 var v2 = v0.yz;
                 v0.yz = v1;
                 var v3 = v0.yz;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(9u, v0.x);
-                Assert.AreEqual(9u, v0.y);
-                Assert.AreEqual(4u, v0.z);
-                Assert.AreEqual(3u, v0.w);
+                Assert.AreEqual(3u, v0.x);
+                Assert.AreEqual(4u, v0.y);
+                Assert.AreEqual(0u, v0.z);
+                Assert.AreEqual(8u, v0.w);
             
-                Assert.AreEqual(0u, v2.x);
-                Assert.AreEqual(8u, v2.y);
+                Assert.AreEqual(3u, v2.x);
+                Assert.AreEqual(9u, v2.y);
             }
             {
-                var v0 = new uint4(6u, 3u, 9u, 6u);
-                var v1 = new uint3(9u, 3u, 0u);
+                var v0 = new uint4(2u, 1u, 3u, 5u);
+                var v1 = new uint3(6u, 3u, 8u);
                 var v2 = v0.xyz;
                 v0.xyz = v1;
                 var v3 = v0.xyz;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(9u, v0.x);
+                Assert.AreEqual(6u, v0.x);
                 Assert.AreEqual(3u, v0.y);
-                Assert.AreEqual(0u, v0.z);
-                Assert.AreEqual(6u, v0.w);
+                Assert.AreEqual(8u, v0.z);
+                Assert.AreEqual(5u, v0.w);
             
-                Assert.AreEqual(6u, v2.x);
-                Assert.AreEqual(3u, v2.y);
-                Assert.AreEqual(9u, v2.z);
+                Assert.AreEqual(2u, v2.x);
+                Assert.AreEqual(1u, v2.y);
+                Assert.AreEqual(3u, v2.z);
             }
             {
-                var v0 = new uint4(9u, 4u, 6u, 9u);
-                var v1 = new uint2(4u, 2u);
+                var v0 = new uint4(0u, 2u, 8u, 5u);
+                var v1 = new uint2(7u, 4u);
                 var v2 = v0.xw;
                 v0.xw = v1;
                 var v3 = v0.xw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(4u, v0.x);
-                Assert.AreEqual(4u, v0.y);
-                Assert.AreEqual(6u, v0.z);
-                Assert.AreEqual(2u, v0.w);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(2u, v0.y);
+                Assert.AreEqual(8u, v0.z);
+                Assert.AreEqual(4u, v0.w);
             
-                Assert.AreEqual(9u, v2.x);
-                Assert.AreEqual(9u, v2.y);
+                Assert.AreEqual(0u, v2.x);
+                Assert.AreEqual(5u, v2.y);
             }
             {
-                var v0 = new uint4(4u, 0u, 3u, 1u);
-                var v1 = new uint2(3u, 2u);
+                var v0 = new uint4(7u, 7u, 0u, 8u);
+                var v1 = new uint2(5u, 3u);
                 var v2 = v0.yw;
                 v0.yw = v1;
                 var v3 = v0.yw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(4u, v0.x);
-                Assert.AreEqual(3u, v0.y);
-                Assert.AreEqual(3u, v0.z);
-                Assert.AreEqual(2u, v0.w);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(5u, v0.y);
+                Assert.AreEqual(0u, v0.z);
+                Assert.AreEqual(3u, v0.w);
             
-                Assert.AreEqual(0u, v2.x);
-                Assert.AreEqual(1u, v2.y);
+                Assert.AreEqual(7u, v2.x);
+                Assert.AreEqual(8u, v2.y);
             }
             {
-                var v0 = new uint4(8u, 2u, 5u, 5u);
-                var v1 = new uint3(2u, 7u, 3u);
+                var v0 = new uint4(7u, 7u, 3u, 5u);
+                var v1 = new uint3(6u, 6u, 6u);
                 var v2 = v0.xyw;
                 v0.xyw = v1;
                 var v3 = v0.xyw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(2u, v0.x);
-                Assert.AreEqual(7u, v0.y);
-                Assert.AreEqual(5u, v0.z);
-                Assert.AreEqual(3u, v0.w);
+                Assert.AreEqual(6u, v0.x);
+                Assert.AreEqual(6u, v0.y);
+                Assert.AreEqual(3u, v0.z);
+                Assert.AreEqual(6u, v0.w);
             
-                Assert.AreEqual(8u, v2.x);
-                Assert.AreEqual(2u, v2.y);
+                Assert.AreEqual(7u, v2.x);
+                Assert.AreEqual(7u, v2.y);
                 Assert.AreEqual(5u, v2.z);
             }
             {
-                var v0 = new uint4(5u, 0u, 2u, 4u);
-                var v1 = new uint2(2u, 0u);
+                var v0 = new uint4(7u, 5u, 1u, 2u);
+                var v1 = new uint2(2u, 3u);
                 var v2 = v0.zw;
                 v0.zw = v1;
                 var v3 = v0.zw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(5u, v0.x);
-                Assert.AreEqual(0u, v0.y);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(5u, v0.y);
                 Assert.AreEqual(2u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(3u, v0.w);
             
-                Assert.AreEqual(2u, v2.x);
-                Assert.AreEqual(4u, v2.y);
+                Assert.AreEqual(1u, v2.x);
+                Assert.AreEqual(2u, v2.y);
             }
             {
-                var v0 = new uint4(1u, 8u, 5u, 6u);
-                var v1 = new uint3(4u, 6u, 5u);
+                var v0 = new uint4(0u, 8u, 3u, 4u);
+                var v1 = new uint3(4u, 3u, 2u);
                 var v2 = v0.xzw;
                 v0.xzw = v1;
                 var v3 = v0.xzw;
@@ -5364,49 +5364,49 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
             
                 Assert.AreEqual(4u, v0.x);
                 Assert.AreEqual(8u, v0.y);
-                Assert.AreEqual(6u, v0.z);
-                Assert.AreEqual(5u, v0.w);
+                Assert.AreEqual(3u, v0.z);
+                Assert.AreEqual(2u, v0.w);
             
-                Assert.AreEqual(1u, v2.x);
-                Assert.AreEqual(5u, v2.y);
-                Assert.AreEqual(6u, v2.z);
+                Assert.AreEqual(0u, v2.x);
+                Assert.AreEqual(3u, v2.y);
+                Assert.AreEqual(4u, v2.z);
             }
             {
-                var v0 = new uint4(7u, 0u, 3u, 2u);
-                var v1 = new uint3(1u, 7u, 7u);
+                var v0 = new uint4(5u, 0u, 3u, 2u);
+                var v1 = new uint3(4u, 0u, 2u);
                 var v2 = v0.yzw;
                 v0.yzw = v1;
                 var v3 = v0.yzw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(7u, v0.x);
-                Assert.AreEqual(1u, v0.y);
-                Assert.AreEqual(7u, v0.z);
-                Assert.AreEqual(7u, v0.w);
+                Assert.AreEqual(5u, v0.x);
+                Assert.AreEqual(4u, v0.y);
+                Assert.AreEqual(0u, v0.z);
+                Assert.AreEqual(2u, v0.w);
             
                 Assert.AreEqual(0u, v2.x);
                 Assert.AreEqual(3u, v2.y);
                 Assert.AreEqual(2u, v2.z);
             }
             {
-                var v0 = new uint4(9u, 5u, 9u, 6u);
-                var v1 = new uint4(8u, 4u, 0u, 1u);
+                var v0 = new uint4(2u, 9u, 2u, 3u);
+                var v1 = new uint4(4u, 4u, 4u, 7u);
                 var v2 = v0.xyzw;
                 v0.xyzw = v1;
                 var v3 = v0.xyzw;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(8u, v0.x);
+                Assert.AreEqual(4u, v0.x);
                 Assert.AreEqual(4u, v0.y);
-                Assert.AreEqual(0u, v0.z);
-                Assert.AreEqual(1u, v0.w);
+                Assert.AreEqual(4u, v0.z);
+                Assert.AreEqual(7u, v0.w);
             
-                Assert.AreEqual(9u, v2.x);
-                Assert.AreEqual(5u, v2.y);
-                Assert.AreEqual(9u, v2.z);
-                Assert.AreEqual(6u, v2.w);
+                Assert.AreEqual(2u, v2.x);
+                Assert.AreEqual(9u, v2.y);
+                Assert.AreEqual(2u, v2.z);
+                Assert.AreEqual(3u, v2.w);
             }
         }
 
@@ -5414,124 +5414,124 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
         public void InlineRGBA()
         {
             {
-                var v0 = new uint4(5u, 1u, 4u, 0u);
-                var v1 = 7u;
+                var v0 = new uint4(0u, 4u, 5u, 7u);
+                var v1 = 1u;
                 var v2 = v0.r;
                 v0.r = v1;
                 var v3 = v0.r;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(7u, v0.x);
-                Assert.AreEqual(1u, v0.y);
-                Assert.AreEqual(4u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(1u, v0.x);
+                Assert.AreEqual(4u, v0.y);
+                Assert.AreEqual(5u, v0.z);
+                Assert.AreEqual(7u, v0.w);
             
-                Assert.AreEqual(5u, v2);
+                Assert.AreEqual(0u, v2);
             }
             {
-                var v0 = new uint4(5u, 0u, 4u, 1u);
-                var v1 = 0u;
+                var v0 = new uint4(2u, 0u, 4u, 6u);
+                var v1 = 9u;
                 var v2 = v0.g;
                 v0.g = v1;
                 var v3 = v0.g;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(5u, v0.x);
-                Assert.AreEqual(0u, v0.y);
+                Assert.AreEqual(2u, v0.x);
+                Assert.AreEqual(9u, v0.y);
                 Assert.AreEqual(4u, v0.z);
-                Assert.AreEqual(1u, v0.w);
+                Assert.AreEqual(6u, v0.w);
             
                 Assert.AreEqual(0u, v2);
             }
             {
-                var v0 = new uint4(4u, 4u, 7u, 3u);
-                var v1 = new uint2(9u, 3u);
+                var v0 = new uint4(9u, 2u, 3u, 1u);
+                var v1 = new uint2(8u, 7u);
                 var v2 = v0.rg;
                 v0.rg = v1;
                 var v3 = v0.rg;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(9u, v0.x);
-                Assert.AreEqual(3u, v0.y);
-                Assert.AreEqual(7u, v0.z);
-                Assert.AreEqual(3u, v0.w);
+                Assert.AreEqual(8u, v0.x);
+                Assert.AreEqual(7u, v0.y);
+                Assert.AreEqual(3u, v0.z);
+                Assert.AreEqual(1u, v0.w);
             
-                Assert.AreEqual(4u, v2.x);
-                Assert.AreEqual(4u, v2.y);
+                Assert.AreEqual(9u, v2.x);
+                Assert.AreEqual(2u, v2.y);
             }
             {
-                var v0 = new uint4(2u, 1u, 7u, 0u);
-                var v1 = 4u;
+                var v0 = new uint4(4u, 0u, 4u, 4u);
+                var v1 = 6u;
                 var v2 = v0.b;
                 v0.b = v1;
                 var v3 = v0.b;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(2u, v0.x);
-                Assert.AreEqual(1u, v0.y);
-                Assert.AreEqual(4u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(4u, v0.x);
+                Assert.AreEqual(0u, v0.y);
+                Assert.AreEqual(6u, v0.z);
+                Assert.AreEqual(4u, v0.w);
             
-                Assert.AreEqual(7u, v2);
+                Assert.AreEqual(4u, v2);
             }
             {
-                var v0 = new uint4(1u, 0u, 3u, 1u);
-                var v1 = new uint2(5u, 7u);
+                var v0 = new uint4(0u, 0u, 1u, 5u);
+                var v1 = new uint2(9u, 0u);
                 var v2 = v0.rb;
                 v0.rb = v1;
                 var v3 = v0.rb;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(5u, v0.x);
+                Assert.AreEqual(9u, v0.x);
                 Assert.AreEqual(0u, v0.y);
-                Assert.AreEqual(7u, v0.z);
-                Assert.AreEqual(1u, v0.w);
+                Assert.AreEqual(0u, v0.z);
+                Assert.AreEqual(5u, v0.w);
             
-                Assert.AreEqual(1u, v2.x);
-                Assert.AreEqual(3u, v2.y);
+                Assert.AreEqual(0u, v2.x);
+                Assert.AreEqual(1u, v2.y);
             }
             {
-                var v0 = new uint4(2u, 3u, 7u, 1u);
-                var v1 = new uint2(4u, 1u);
+                var v0 = new uint4(3u, 9u, 8u, 8u);
+                var v1 = new uint2(8u, 8u);
                 var v2 = v0.gb;
                 v0.gb = v1;
                 var v3 = v0.gb;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(2u, v0.x);
-                Assert.AreEqual(4u, v0.y);
-                Assert.AreEqual(1u, v0.z);
-                Assert.AreEqual(1u, v0.w);
+                Assert.AreEqual(3u, v0.x);
+                Assert.AreEqual(8u, v0.y);
+                Assert.AreEqual(8u, v0.z);
+                Assert.AreEqual(8u, v0.w);
             
-                Assert.AreEqual(3u, v2.x);
-                Assert.AreEqual(7u, v2.y);
+                Assert.AreEqual(9u, v2.x);
+                Assert.AreEqual(8u, v2.y);
             }
             {
-                var v0 = new uint4(7u, 5u, 8u, 9u);
-                var v1 = new uint3(2u, 1u, 8u);
+                var v0 = new uint4(7u, 7u, 5u, 8u);
+                var v1 = new uint3(7u, 7u, 8u);
                 var v2 = v0.rgb;
                 v0.rgb = v1;
                 var v3 = v0.rgb;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(2u, v0.x);
-                Assert.AreEqual(1u, v0.y);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(7u, v0.y);
                 Assert.AreEqual(8u, v0.z);
-                Assert.AreEqual(9u, v0.w);
+                Assert.AreEqual(8u, v0.w);
             
                 Assert.AreEqual(7u, v2.x);
-                Assert.AreEqual(5u, v2.y);
-                Assert.AreEqual(8u, v2.z);
+                Assert.AreEqual(7u, v2.y);
+                Assert.AreEqual(5u, v2.z);
             }
             {
-                var v0 = new uint4(6u, 4u, 9u, 2u);
+                var v0 = new uint4(1u, 3u, 4u, 2u);
                 var v1 = 3u;
                 var v2 = v0.a;
                 v0.a = v1;
@@ -5539,85 +5539,85 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(6u, v0.x);
-                Assert.AreEqual(4u, v0.y);
-                Assert.AreEqual(9u, v0.z);
+                Assert.AreEqual(1u, v0.x);
+                Assert.AreEqual(3u, v0.y);
+                Assert.AreEqual(4u, v0.z);
                 Assert.AreEqual(3u, v0.w);
             
                 Assert.AreEqual(2u, v2);
             }
             {
-                var v0 = new uint4(2u, 5u, 8u, 9u);
-                var v1 = new uint2(7u, 0u);
+                var v0 = new uint4(9u, 9u, 7u, 8u);
+                var v1 = new uint2(5u, 1u);
                 var v2 = v0.ra;
                 v0.ra = v1;
                 var v3 = v0.ra;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(7u, v0.x);
-                Assert.AreEqual(5u, v0.y);
-                Assert.AreEqual(8u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(5u, v0.x);
+                Assert.AreEqual(9u, v0.y);
+                Assert.AreEqual(7u, v0.z);
+                Assert.AreEqual(1u, v0.w);
             
-                Assert.AreEqual(2u, v2.x);
-                Assert.AreEqual(9u, v2.y);
+                Assert.AreEqual(9u, v2.x);
+                Assert.AreEqual(8u, v2.y);
             }
             {
-                var v0 = new uint4(6u, 6u, 6u, 8u);
-                var v1 = new uint2(3u, 0u);
+                var v0 = new uint4(7u, 1u, 1u, 7u);
+                var v1 = new uint2(9u, 3u);
                 var v2 = v0.ga;
                 v0.ga = v1;
                 var v3 = v0.ga;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(6u, v0.x);
-                Assert.AreEqual(3u, v0.y);
-                Assert.AreEqual(6u, v0.z);
-                Assert.AreEqual(0u, v0.w);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(9u, v0.y);
+                Assert.AreEqual(1u, v0.z);
+                Assert.AreEqual(3u, v0.w);
             
-                Assert.AreEqual(6u, v2.x);
-                Assert.AreEqual(8u, v2.y);
+                Assert.AreEqual(1u, v2.x);
+                Assert.AreEqual(7u, v2.y);
             }
             {
-                var v0 = new uint4(1u, 8u, 1u, 7u);
-                var v1 = new uint3(8u, 1u, 3u);
+                var v0 = new uint4(3u, 2u, 2u, 2u);
+                var v1 = new uint3(7u, 4u, 7u);
                 var v2 = v0.rga;
                 v0.rga = v1;
                 var v3 = v0.rga;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(8u, v0.x);
-                Assert.AreEqual(1u, v0.y);
-                Assert.AreEqual(1u, v0.z);
-                Assert.AreEqual(3u, v0.w);
+                Assert.AreEqual(7u, v0.x);
+                Assert.AreEqual(4u, v0.y);
+                Assert.AreEqual(2u, v0.z);
+                Assert.AreEqual(7u, v0.w);
             
-                Assert.AreEqual(1u, v2.x);
-                Assert.AreEqual(8u, v2.y);
-                Assert.AreEqual(7u, v2.z);
+                Assert.AreEqual(3u, v2.x);
+                Assert.AreEqual(2u, v2.y);
+                Assert.AreEqual(2u, v2.z);
             }
             {
-                var v0 = new uint4(9u, 0u, 3u, 9u);
-                var v1 = new uint2(8u, 1u);
+                var v0 = new uint4(1u, 1u, 4u, 6u);
+                var v1 = new uint2(4u, 2u);
                 var v2 = v0.ba;
                 v0.ba = v1;
                 var v3 = v0.ba;
             
                 Assert.AreEqual(v1, v3);
             
-                Assert.AreEqual(9u, v0.x);
-                Assert.AreEqual(0u, v0.y);
-                Assert.AreEqual(8u, v0.z);
-                Assert.AreEqual(1u, v0.w);
+                Assert.AreEqual(1u, v0.x);
+                Assert.AreEqual(1u, v0.y);
+                Assert.AreEqual(4u, v0.z);
+                Assert.AreEqual(2u, v0.w);
             
-                Assert.AreEqual(3u, v2.x);
-                Assert.AreEqual(9u, v2.y);
+                Assert.AreEqual(4u, v2.x);
+                Assert.AreEqual(6u, v2.y);
             }
             {
-                var v0 = new uint4(3u, 9u, 0u, 9u);
-                var v1 = new uint3(3u, 0u, 2u);
+                var v0 = new uint4(8u, 7u, 2u, 5u);
+                var v1 = new uint3(3u, 2u, 6u);
                 var v2 = v0.rba;
                 v0.rba = v1;
                 var v3 = v0.rba;
@@ -5625,17 +5625,17 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(v1, v3);
             
                 Assert.AreEqual(3u, v0.x);
-                Assert.AreEqual(9u, v0.y);
-                Assert.AreEqual(0u, v0.z);
-                Assert.AreEqual(2u, v0.w);
+                Assert.AreEqual(7u, v0.y);
+                Assert.AreEqual(2u, v0.z);
+                Assert.AreEqual(6u, v0.w);
             
-                Assert.AreEqual(3u, v2.x);
-                Assert.AreEqual(0u, v2.y);
-                Assert.AreEqual(9u, v2.z);
+                Assert.AreEqual(8u, v2.x);
+                Assert.AreEqual(2u, v2.y);
+                Assert.AreEqual(5u, v2.z);
             }
             {
-                var v0 = new uint4(8u, 9u, 9u, 0u);
-                var v1 = new uint3(8u, 3u, 5u);
+                var v0 = new uint4(8u, 8u, 5u, 0u);
+                var v1 = new uint3(2u, 4u, 3u);
                 var v2 = v0.gba;
                 v0.gba = v1;
                 var v3 = v0.gba;
@@ -5643,17 +5643,17 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(v1, v3);
             
                 Assert.AreEqual(8u, v0.x);
-                Assert.AreEqual(8u, v0.y);
-                Assert.AreEqual(3u, v0.z);
-                Assert.AreEqual(5u, v0.w);
+                Assert.AreEqual(2u, v0.y);
+                Assert.AreEqual(4u, v0.z);
+                Assert.AreEqual(3u, v0.w);
             
-                Assert.AreEqual(9u, v2.x);
-                Assert.AreEqual(9u, v2.y);
+                Assert.AreEqual(8u, v2.x);
+                Assert.AreEqual(5u, v2.y);
                 Assert.AreEqual(0u, v2.z);
             }
             {
-                var v0 = new uint4(7u, 5u, 8u, 5u);
-                var v1 = new uint4(9u, 1u, 7u, 8u);
+                var v0 = new uint4(6u, 0u, 7u, 7u);
+                var v1 = new uint4(9u, 7u, 1u, 4u);
                 var v2 = v0.rgba;
                 v0.rgba = v1;
                 var v3 = v0.rgba;
@@ -5661,14 +5661,14 @@ namespace  Atma.Math.Swizzle.Generated.Swizzle
                 Assert.AreEqual(v1, v3);
             
                 Assert.AreEqual(9u, v0.x);
-                Assert.AreEqual(1u, v0.y);
-                Assert.AreEqual(7u, v0.z);
-                Assert.AreEqual(8u, v0.w);
+                Assert.AreEqual(7u, v0.y);
+                Assert.AreEqual(1u, v0.z);
+                Assert.AreEqual(4u, v0.w);
             
-                Assert.AreEqual(7u, v2.x);
-                Assert.AreEqual(5u, v2.y);
-                Assert.AreEqual(8u, v2.z);
-                Assert.AreEqual(5u, v2.w);
+                Assert.AreEqual(6u, v2.x);
+                Assert.AreEqual(0u, v2.y);
+                Assert.AreEqual(7u, v2.z);
+                Assert.AreEqual(7u, v2.w);
             }
         }
 

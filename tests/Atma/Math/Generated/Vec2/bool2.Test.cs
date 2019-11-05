@@ -27,17 +27,17 @@ namespace  Atma.Math.Generated.Vec2
                 Assert.AreEqual(true, v.y);
             }
             {
-                var v = new bool2(false, true);
-                Assert.AreEqual(false, v.x);
+                var v = new bool2(true, false);
+                Assert.AreEqual(true, v.x);
+                Assert.AreEqual(false, v.y);
+            }
+            {
+                var v = new bool2(new bool2(true, true));
+                Assert.AreEqual(true, v.x);
                 Assert.AreEqual(true, v.y);
             }
             {
-                var v = new bool2(new bool2(false, true));
-                Assert.AreEqual(false, v.x);
-                Assert.AreEqual(true, v.y);
-            }
-            {
-                var v = new bool2(new bool3(false, false, false));
+                var v = new bool2(new bool3(false, false, true));
                 Assert.AreEqual(false, v.x);
                 Assert.AreEqual(false, v.y);
             }
@@ -51,9 +51,9 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void Indexer()
         {
-            var v = new bool2(true, false);
+            var v = new bool2(true, true);
             Assert.AreEqual(true, v[0]);
-            Assert.AreEqual(false, v[1]);
+            Assert.AreEqual(true, v[1]);
             
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[-2147483648]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[-2147483648] = false; } );
@@ -68,17 +68,17 @@ namespace  Atma.Math.Generated.Vec2
             
             v[0] = false;
             Assert.AreEqual(false, v[0]);
-            v[1] = true;
-            Assert.AreEqual(true, v[1]);
+            v[0] = true;
+            Assert.AreEqual(true, v[0]);
         }
 
         [Test]
         public void PropertyValues()
         {
-            var v = new bool2(false, false);
+            var v = new bool2(true, true);
             var vals = v.Values;
-            Assert.AreEqual(false, vals[0]);
-            Assert.AreEqual(false, vals[1]);
+            Assert.AreEqual(true, vals[0]);
+            Assert.AreEqual(true, vals[1]);
             Assert.That(vals.SequenceEqual(v.ToArray()));
         }
 
@@ -101,9 +101,9 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void Operators()
         {
-            var v1 = new bool2(true, false);
-            var v2 = new bool2(true, false);
-            var v3 = new bool2(false, true);
+            var v1 = new bool2(false, true);
+            var v2 = new bool2(false, true);
+            var v3 = new bool2(true, false);
             Assert.That(v1 == new bool2(v1));
             Assert.That(v2 == new bool2(v2));
             Assert.That(v3 == new bool2(v3));
@@ -115,7 +115,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void StringInterop()
         {
-            var v = new bool2(true, false);
+            var v = new bool2(false, true);
             
             var s0 = v.ToString();
             var s1 = v.ToString("#");
@@ -150,7 +150,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void SerializationJson()
         {
-            var v0 = new bool2(false, false);
+            var v0 = new bool2(false, true);
             var s0 = JsonConvert.SerializeObject(v0);
             
             var v1 = JsonConvert.DeserializeObject<bool2>(s0);

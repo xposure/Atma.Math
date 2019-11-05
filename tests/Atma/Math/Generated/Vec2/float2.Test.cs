@@ -22,38 +22,38 @@ namespace  Atma.Math.Generated.Vec2
         public void Constructors()
         {
             {
-                var v = new float2(0.5f);
-                Assert.AreEqual(0.5f, v.x);
-                Assert.AreEqual(0.5f, v.y);
+                var v = new float2(-4.5f);
+                Assert.AreEqual(-4.5f, v.x);
+                Assert.AreEqual(-4.5f, v.y);
             }
             {
-                var v = new float2(7f, -5f);
-                Assert.AreEqual(7f, v.x);
-                Assert.AreEqual(-5f, v.y);
+                var v = new float2(9f, -6f);
+                Assert.AreEqual(9f, v.x);
+                Assert.AreEqual(-6f, v.y);
             }
             {
-                var v = new float2(new float2(6.5f, 9.5f));
-                Assert.AreEqual(6.5f, v.x);
-                Assert.AreEqual(9.5f, v.y);
+                var v = new float2(new float2(9f, 3.5f));
+                Assert.AreEqual(9f, v.x);
+                Assert.AreEqual(3.5f, v.y);
             }
             {
-                var v = new float2(new float3(-4f, -5.5f, 2.5f));
-                Assert.AreEqual(-4f, v.x);
-                Assert.AreEqual(-5.5f, v.y);
+                var v = new float2(new float3(-9.5f, 8.5f, -3f));
+                Assert.AreEqual(-9.5f, v.x);
+                Assert.AreEqual(8.5f, v.y);
             }
             {
-                var v = new float2(new float4(-8.5f, -9f, -8f, -6.5f));
-                Assert.AreEqual(-8.5f, v.x);
-                Assert.AreEqual(-9f, v.y);
+                var v = new float2(new float4(-7f, -2.5f, -3f, 4f));
+                Assert.AreEqual(-7f, v.x);
+                Assert.AreEqual(-2.5f, v.y);
             }
         }
 
         [Test]
         public void Indexer()
         {
-            var v = new float2(-0.5f, -9.5f);
-            Assert.AreEqual(-0.5f, v[0]);
-            Assert.AreEqual(-9.5f, v[1]);
+            var v = new float2(-9.5f, -1.5f);
+            Assert.AreEqual(-9.5f, v[0]);
+            Assert.AreEqual(-1.5f, v[1]);
             
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[-2147483648]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[-2147483648] = 0f; } );
@@ -66,93 +66,93 @@ namespace  Atma.Math.Generated.Vec2
             Assert.Throws<ArgumentOutOfRangeException>(() => { var s = v[5]; } );
             Assert.Throws<ArgumentOutOfRangeException>(() => { v[5] = 0f; } );
             
-            v[1] = 0f;
-            Assert.AreEqual(0f, v[1]);
-            v[0] = 1f;
-            Assert.AreEqual(1f, v[0]);
+            v[0] = 0f;
+            Assert.AreEqual(0f, v[0]);
+            v[1] = 1f;
+            Assert.AreEqual(1f, v[1]);
             v[1] = 2f;
             Assert.AreEqual(2f, v[1]);
-            v[1] = 3f;
-            Assert.AreEqual(3f, v[1]);
+            v[0] = 3f;
+            Assert.AreEqual(3f, v[0]);
             v[1] = 4f;
             Assert.AreEqual(4f, v[1]);
             v[0] = 5f;
             Assert.AreEqual(5f, v[0]);
-            v[1] = 6f;
-            Assert.AreEqual(6f, v[1]);
-            v[1] = 7f;
-            Assert.AreEqual(7f, v[1]);
-            v[0] = 8f;
-            Assert.AreEqual(8f, v[0]);
-            v[1] = 9f;
-            Assert.AreEqual(9f, v[1]);
+            v[0] = 6f;
+            Assert.AreEqual(6f, v[0]);
+            v[0] = 7f;
+            Assert.AreEqual(7f, v[0]);
+            v[1] = 8f;
+            Assert.AreEqual(8f, v[1]);
+            v[0] = 9f;
+            Assert.AreEqual(9f, v[0]);
             v[1] = -1f;
             Assert.AreEqual(-1f, v[1]);
             v[1] = -2f;
             Assert.AreEqual(-2f, v[1]);
-            v[1] = -3f;
-            Assert.AreEqual(-3f, v[1]);
+            v[0] = -3f;
+            Assert.AreEqual(-3f, v[0]);
             v[0] = -4f;
             Assert.AreEqual(-4f, v[0]);
-            v[0] = -5f;
-            Assert.AreEqual(-5f, v[0]);
+            v[1] = -5f;
+            Assert.AreEqual(-5f, v[1]);
             v[0] = -6f;
             Assert.AreEqual(-6f, v[0]);
-            v[0] = -7f;
-            Assert.AreEqual(-7f, v[0]);
-            v[1] = -8f;
-            Assert.AreEqual(-8f, v[1]);
+            v[1] = -7f;
+            Assert.AreEqual(-7f, v[1]);
+            v[0] = -8f;
+            Assert.AreEqual(-8f, v[0]);
             v[1] = -9f;
             Assert.AreEqual(-9f, v[1]);
-            v[1] = -9.5f;
-            Assert.AreEqual(-9.5f, v[1]);
+            v[0] = -9.5f;
+            Assert.AreEqual(-9.5f, v[0]);
             v[0] = -8.5f;
             Assert.AreEqual(-8.5f, v[0]);
             v[0] = -7.5f;
             Assert.AreEqual(-7.5f, v[0]);
-            v[0] = -6.5f;
-            Assert.AreEqual(-6.5f, v[0]);
-            v[1] = -5.5f;
-            Assert.AreEqual(-5.5f, v[1]);
+            v[1] = -6.5f;
+            Assert.AreEqual(-6.5f, v[1]);
+            v[0] = -5.5f;
+            Assert.AreEqual(-5.5f, v[0]);
             v[1] = -4.5f;
             Assert.AreEqual(-4.5f, v[1]);
-            v[0] = -3.5f;
-            Assert.AreEqual(-3.5f, v[0]);
+            v[1] = -3.5f;
+            Assert.AreEqual(-3.5f, v[1]);
             v[1] = -2.5f;
             Assert.AreEqual(-2.5f, v[1]);
-            v[1] = -1.5f;
-            Assert.AreEqual(-1.5f, v[1]);
-            v[0] = -0.5f;
-            Assert.AreEqual(-0.5f, v[0]);
-            v[1] = 0.5f;
-            Assert.AreEqual(0.5f, v[1]);
+            v[0] = -1.5f;
+            Assert.AreEqual(-1.5f, v[0]);
+            v[1] = -0.5f;
+            Assert.AreEqual(-0.5f, v[1]);
+            v[0] = 0.5f;
+            Assert.AreEqual(0.5f, v[0]);
             v[1] = 1.5f;
             Assert.AreEqual(1.5f, v[1]);
-            v[0] = 2.5f;
-            Assert.AreEqual(2.5f, v[0]);
+            v[1] = 2.5f;
+            Assert.AreEqual(2.5f, v[1]);
             v[0] = 3.5f;
             Assert.AreEqual(3.5f, v[0]);
-            v[1] = 4.5f;
-            Assert.AreEqual(4.5f, v[1]);
-            v[0] = 5.5f;
-            Assert.AreEqual(5.5f, v[0]);
-            v[0] = 6.5f;
-            Assert.AreEqual(6.5f, v[0]);
+            v[0] = 4.5f;
+            Assert.AreEqual(4.5f, v[0]);
+            v[1] = 5.5f;
+            Assert.AreEqual(5.5f, v[1]);
+            v[1] = 6.5f;
+            Assert.AreEqual(6.5f, v[1]);
             v[0] = 7.5f;
             Assert.AreEqual(7.5f, v[0]);
-            v[1] = 8.5f;
-            Assert.AreEqual(8.5f, v[1]);
-            v[1] = 9.5f;
-            Assert.AreEqual(9.5f, v[1]);
+            v[0] = 8.5f;
+            Assert.AreEqual(8.5f, v[0]);
+            v[0] = 9.5f;
+            Assert.AreEqual(9.5f, v[0]);
         }
 
         [Test]
         public void PropertyValues()
         {
-            var v = new float2(8f, -6f);
+            var v = new float2(7.5f, -5.5f);
             var vals = v.Values;
-            Assert.AreEqual(8f, vals[0]);
-            Assert.AreEqual(-6f, vals[1]);
+            Assert.AreEqual(7.5f, vals[0]);
+            Assert.AreEqual(-5.5f, vals[1]);
             Assert.That(vals.SequenceEqual(v.ToArray()));
         }
 
@@ -193,9 +193,9 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void Operators()
         {
-            var v1 = new float2(-6.5f, 8f);
-            var v2 = new float2(-6.5f, 8f);
-            var v3 = new float2(8f, -6.5f);
+            var v1 = new float2(8.5f, 3.5f);
+            var v2 = new float2(8.5f, 3.5f);
+            var v3 = new float2(3.5f, 8.5f);
             Assert.That(v1 == new float2(v1));
             Assert.That(v2 == new float2(v2));
             Assert.That(v3 == new float2(v3));
@@ -207,7 +207,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void StringInterop()
         {
-            var v = new float2(-0.5f, -8f);
+            var v = new float2(-9f, -6.5f);
             
             var s0 = v.ToString();
             var s1 = v.ToString("#");
@@ -253,7 +253,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void SerializationJson()
         {
-            var v0 = new float2(-3f, -9.5f);
+            var v0 = new float2(-8.5f, 5.5f);
             var s0 = JsonConvert.SerializeObject(v0);
             
             var v1 = JsonConvert.DeserializeObject<float2>(s0);
@@ -267,43 +267,43 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantId()
         {
             {
-                var v0 = new float2(-8.5f, 0.5f);
+                var v0 = new float2(-9.5f, 9f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(2f, 3.5f);
+                var v0 = new float2(-1f, 9f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(-8f, -6f);
+                var v0 = new float2(-6f, 2.5f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(8.5f, 4.5f);
+                var v0 = new float2(3f, -3f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(3f, 8f);
+                var v0 = new float2(-5.5f, 4.5f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(5f, -7.5f);
+                var v0 = new float2(-4.5f, -7.5f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(-5f, -6f);
+                var v0 = new float2(-1f, -1.5f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(-2f, 3f);
+                var v0 = new float2(1f, 0f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(-9.5f, 8f);
+                var v0 = new float2(-5.5f, -1f);
                 Assert.AreEqual(v0, +v0);
             }
             {
-                var v0 = new float2(-4f, 2.5f);
+                var v0 = new float2(8f, 6f);
                 Assert.AreEqual(v0, +v0);
             }
         }
@@ -312,43 +312,43 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantDouble()
         {
             {
-                var v0 = new float2(-7f, 2f);
+                var v0 = new float2(2.5f, -6.5f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(-3.5f, 8f);
+                var v0 = new float2(3f, -2f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(9.5f, -7.5f);
+                var v0 = new float2(3.5f, -3f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(2.5f, 0.5f);
+                var v0 = new float2(-1f, 8f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(-4.5f, -6.5f);
+                var v0 = new float2(3.5f, -6.5f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(-8.5f, 5f);
+                var v0 = new float2(5.5f, -8.5f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(4.5f, -3.5f);
+                var v0 = new float2(1f, 3f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(-6f, 2f);
+                var v0 = new float2(-9.5f, 5f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(-8.5f, 9f);
+                var v0 = new float2(3f, -6f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
             {
-                var v0 = new float2(5.5f, 3f);
+                var v0 = new float2(8.5f, -5.5f);
                 Assert.AreEqual(v0 + v0, 2 * v0);
             }
         }
@@ -357,43 +357,43 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantTriple()
         {
             {
-                var v0 = new float2(4f, 9.5f);
+                var v0 = new float2(9.5f, 8f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(1.5f, 7.5f);
+                var v0 = new float2(5f, 1f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(2.5f, 8f);
+                var v0 = new float2(8.5f, 2f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(9.5f, 7f);
+                var v0 = new float2(-6f, 0f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(-2.5f, 4.5f);
+                var v0 = new float2(4.5f, 5f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(-7f, -1f);
+                var v0 = new float2(7f, 5.5f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(9.5f, -8.5f);
+                var v0 = new float2(4.5f, 2f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(-6f, 6.5f);
+                var v0 = new float2(-2.5f, 9f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(8f, -3f);
+                var v0 = new float2(6f, 1.5f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
             {
-                var v0 = new float2(-3f, 2f);
+                var v0 = new float2(8f, -8f);
                 Assert.AreEqual(v0 + v0 + v0, 3 * v0);
             }
         }
@@ -402,53 +402,53 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantCommutative()
         {
             {
-                var v0 = new float2(5.5f, -2f);
-                var v1 = new float2(5.5f, -3f);
+                var v0 = new float2(8f, 9f);
+                var v1 = new float2(4f, -8.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new float2(4f, 2f);
-                var v1 = new float2(-5.5f, 1f);
-                Assert.AreEqual(v0 * v1, v1 * v0);
-            }
-            {
-                var v0 = new float2(1f, -5f);
-                var v1 = new float2(6f, 2f);
-                Assert.AreEqual(v0 * v1, v1 * v0);
-            }
-            {
-                var v0 = new float2(-5.5f, 9.5f);
-                var v1 = new float2(6f, -6f);
-                Assert.AreEqual(v0 * v1, v1 * v0);
-            }
-            {
-                var v0 = new float2(-9f, 0f);
-                var v1 = new float2(-6f, -1f);
+                var v0 = new float2(8.5f, -0.5f);
+                var v1 = new float2(3.5f, 8.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
                 var v0 = new float2(6.5f, 7.5f);
-                var v1 = new float2(3f, 9.5f);
+                var v1 = new float2(-1.5f, 9.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new float2(-1.5f, -1f);
-                var v1 = new float2(-5f, 5.5f);
+                var v0 = new float2(5.5f, -5.5f);
+                var v1 = new float2(-8f, 7.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new float2(6.5f, 4.5f);
-                var v1 = new float2(8.5f, -7.5f);
+                var v0 = new float2(-9f, 4f);
+                var v1 = new float2(2f, -6.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new float2(-9.5f, -2.5f);
-                var v1 = new float2(-1.5f, -5.5f);
+                var v0 = new float2(1f, 9f);
+                var v1 = new float2(-1f, -3.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
             {
-                var v0 = new float2(-0.5f, -7f);
-                var v1 = new float2(3f, -4.5f);
+                var v0 = new float2(-2.5f, -2f);
+                var v1 = new float2(3.5f, -6f);
+                Assert.AreEqual(v0 * v1, v1 * v0);
+            }
+            {
+                var v0 = new float2(-7f, -2.5f);
+                var v1 = new float2(9.5f, -4.5f);
+                Assert.AreEqual(v0 * v1, v1 * v0);
+            }
+            {
+                var v0 = new float2(6.5f, 9.5f);
+                var v1 = new float2(0.5f, -6f);
+                Assert.AreEqual(v0 * v1, v1 * v0);
+            }
+            {
+                var v0 = new float2(9.5f, 4f);
+                var v1 = new float2(-2.5f, -0.5f);
                 Assert.AreEqual(v0 * v1, v1 * v0);
             }
         }
@@ -457,63 +457,63 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantAssociative()
         {
             {
-                var v0 = new float2(9.5f, 2f);
-                var v1 = new float2(0f, 2f);
-                var v2 = new float2(-3.5f, 8.5f);
+                var v0 = new float2(4f, 7f);
+                var v1 = new float2(2.5f, -9f);
+                var v2 = new float2(6.5f, -7f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(-5f, 6.5f);
-                var v1 = new float2(5f, -3f);
-                var v2 = new float2(0.5f, -5.5f);
+                var v0 = new float2(-0.5f, 4f);
+                var v1 = new float2(-8.5f, 5f);
+                var v2 = new float2(-2f, 9.5f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(9f, -2f);
-                var v1 = new float2(-1f, -2.5f);
-                var v2 = new float2(9.5f, 6f);
+                var v0 = new float2(-3.5f, -0.5f);
+                var v1 = new float2(-3.5f, 9f);
+                var v2 = new float2(1.5f, 3f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(4.5f, 2.5f);
-                var v1 = new float2(-5.5f, 8f);
-                var v2 = new float2(9f, -1.5f);
+                var v0 = new float2(0f, 2.5f);
+                var v1 = new float2(3f, -7f);
+                var v2 = new float2(2f, -7f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(-4f, 9f);
-                var v1 = new float2(-9f, 0.5f);
-                var v2 = new float2(-8.5f, -8f);
+                var v0 = new float2(5.5f, 6f);
+                var v1 = new float2(-8f, -2f);
+                var v2 = new float2(9.5f, -2.5f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(0f, -7f);
-                var v1 = new float2(-1f, -4.5f);
-                var v2 = new float2(-7.5f, -4.5f);
+                var v0 = new float2(-9.5f, -8.5f);
+                var v1 = new float2(4f, -7f);
+                var v2 = new float2(-3f, 9.5f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(8.5f, 0.5f);
-                var v1 = new float2(5f, 4.5f);
-                var v2 = new float2(6.5f, -1.5f);
+                var v0 = new float2(5.5f, -8.5f);
+                var v1 = new float2(-4f, -7f);
+                var v2 = new float2(-1f, 4f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(-1f, -6.5f);
-                var v1 = new float2(5f, 2f);
-                var v2 = new float2(7f, 9f);
+                var v0 = new float2(5.5f, -2f);
+                var v1 = new float2(-3.5f, -1f);
+                var v2 = new float2(6f, -1.5f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(-8.5f, -3.5f);
-                var v1 = new float2(7f, 9f);
-                var v2 = new float2(-9.5f, -0.5f);
+                var v0 = new float2(8f, -9.5f);
+                var v1 = new float2(-2f, 3.5f);
+                var v2 = new float2(6.5f, -2f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
             {
-                var v0 = new float2(1f, 1.5f);
-                var v1 = new float2(2.5f, -3f);
-                var v2 = new float2(-1.5f, -6f);
+                var v0 = new float2(4f, -1.5f);
+                var v1 = new float2(5f, -5f);
+                var v2 = new float2(-6.5f, 0.5f);
                 Assert.AreEqual(v0 * (v1 + v2), v0 * v1 + v0 * v2);
             }
         }
@@ -522,43 +522,43 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantIdNeg()
         {
             {
-                var v0 = new float2(6.5f, 0f);
+                var v0 = new float2(7f, -3f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(-8.5f, 9f);
+                var v0 = new float2(0.5f, 7f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(-2.5f, -4f);
+                var v0 = new float2(7.5f, 7.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(0f, 4f);
+                var v0 = new float2(2f, -7.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(4.5f, -6.5f);
+                var v0 = new float2(0.5f, -4.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(-1f, 0.5f);
+                var v0 = new float2(-1f, -4.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(2.5f, 4.5f);
+                var v0 = new float2(-3.5f, -4.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(3.5f, -1f);
+                var v0 = new float2(6f, -9.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(0f, -5.5f);
+                var v0 = new float2(7f, -1.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
             {
-                var v0 = new float2(-8.5f, 8f);
+                var v0 = new float2(3.5f, -4.5f);
                 Assert.AreEqual(v0, -(-v0));
             }
         }
@@ -567,53 +567,53 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantCommutativeNeg()
         {
             {
-                var v0 = new float2(3.5f, 5f);
-                var v1 = new float2(7f, -4f);
+                var v0 = new float2(-3f, 7.5f);
+                var v1 = new float2(-5.5f, -3.5f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-7.5f, -3f);
-                var v1 = new float2(1.5f, 4f);
+                var v0 = new float2(-2.5f, 7.5f);
+                var v1 = new float2(-5.5f, -5.5f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-3f, -4.5f);
-                var v1 = new float2(-4.5f, -6f);
+                var v0 = new float2(7f, -7f);
+                var v1 = new float2(1f, 8f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-5f, 8f);
-                var v1 = new float2(-0.5f, 3f);
+                var v0 = new float2(9f, -4.5f);
+                var v1 = new float2(5f, 9f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-3.5f, -4f);
-                var v1 = new float2(0f, -7f);
+                var v0 = new float2(3.5f, 7.5f);
+                var v1 = new float2(8.5f, -3.5f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-6f, 1f);
-                var v1 = new float2(-3.5f, -5.5f);
+                var v0 = new float2(8.5f, 0f);
+                var v1 = new float2(-3.5f, 2f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-1f, -3f);
-                var v1 = new float2(-0.5f, 1f);
+                var v0 = new float2(-1.5f, 3.5f);
+                var v1 = new float2(-3.5f, 3.5f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-3.5f, -8f);
-                var v1 = new float2(0f, 6f);
+                var v0 = new float2(-9.5f, 0f);
+                var v1 = new float2(2.5f, -2.5f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(4.5f, -1f);
-                var v1 = new float2(5.5f, 2.5f);
+                var v0 = new float2(-2.5f, -6f);
+                var v1 = new float2(-0.5f, 6f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
             {
-                var v0 = new float2(-7.5f, 4.5f);
-                var v1 = new float2(6f, 4.5f);
+                var v0 = new float2(7f, -5f);
+                var v1 = new float2(-8f, -4f);
                 Assert.AreEqual(v0 - v1, -(v1 - v0));
             }
         }
@@ -622,63 +622,63 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantAssociativeNeg()
         {
             {
-                var v0 = new float2(-6.5f, -8.5f);
-                var v1 = new float2(9.5f, 3.5f);
-                var v2 = new float2(-1.5f, -5.5f);
+                var v0 = new float2(-1f, 1f);
+                var v1 = new float2(4f, -3.5f);
+                var v2 = new float2(4.5f, -6f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(9.5f, -9f);
-                var v1 = new float2(-1f, 6.5f);
-                var v2 = new float2(-7f, -8f);
+                var v0 = new float2(6f, 7f);
+                var v1 = new float2(1f, 9f);
+                var v2 = new float2(2f, -5.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(8f, 0f);
-                var v1 = new float2(-1f, -5f);
-                var v2 = new float2(6.5f, -9f);
+                var v0 = new float2(4f, -2.5f);
+                var v1 = new float2(4f, 5.5f);
+                var v2 = new float2(1.5f, 4f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(-7f, 5.5f);
-                var v1 = new float2(9f, -7f);
-                var v2 = new float2(-8.5f, -2.5f);
+                var v0 = new float2(1f, -0.5f);
+                var v1 = new float2(5f, -0.5f);
+                var v2 = new float2(6f, 7.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(7.5f, -9.5f);
-                var v1 = new float2(5.5f, 0.5f);
-                var v2 = new float2(-7f, -7f);
+                var v0 = new float2(-5.5f, 7.5f);
+                var v1 = new float2(4.5f, -4.5f);
+                var v2 = new float2(0.5f, 8f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(-5.5f, 4.5f);
-                var v1 = new float2(4f, -4f);
-                var v2 = new float2(-1.5f, -9.5f);
+                var v0 = new float2(3.5f, 6f);
+                var v1 = new float2(-8f, -6f);
+                var v2 = new float2(-1f, 5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(3.5f, 0.5f);
-                var v1 = new float2(0f, 7f);
-                var v2 = new float2(9f, 5f);
+                var v0 = new float2(-4f, 9f);
+                var v1 = new float2(9f, 3.5f);
+                var v2 = new float2(7.5f, -4.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(-1f, 3.5f);
-                var v1 = new float2(7.5f, 1.5f);
-                var v2 = new float2(-5.5f, 5.5f);
+                var v0 = new float2(6.5f, 7f);
+                var v1 = new float2(4.5f, 2.5f);
+                var v2 = new float2(4.5f, 4.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(3f, 5.5f);
-                var v1 = new float2(4f, 9.5f);
-                var v2 = new float2(-3f, -7f);
+                var v0 = new float2(6.5f, 6.5f);
+                var v1 = new float2(7f, 2.5f);
+                var v2 = new float2(-1f, -4.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
             {
-                var v0 = new float2(-8f, 5f);
-                var v1 = new float2(0f, -3f);
-                var v2 = new float2(6.5f, 7f);
+                var v0 = new float2(7f, -7.5f);
+                var v1 = new float2(5.5f, 7f);
+                var v2 = new float2(2f, 6.5f);
                 Assert.AreEqual(v0 * (v1 - v2), v0 * v1 - v0 * v2);
             }
         }
@@ -687,53 +687,53 @@ namespace  Atma.Math.Generated.Vec2
         public void TriangleInequality()
         {
             {
-                var v0 = new float2(-7f, 6f);
-                var v1 = new float2(8.5f, 3f);
+                var v0 = new float2(4f, 6f);
+                var v1 = new float2(4f, -4f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(3.5f, -1f);
-                var v1 = new float2(6.5f, 1f);
+                var v0 = new float2(-7.5f, 8f);
+                var v1 = new float2(-1f, 7.5f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(-1f, 5f);
-                var v1 = new float2(-3.5f, -0.5f);
+                var v0 = new float2(9.5f, -6f);
+                var v1 = new float2(5.5f, -6f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(-5f, -2.5f);
-                var v1 = new float2(1f, -6f);
+                var v0 = new float2(1.5f, -6f);
+                var v1 = new float2(-6f, -8.5f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(8f, 4.5f);
-                var v1 = new float2(9f, 2.5f);
+                var v0 = new float2(7.5f, -9f);
+                var v1 = new float2(-6.5f, 8f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(2.5f, -4f);
-                var v1 = new float2(-7f, 8f);
+                var v0 = new float2(1f, -2f);
+                var v1 = new float2(3f, 3f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(7f, -7f);
-                var v1 = new float2(-2.5f, 8f);
+                var v0 = new float2(-7f, -4.5f);
+                var v1 = new float2(2.5f, 9.5f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(-6.5f, -5.5f);
-                var v1 = new float2(-1f, 5f);
+                var v0 = new float2(4f, 8.5f);
+                var v1 = new float2(3f, -2f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(-3.5f, 2.5f);
-                var v1 = new float2(-9f, -8f);
+                var v0 = new float2(0.5f, 7f);
+                var v1 = new float2(2.5f, -7f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
             {
-                var v0 = new float2(-8f, 9f);
-                var v1 = new float2(-4.5f, 1.5f);
+                var v0 = new float2(1f, -7.5f);
+                var v1 = new float2(-2f, -5.5f);
                 Assert.GreaterOrEqual(v0.NormMax + v1.NormMax, (v0 + v1).NormMax);
             }
         }
@@ -742,43 +742,43 @@ namespace  Atma.Math.Generated.Vec2
         public void InvariantNorm()
         {
             {
-                var v0 = new float2(8.5f, 9f);
+                var v0 = new float2(-8f, 5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(9f, 1.5f);
+                var v0 = new float2(-0.5f, -7f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-3f, 1.5f);
+                var v0 = new float2(-9.5f, 6.5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-2f, -8f);
+                var v0 = new float2(1.5f, 9.5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-3f, -8.5f);
+                var v0 = new float2(0f, -7.5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-3.5f, -7f);
+                var v0 = new float2(2f, 6f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-6.5f, -2.5f);
+                var v0 = new float2(6f, 8f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-3.5f, 6.5f);
+                var v0 = new float2(0.5f, -9.5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(-2.5f, -2.5f);
+                var v0 = new float2(-3.5f, 9f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
             {
-                var v0 = new float2(0.5f, 4.5f);
+                var v0 = new float2(-1.5f, 5.5f);
                 Assert.LessOrEqual(v0.NormMax, v0.Norm);
             }
         }
@@ -786,7 +786,107 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void RandomUniform0()
         {
-            var random = new Random(1815888318);
+            var random = new Random(236467850);
+            var sum = new double2(0.0);
+            var sumSqr = new double2(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = float2.Random(random, -1, 2);
+                sum += (double2)v;
+                sumSqr += glm.Pow2((double2)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 0.5, 1.0);
+            Assert.AreEqual(avg.y, 0.5, 1.0);
+            
+            Assert.AreEqual(variance.x, 0.75, 3.0);
+            Assert.AreEqual(variance.y, 0.75, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform1()
+        {
+            var random = new Random(467782784);
+            var sum = new double2(0.0);
+            var sumSqr = new double2(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = float2.RandomUniform(random, 4, 5);
+                sum += (double2)v;
+                sumSqr += glm.Pow2((double2)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 4.5, 1.0);
+            Assert.AreEqual(avg.y, 4.5, 1.0);
+            
+            Assert.AreEqual(variance.x, 0.08333333333333333, 3.0);
+            Assert.AreEqual(variance.y, 0.08333333333333333, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform2()
+        {
+            var random = new Random(698728900);
+            var sum = new double2(0.0);
+            var sumSqr = new double2(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = float2.Random(random, 0, 4);
+                sum += (double2)v;
+                sumSqr += glm.Pow2((double2)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 2, 1.0);
+            Assert.AreEqual(avg.y, 2, 1.0);
+            
+            Assert.AreEqual(variance.x, 1.3333333333333333, 3.0);
+            Assert.AreEqual(variance.y, 1.3333333333333333, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform3()
+        {
+            var random = new Random(368749223);
+            var sum = new double2(0.0);
+            var sumSqr = new double2(0.0);
+            
+            const int count = 50000;
+            for (var _ = 0; _ < count; ++_)
+            {
+                var v = float2.RandomUniform(random, 1, 5);
+                sum += (double2)v;
+                sumSqr += glm.Pow2((double2)v);
+            }
+            
+            var avg = sum / (double)count;
+            var variance = sumSqr / (double)count - avg * avg;
+            
+            Assert.AreEqual(avg.x, 3, 1.0);
+            Assert.AreEqual(avg.y, 3, 1.0);
+            
+            Assert.AreEqual(variance.x, 1.3333333333333333, 3.0);
+            Assert.AreEqual(variance.y, 1.3333333333333333, 3.0);
+        }
+
+        [Test]
+        public void RandomUniform4()
+        {
+            var random = new Random(1411722177);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
@@ -809,116 +909,16 @@ namespace  Atma.Math.Generated.Vec2
         }
 
         [Test]
-        public void RandomUniform1()
-        {
-            var random = new Random(593836462);
-            var sum = new double2(0.0);
-            var sumSqr = new double2(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = float2.RandomUniform(random, -4, 0);
-                sum += (double2)v;
-                sumSqr += glm.Pow2((double2)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, -2, 1.0);
-            Assert.AreEqual(avg.y, -2, 1.0);
-            
-            Assert.AreEqual(variance.x, 1.3333333333333333, 3.0);
-            Assert.AreEqual(variance.y, 1.3333333333333333, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform2()
-        {
-            var random = new Random(1262386003);
-            var sum = new double2(0.0);
-            var sumSqr = new double2(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = float2.Random(random, 2, 3);
-                sum += (double2)v;
-                sumSqr += glm.Pow2((double2)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 2.5, 1.0);
-            Assert.AreEqual(avg.y, 2.5, 1.0);
-            
-            Assert.AreEqual(variance.x, 0.08333333333333333, 3.0);
-            Assert.AreEqual(variance.y, 0.08333333333333333, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform3()
-        {
-            var random = new Random(1637591036);
-            var sum = new double2(0.0);
-            var sumSqr = new double2(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = float2.RandomUniform(random, 4, 8);
-                sum += (double2)v;
-                sumSqr += glm.Pow2((double2)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, 6, 1.0);
-            Assert.AreEqual(avg.y, 6, 1.0);
-            
-            Assert.AreEqual(variance.x, 1.3333333333333333, 3.0);
-            Assert.AreEqual(variance.y, 1.3333333333333333, 3.0);
-        }
-
-        [Test]
-        public void RandomUniform4()
-        {
-            var random = new Random(1319105238);
-            var sum = new double2(0.0);
-            var sumSqr = new double2(0.0);
-            
-            const int count = 50000;
-            for (var _ = 0; _ < count; ++_)
-            {
-                var v = float2.Random(random, -5, -2);
-                sum += (double2)v;
-                sumSqr += glm.Pow2((double2)v);
-            }
-            
-            var avg = sum / (double)count;
-            var variance = sumSqr / (double)count - avg * avg;
-            
-            Assert.AreEqual(avg.x, -3.5, 1.0);
-            Assert.AreEqual(avg.y, -3.5, 1.0);
-            
-            Assert.AreEqual(variance.x, 0.75, 3.0);
-            Assert.AreEqual(variance.y, 0.75, 3.0);
-        }
-
-        [Test]
         public void RandomGaussian0()
         {
-            var random = new Random(671505550);
+            var random = new Random(1209066187);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = float2.RandomNormal(random, -1.6430127768046283f, 8.997948998118726f);
+                var v = float2.RandomNormal(random, -0.7829248433853149f, 4.774792936991338f);
                 sum += (double2)v;
                 sumSqr += glm.Pow2((double2)v);
             }
@@ -926,24 +926,24 @@ namespace  Atma.Math.Generated.Vec2
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -1.6430127768046283, 1.0);
-            Assert.AreEqual(avg.y, -1.6430127768046283, 1.0);
+            Assert.AreEqual(avg.x, -0.7829248433853149, 1.0);
+            Assert.AreEqual(avg.y, -0.7829248433853149, 1.0);
             
-            Assert.AreEqual(variance.x, 8.997948998118726, 3.0);
-            Assert.AreEqual(variance.y, 8.997948998118726, 3.0);
+            Assert.AreEqual(variance.x, 4.774792936991338, 3.0);
+            Assert.AreEqual(variance.y, 4.774792936991338, 3.0);
         }
 
         [Test]
         public void RandomGaussian1()
         {
-            var random = new Random(825492230);
+            var random = new Random(639650869);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = float2.RandomGaussian(random, -1.0254157013378178f, 5.793792757109642f);
+                var v = float2.RandomGaussian(random, 1.257362283420452f, 2.6465906308249525f);
                 sum += (double2)v;
                 sumSqr += glm.Pow2((double2)v);
             }
@@ -951,24 +951,24 @@ namespace  Atma.Math.Generated.Vec2
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -1.0254157013378178, 1.0);
-            Assert.AreEqual(avg.y, -1.0254157013378178, 1.0);
+            Assert.AreEqual(avg.x, 1.257362283420452, 1.0);
+            Assert.AreEqual(avg.y, 1.257362283420452, 1.0);
             
-            Assert.AreEqual(variance.x, 5.793792757109642, 3.0);
-            Assert.AreEqual(variance.y, 5.793792757109642, 3.0);
+            Assert.AreEqual(variance.x, 2.6465906308249525, 3.0);
+            Assert.AreEqual(variance.y, 2.6465906308249525, 3.0);
         }
 
         [Test]
         public void RandomGaussian2()
         {
-            var random = new Random(1152879521);
+            var random = new Random(1027336644);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = float2.RandomNormal(random, 0.7843325281442759f, 3.1033566794839484f);
+                var v = float2.RandomNormal(random, 1.7675580250879555f, 7.160300327073923f);
                 sum += (double2)v;
                 sumSqr += glm.Pow2((double2)v);
             }
@@ -976,24 +976,24 @@ namespace  Atma.Math.Generated.Vec2
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 0.7843325281442759, 1.0);
-            Assert.AreEqual(avg.y, 0.7843325281442759, 1.0);
+            Assert.AreEqual(avg.x, 1.7675580250879555, 1.0);
+            Assert.AreEqual(avg.y, 1.7675580250879555, 1.0);
             
-            Assert.AreEqual(variance.x, 3.1033566794839484, 3.0);
-            Assert.AreEqual(variance.y, 3.1033566794839484, 3.0);
+            Assert.AreEqual(variance.x, 7.160300327073923, 3.0);
+            Assert.AreEqual(variance.y, 7.160300327073923, 3.0);
         }
 
         [Test]
         public void RandomGaussian3()
         {
-            var random = new Random(417215638);
+            var random = new Random(849091546);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = float2.RandomGaussian(random, 1.3364253860602275f, 9.262568810611297f);
+                var v = float2.RandomGaussian(random, -1.7133045735365267f, 6.0892355656666854f);
                 sum += (double2)v;
                 sumSqr += glm.Pow2((double2)v);
             }
@@ -1001,24 +1001,24 @@ namespace  Atma.Math.Generated.Vec2
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, 1.3364253860602275, 1.0);
-            Assert.AreEqual(avg.y, 1.3364253860602275, 1.0);
+            Assert.AreEqual(avg.x, -1.7133045735365267, 1.0);
+            Assert.AreEqual(avg.y, -1.7133045735365267, 1.0);
             
-            Assert.AreEqual(variance.x, 9.262568810611297, 3.0);
-            Assert.AreEqual(variance.y, 9.262568810611297, 3.0);
+            Assert.AreEqual(variance.x, 6.0892355656666854, 3.0);
+            Assert.AreEqual(variance.y, 6.0892355656666854, 3.0);
         }
 
         [Test]
         public void RandomGaussian4()
         {
-            var random = new Random(1344985849);
+            var random = new Random(1591975894);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
             const int count = 50000;
             for (var _ = 0; _ < count; ++_)
             {
-                var v = float2.RandomNormal(random, -1.706437397611531f, 5.221411564956146f);
+                var v = float2.RandomNormal(random, -1.1748055197181206f, 5.957678000422976f);
                 sum += (double2)v;
                 sumSqr += glm.Pow2((double2)v);
             }
@@ -1026,17 +1026,17 @@ namespace  Atma.Math.Generated.Vec2
             var avg = sum / (double)count;
             var variance = sumSqr / (double)count - avg * avg;
             
-            Assert.AreEqual(avg.x, -1.706437397611531, 1.0);
-            Assert.AreEqual(avg.y, -1.706437397611531, 1.0);
+            Assert.AreEqual(avg.x, -1.1748055197181206, 1.0);
+            Assert.AreEqual(avg.y, -1.1748055197181206, 1.0);
             
-            Assert.AreEqual(variance.x, 5.221411564956146, 3.0);
-            Assert.AreEqual(variance.y, 5.221411564956146, 3.0);
+            Assert.AreEqual(variance.x, 5.957678000422976, 3.0);
+            Assert.AreEqual(variance.y, 5.957678000422976, 3.0);
         }
 
         [Test]
         public void RandomNormal0()
         {
-            var random = new Random(179495530);
+            var random = new Random(1812187584);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
@@ -1061,7 +1061,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void RandomNormal1()
         {
-            var random = new Random(1610352429);
+            var random = new Random(1383738131);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
@@ -1086,7 +1086,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void RandomNormal2()
         {
-            var random = new Random(2135407385);
+            var random = new Random(1656752634);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
@@ -1111,7 +1111,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void RandomNormal3()
         {
-            var random = new Random(398948702);
+            var random = new Random(211236369);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
@@ -1136,7 +1136,7 @@ namespace  Atma.Math.Generated.Vec2
         [Test]
         public void RandomNormal4()
         {
-            var random = new Random(607835997);
+            var random = new Random(2115465384);
             var sum = new double2(0.0);
             var sumSqr = new double2(0.0);
             
