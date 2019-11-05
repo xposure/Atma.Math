@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Intrinsic.Math.Types;
+using Atma.Math.Types;
 
-namespace Intrinsic.Math.Tests
+namespace Atma.Math.Tests
 {
     class TestFunc
     {

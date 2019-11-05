@@ -1,4 +1,4 @@
-﻿namespace Intrinsic
+﻿namespace Atma
 {
     using System;
     using System.Numerics;

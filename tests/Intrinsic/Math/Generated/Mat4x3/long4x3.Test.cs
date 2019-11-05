@@ -8,11 +8,11 @@ using System.Numerics;
 using System.Linq;
 using NUnit.Framework;
 using Newtonsoft.Json;
-using Intrinsic.Math;
+using Atma.Math;
 
 // ReSharper disable InconsistentNaming
 
-namespace  Intrinsic.Math.Generated.Mat4x3
+namespace  Atma.Math.Generated.Mat4x3
 {
     [TestFixture]
     public class LongMat4x3Test

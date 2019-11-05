@@ -8,11 +8,11 @@ using System.Numerics;
 using System.Linq;
 using NUnit.Framework;
 using Newtonsoft.Json;
-using Intrinsic.Math;
+using Atma.Math;
 
 // ReSharper disable InconsistentNaming
 
-namespace  Intrinsic.Math.Generated.Vec4
+namespace  Atma.Math.Generated.Vec4
 {
     [TestFixture]
     public class UintVec4Test

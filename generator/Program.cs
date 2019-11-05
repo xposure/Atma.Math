@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Intrinsic.Math.Types;
+using Atma.Math.Types;
 
-namespace Intrinsic.Math
+namespace Atma.Math
 {
     class Program
     {
-        public static string Namespace = "Intrinsic.Math";
+        public static string Namespace = "Atma.Math";
 
         private static string GetRootDirectory()
         {
@@ -29,11 +29,11 @@ namespace Intrinsic.Math
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
             Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
 
-            Console.WriteLine("Intrinsic.Math Generator");
+            Console.WriteLine("Atma.Math Generator");
 
             var basePath = GetRootDirectory();
-            var path = Path.Combine(basePath, "Intrinsic.Math\\source\\Intrinsic\\Math");
-            var testpath = Path.Combine(basePath, "Intrinsic.Math\\tests\\Intrinsic\\Math");
+            var path = Path.Combine(basePath, "Atma.Math\\source\\Intrinsic\\Math");
+            var testpath = Path.Combine(basePath, "Atma.Math\\tests\\Intrinsic\\Math");
 
             AbstractType.Version = 45;
             AbstractType.InitTypes();

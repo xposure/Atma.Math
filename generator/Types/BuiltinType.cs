@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using Intrinsic.Math.Members;
+using Atma.Math.Members;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     class BuiltinType : AbstractType
     {

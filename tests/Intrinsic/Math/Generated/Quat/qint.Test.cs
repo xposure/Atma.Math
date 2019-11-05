@@ -8,11 +8,11 @@ using System.Numerics;
 using System.Linq;
 using NUnit.Framework;
 using Newtonsoft.Json;
-using Intrinsic.Math;
+using Atma.Math;
 
 // ReSharper disable InconsistentNaming
 
-namespace  Intrinsic.Math.Generated.Quat
+namespace  Atma.Math.Generated.Quat
 {
     [TestFixture]
     public class IntQuatTest

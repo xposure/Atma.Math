@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Intrinsic.Math.Members;
-using Intrinsic.Math.Tests;
+using Atma.Math.Members;
+using Atma.Math.Tests;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     partial class VectorType : AbstractType
     {

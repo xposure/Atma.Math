@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Intrinsic.Math.Members;
+using Atma.Math.Members;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     partial class SwizzleType : AbstractType
     {

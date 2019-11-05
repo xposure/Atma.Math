@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using Intrinsic.Math.Members;
-using Intrinsic.Math.Tests;
+using Atma.Math.Members;
+using Atma.Math.Tests;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     abstract class AbstractType
     {

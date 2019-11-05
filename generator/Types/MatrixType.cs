@@ -2,9 +2,9 @@
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
-using Intrinsic.Math.Members;
+using Atma.Math.Members;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     class MatrixType : AbstractType
     {

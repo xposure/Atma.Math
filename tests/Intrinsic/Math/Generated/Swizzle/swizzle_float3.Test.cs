@@ -8,11 +8,11 @@ using System.Numerics;
 using System.Linq;
 using NUnit.Framework;
 using Newtonsoft.Json;
-using Intrinsic.Math.Swizzle;
+using Atma.Math.Swizzle;
 
 // ReSharper disable InconsistentNaming
 
-namespace  Intrinsic.Math.Swizzle.Generated.Swizzle
+namespace  Atma.Math.Swizzle.Generated.Swizzle
 {
     [TestFixture]
     public class FloatSwizzleVec3Test

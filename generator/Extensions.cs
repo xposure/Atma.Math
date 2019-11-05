@@ -5,9 +5,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Intrinsic.Math.Types;
+using Atma.Math.Types;
 
-namespace Intrinsic.Math
+namespace Atma.Math
 {
     static class Extensions
     {

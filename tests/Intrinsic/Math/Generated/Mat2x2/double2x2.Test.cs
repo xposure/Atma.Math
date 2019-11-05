@@ -8,11 +8,11 @@ using System.Numerics;
 using System.Linq;
 using NUnit.Framework;
 using Newtonsoft.Json;
-using Intrinsic.Math;
+using Atma.Math;
 
 // ReSharper disable InconsistentNaming
 
-namespace  Intrinsic.Math.Generated.Mat2x2
+namespace  Atma.Math.Generated.Mat2x2
 {
     [TestFixture]
     public class DoubleMat2x2Test

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Intrinsic.Math.Tests;
+using Atma.Math.Tests;
 
-namespace Intrinsic.Math.Types
+namespace Atma.Math.Types
 {
     partial class SwizzleType
     {
