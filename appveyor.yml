@@ -1,0 +1,39 @@
+﻿image: Visual Studio 2019
+install:
+  - choco install gitversion.portable --version 4.0.0 -y
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+
+assembly_info:
+  patch: false
+
+environment:
+  nuget_feed:
+    secure: T15Ie7zxXsFsN1JVkU6xtUz5PabRbt3nw3ce19qAo/qylg41YmbRcio/BWsV/1Pn
+  nuget_user:
+    secure: JFXulRBxuQFh7gO0f67O6/BTRJfqVQ5BKFpqfs5IZNo=
+  nuget_pass:
+    secure: 983j1Y1KlJombYlL6SbBWw==
+
+configuration: Debug
+
+before_build:
+  - cmd: nuget sources add -Name "AccountFeed" -Source %nuget_feed% -UserName %nuget_user% -Password %nuget_pass%
+  - cmd: dotnet restore --ignore-failed-sources --no-cache --disable-parallel
+  - ps: gitversion /l console /output buildserver /updateAssemblyInfo
+  - cmd: dotnet test
+
+build_script:
+  - cmd: dotnet pack source -c %configuration% /property:Version=%GitVersion_NuGetVersion% -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg -o .
+  - cmd: move "%APPVEYOR_PROJECT_NAME%.%GitVersion_NuGetVersion%.snupkg" "%APPVEYOR_PROJECT_NAME%.%GitVersion_NuGetVersion%.symbols.nupkg"
+
+after_build:
+  - cmd: appveyor PushArtifact "%APPVEYOR_PROJECT_NAME%.%GitVersion_NuGetVersion%.nupkg"
+  - cmd: appveyor PushArtifact "%APPVEYOR_PROJECT_NAME%.%GitVersion_NuGetVersion%.symbols.nupkg"
+
+  # here we are going to override common configuration
+for:
+  - branches:
+      only:
+        - master
+
+    configuration: Release
