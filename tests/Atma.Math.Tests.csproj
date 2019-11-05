@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Intrinsic.Math.csproj" />
+    <ProjectReference Include="..\source\Atma.Math.csproj" />
   </ItemGroup>
 
   <ItemGroup>

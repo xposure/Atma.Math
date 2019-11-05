@@ -18,7 +18,7 @@ namespace Intrinsic.Math
         private static string GetRootDirectory()
         {
             var path = Environment.CurrentDirectory;
-            while (string.Compare(Path.GetFileName(path), "src", true) != 0)
+            while (string.Compare(Path.GetFileName(path), "source", true) != 0)
                 path = Path.GetDirectoryName(path);
 
             return path;
@@ -32,7 +32,7 @@ namespace Intrinsic.Math
             Console.WriteLine("Intrinsic.Math Generator");
 
             var basePath = GetRootDirectory();
-            var path = Path.Combine(basePath, "Intrinsic.Math\\src\\Intrinsic\\Math");
+            var path = Path.Combine(basePath, "Intrinsic.Math\\source\\Intrinsic\\Math");
             var testpath = Path.Combine(basePath, "Intrinsic.Math\\tests\\Intrinsic\\Math");
 
             AbstractType.Version = 45;
