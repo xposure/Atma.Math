@@ -346,6 +346,35 @@ namespace Atma.Math
             return true;
         }
 
+        /// <summary>
+        ///		Returns whether or not this box intersects another.
+        /// </summary>
+        /// <param name="box2"></param>
+        /// <returns>True if the 2 boxes intersect, false otherwise.</returns>
+        public bool Intersects(ReadOnlySpan<AxisAlignedBox2> boxes, out int index)
+        {
+            index = -1;
+            for (var i = 0; i < boxes.Length; i++)
+            {
+                ref readonly var box2 = ref boxes[i];
+                // Use up to 6 separating planes
+                if (this.Max.x <= box2.Min.x)
+                    return false;
+                if (this.Max.y <= box2.Min.y)
+                    return false;
+
+                if (this.Min.x >= box2.Max.x)
+                    return false;
+                if (this.Min.y >= box2.Max.y)
+                    return false;
+
+                // otherwise, must be intersecting
+                index = i;
+                return true;
+            }
+            return false;
+        }
+
         // public bool Intersects(Circle circle)
         // {
         //     return Intersects(circle.Center) ||
