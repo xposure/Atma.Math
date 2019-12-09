@@ -65,11 +65,11 @@ namespace Atma.Math
     {
         #region Fields
 
-        internal float2 m_maxVector;
-        internal float2 m_minVector;
-        private float2[] corners;
-        private bool isInfinite;
-        private bool isNull;
+        public float2 Max;
+        public float2 Min;
+        //private float2[] corners;
+        //private bool isInfinite => float2.IsInfinity(m_minVector) || float2.IsInfinity(m_maxVector);
+        //private bool isNull;
 
         #endregion Fields
 
@@ -77,34 +77,34 @@ namespace Atma.Math
 
         public AxisAlignedBox2(float x0, float y0, float x1, float y1)
         {
-            corners = new float2[4];
-            m_minVector.x = x0;
-            m_minVector.y = y0;
-            m_maxVector.x = x1;
-            m_maxVector.y = y1;
-            isNull = false;
-            isInfinite = false;
-            UpdateCorners();
+            //corners = new float2[4];
+            Min.x = x0;
+            Min.y = y0;
+            Max.x = x1;
+            Max.y = y1;
+            //isNull = false;
+            //isInfinite = false;
+            //UpdateCorners();
         }
 
         public AxisAlignedBox2(float2 min, float2 max)
         {
-            corners = new float2[4];
-            m_minVector = min;
-            m_maxVector = max;
-            isNull = false;
-            isInfinite = false;
-            UpdateCorners();
+            //corners = new float2[4];
+            Min = min;
+            Max = max;
+            //isNull = false;
+            //isInfinite = false;
+            //UpdateCorners();
         }
 
         public AxisAlignedBox2(AxisAlignedBox2 box)
         {
-            corners = new float2[4];
-            m_minVector = box.m_minVector;
-            m_maxVector = box.m_maxVector;
-            isNull = box.IsNull;
-            isInfinite = box.IsInfinite;
-            UpdateCorners();
+            //corners = new float2[4];
+            Min = box.Min;
+            Max = box.Max;
+            //isNull = box.IsNull;
+            //isInfinite = box.IsInfinite;
+            //UpdateCorners();
         }
 
         #endregion Constructors
@@ -113,21 +113,21 @@ namespace Atma.Math
 
         public float Height
         {
-            get { return m_maxVector.y - m_minVector.y; }
+            get { return Max.y - Min.y; }
         }
 
         public float Width
         {
-            get { return m_maxVector.x - m_minVector.x; }
+            get { return Max.x - Min.x; }
         }
 
-        public float x0 { get { return m_minVector.x; } }
+        public float x0 { get { return Min.x; } }
 
-        public float x1 { get { return m_maxVector.x; } }
+        public float x1 { get { return Max.x; } }
 
-        public float y0 { get { return m_minVector.y; } }
+        public float y0 { get { return Min.y; } }
 
-        public float y1 { get { return m_maxVector.y; } }
+        public float y1 { get { return Max.y; } }
 
         /// <summary>
         ///     Return new bounding box from the supplied dimensions.
@@ -171,11 +171,11 @@ namespace Atma.Math
         {
             var hx = x / 2f;
             var hy = y / 2f;
-            m_minVector.x -= hx;
-            m_minVector.y -= hy;
-            m_maxVector.x += hx;
-            m_maxVector.y += hy;
-            UpdateCorners();
+            Min.x -= hx;
+            Min.y -= hy;
+            Max.x += hx;
+            Max.y += hy;
+            //UpdateCorners();
         }
 
         public void Inflate(float2 size)
@@ -189,33 +189,33 @@ namespace Atma.Math
         /// <param name="box">Source box.</param>
         public void Merge(AxisAlignedBox2 box)
         {
-            if (box.IsNull)
-            {
-                // nothing to merge with in this case, just return
-                return;
-            }
-            else if (box.IsInfinite)
-            {
-                this.IsInfinite = true;
-            }
-            else if (this.IsNull)
-            {
-                SetExtents(box.Minimum, box.Maximum);
-            }
-            else if (!this.IsInfinite)
-            {
-                if (box.m_minVector.x < m_minVector.x)
-                    m_minVector.x = box.m_minVector.x;
-                if (box.m_maxVector.x > m_maxVector.x)
-                    m_maxVector.x = box.m_maxVector.x;
+            // if (box.IsNull)
+            // {
+            //     // nothing to merge with in this case, just return
+            //     return;
+            // }
+            // else if (box.IsInfinite)
+            // {
+            //     this.IsInfinite = true;
+            // }
+            // else if (this.IsNull)
+            // {
+            //     SetExtents(box.Minimum, box.Maximum);
+            // }
+            // else if (!this.IsInfinite)
+            // {
+            if (box.Min.x < Min.x)
+                Min.x = box.Min.x;
+            if (box.Max.x > Max.x)
+                Max.x = box.Max.x;
 
-                if (box.m_minVector.y < m_minVector.y)
-                    m_minVector.y = box.m_minVector.y;
-                if (box.m_maxVector.y > m_maxVector.y)
-                    m_maxVector.y = box.m_maxVector.y;
+            if (box.Min.y < Min.y)
+                Min.y = box.Min.y;
+            if (box.Max.y > Max.y)
+                Max.y = box.Max.y;
 
-                UpdateCorners();
-            }
+            //UpdateCorners();
+            //}
         }
 
         /// <summary>
@@ -224,25 +224,25 @@ namespace Atma.Math
         /// <param name="point"></param>
         public void Merge(float2 point)
         {
-            if (isNull || isInfinite)
-            {
-                // if null, use this point
-                SetExtents(point, point);
-            }
-            else
-            {
-                if (point.x > m_maxVector.x)
-                    m_maxVector.x = point.x;
-                else if (point.x < m_minVector.x)
-                    m_minVector.x = point.x;
+            // if (isNull || isInfinite)
+            // {
+            //     // if null, use this point
+            //     SetExtents(point, point);
+            // }
+            // else
+            // {
+            if (point.x > Max.x)
+                Max.x = point.x;
+            else if (point.x < Min.x)
+                Min.x = point.x;
 
-                if (point.y > m_maxVector.y)
-                    m_maxVector.y = point.y;
-                else if (point.y < m_minVector.y)
-                    m_minVector.y = point.y;
+            if (point.y > Max.y)
+                Max.y = point.y;
+            else if (point.y < Min.y)
+                Min.y = point.y;
 
-                UpdateCorners();
-            }
+            //UpdateCorners();
+            //}
         }
 
         /// <summary>
@@ -251,7 +251,7 @@ namespace Atma.Math
         /// <param name="factor">Factor of scaling to apply to the box.</param>
         public void Scale(float2 factor)
         {
-            SetExtents(m_minVector * factor, m_maxVector * factor);
+            SetExtents(Min * factor, Max * factor);
         }
 
         /// <summary>
@@ -262,48 +262,48 @@ namespace Atma.Math
         /// <param name="max"></param>
         public void SetExtents(float2 min, float2 max)
         {
-            isNull = false;
-            isInfinite = false;
+            // isNull = false;
+            // isInfinite = false;
 
-            m_minVector = min;
-            m_maxVector = max;
+            Min = min;
+            Max = max;
 
-            UpdateCorners();
+            //UpdateCorners();
         }
 
         public void UpdateCorners(float2 minVector, float2 maxVector)
         {
-            m_minVector = minVector;
-            m_maxVector = maxVector;
-            UpdateCorners();
+            Min = minVector;
+            Max = maxVector;
+            //UpdateCorners();
         }
 
-        /// <summary>
-        ///
-        /// </summary>
-        internal void UpdateCorners()
-        {
-            // The order of these items is, using right-handed co-ordinates:
-            // Minimum Z face, starting with Min(all), then anticlockwise
-            //   around face (looking onto the face)
-            // Maximum Z face, starting with Max(all), then anticlockwise
-            //   around face (looking onto the face)
-            corners[0] = m_minVector;
-            corners[1].x = m_minVector.x;
-            corners[1].y = m_maxVector.y;
-            corners[2].x = m_maxVector.x;
-            corners[2].y = m_maxVector.y;
-            corners[3].x = m_maxVector.x;
-            corners[3].y = m_minVector.y;
+        // /// <summary>
+        // ///
+        // /// </summary>
+        // internal void UpdateCorners()
+        // {
+        //     // The order of these items is, using right-handed co-ordinates:
+        //     // Minimum Z face, starting with Min(all), then anticlockwise
+        //     //   around face (looking onto the face)
+        //     // Maximum Z face, starting with Max(all), then anticlockwise
+        //     //   around face (looking onto the face)
+        //     corners[0] = m_minVector;
+        //     corners[1].x = m_minVector.x;
+        //     corners[1].y = m_maxVector.y;
+        //     corners[2].x = m_maxVector.x;
+        //     corners[2].y = m_maxVector.y;
+        //     corners[3].x = m_maxVector.x;
+        //     corners[3].y = m_minVector.y;
 
-            //corners[4] = m_maxVector;
-            //corners[5].x= m_minVector.x;
-            //corners[5].y= m_maxVector.y;
-            //corners[6].x= m_minVector.x;
-            //corners[6].y= m_minVector.y;
-            //corners[7].x= m_maxVector.x;
-            //corners[7].y= m_minVector.y;
-        }
+        //     //corners[4] = m_maxVector;
+        //     //corners[5].x= m_minVector.x;
+        //     //corners[5].y= m_maxVector.y;
+        //     //corners[6].x= m_minVector.x;
+        //     //corners[6].y= m_minVector.y;
+        //     //corners[7].x= m_maxVector.x;
+        //     //corners[7].y= m_minVector.y;
+        // }
 
         #endregion Public methods
 
@@ -316,10 +316,10 @@ namespace Atma.Math
         /// <returns>True if the vector is contained inside the box.</returns>
         public bool Contains(float2 v)
         {
-            if (IsNull)
-                return false;
-            if (IsInfinite)
-                return true;
+            // if (IsNull)
+            //     return false;
+            // if (IsInfinite)
+            //     return true;
 
             return Minimum.x <= v.x && v.x <= Maximum.x &&
                       Minimum.y <= v.y && v.y <= Maximum.y;
@@ -327,7 +327,7 @@ namespace Atma.Math
 
         public bool Contains(AxisAlignedBox2 box)
         {
-            return Contains(box.m_minVector) && Contains(box.m_maxVector);
+            return Contains(box.Min) && Contains(box.Max);
         }
 
         #endregion Contain methods
@@ -336,8 +336,7 @@ namespace Atma.Math
 
         public MinimumTranslationVector collide(AxisAlignedBox2 box2)
         {
-            var overlap = Intersection(box2);
-            if (!overlap.IsNull)
+            if (Intersection(box2, out var overlap))
             {
                 var axis = new Axis();
                 var minOverlap = 0.0;
@@ -370,8 +369,8 @@ namespace Atma.Math
 
         public MinimumTranslationVector collideX(AxisAlignedBox2 box2)
         {
-            var overlap = Intersection(box2);
-            if (!overlap.IsNull)
+            //var overlap = Intersection(box2);
+            if (Intersection(box2, out var overlap))
             {
                 var axis = new Axis();
                 var minOverlap = 0.0;
@@ -393,8 +392,8 @@ namespace Atma.Math
 
         public MinimumTranslationVector collideY(AxisAlignedBox2 box2)
         {
-            var overlap = Intersection(box2);
-            if (!overlap.IsNull)
+            //var overlap = Intersection(box2);
+            if (Intersection(box2, out var overlap))
             {
                 var axis = new Axis();
                 var minOverlap = 0.0;
@@ -417,36 +416,40 @@ namespace Atma.Math
         /// <summary>
         ///		Calculate the area of intersection of this box and another
         /// </summary>
-        public AxisAlignedBox2 Intersection(AxisAlignedBox2 b2)
+        public bool Intersection(AxisAlignedBox2 b2, out AxisAlignedBox2 intersection)
         {
             if (!Intersects(b2))
-                return AxisAlignedBox2.Null;
+            {
+                intersection = new AxisAlignedBox2(float2.Zero, float2.Zero);
+                return false;
+            }
 
             float2 intMin = float2.Zero;
             float2 intMax = float2.Zero;
 
-            float2 b2max = b2.m_maxVector;
-            float2 b2min = b2.m_minVector;
+            float2 b2max = b2.Max;
+            float2 b2min = b2.Min;
 
-            if (b2max.x > m_maxVector.x && m_maxVector.x > b2min.x)
-                intMax.x = m_maxVector.x;
+            if (b2max.x > Max.x && Max.x > b2min.x)
+                intMax.x = Max.x;
             else
                 intMax.x = b2max.x;
-            if (b2max.y > m_maxVector.y && m_maxVector.y > b2min.y)
-                intMax.y = m_maxVector.y;
+            if (b2max.y > Max.y && Max.y > b2min.y)
+                intMax.y = Max.y;
             else
                 intMax.y = b2max.y;
 
-            if (b2min.x < m_minVector.x && m_minVector.x < b2max.x)
-                intMin.x = m_minVector.x;
+            if (b2min.x < Min.x && Min.x < b2max.x)
+                intMin.x = Min.x;
             else
                 intMin.x = b2min.x;
-            if (b2min.y < m_minVector.y && m_minVector.y < b2max.y)
-                intMin.y = m_minVector.y;
+            if (b2min.y < Min.y && Min.y < b2max.y)
+                intMin.y = Min.y;
             else
                 intMin.y = b2min.y;
 
-            return new AxisAlignedBox2(intMin, intMax);
+            intersection = new AxisAlignedBox2(intMin, intMax);
+            return true;
         }
 
         /// <summary>
@@ -456,22 +459,22 @@ namespace Atma.Math
         /// <returns>True if the 2 boxes intersect, false otherwise.</returns>
         public bool Intersects(AxisAlignedBox2 box2)
         {
-            // Early-fail for nulls
-            if (this.IsNull || box2.IsNull)
-                return false;
+            // // Early-fail for nulls
+            // if (this.IsNull || box2.IsNull)
+            //     return false;
 
-            if (this.IsInfinite || box2.IsInfinite)
-                return true;
+            // if (this.IsInfinite || box2.IsInfinite)
+            //     return true;
 
             // Use up to 6 separating planes
-            if (this.m_maxVector.x <= box2.m_minVector.x)
+            if (this.Max.x <= box2.Min.x)
                 return false;
-            if (this.m_maxVector.y <= box2.m_minVector.y)
+            if (this.Max.y <= box2.Min.y)
                 return false;
 
-            if (this.m_minVector.x >= box2.m_maxVector.x)
+            if (this.Min.x >= box2.Max.x)
                 return false;
-            if (this.m_minVector.y >= box2.m_maxVector.y)
+            if (this.Min.y >= box2.Max.y)
                 return false;
 
             // otherwise, must be intersecting
@@ -514,8 +517,8 @@ namespace Atma.Math
         /// <returns>True if the vector is within this box, false otherwise.</returns>
         public bool Intersects(float2 vector)
         {
-            return (vector.x >= m_minVector.x && vector.x <= m_maxVector.x &&
-                vector.y >= m_minVector.y && vector.y <= m_maxVector.y);
+            return (vector.x >= Min.x && vector.x <= Max.x &&
+                vector.y >= Min.y && vector.y <= Max.y);
         }
 
         #endregion Intersection Methods
@@ -524,37 +527,37 @@ namespace Atma.Math
 
         public float2 maxVector
         {
-            get { return m_maxVector; }
+            get { return Max; }
             set
             {
-                m_maxVector = value;
-                UpdateCorners();
+                Max = value;
+                //UpdateCorners();
             }
         }
 
         public float2 minVector
         {
-            get { return m_minVector; }
+            get { return Min; }
             set
             {
-                m_minVector = value;
-                UpdateCorners();
+                Min = value;
+                //UpdateCorners();
             }
         }
 
-        /// <summary>
-        ///		Returns a null box
-        /// </summary>
-        public static AxisAlignedBox2 Null
-        {
-            get
-            {
-                AxisAlignedBox2 nullBox = new AxisAlignedBox2(new float2(-0.5f, -0.5f), new float2(0.5f, 0.5f));
-                nullBox.IsNull = true;
-                nullBox.isInfinite = false;
-                return nullBox;
-            }
-        }
+        // /// <summary>
+        // ///		Returns a null box
+        // /// </summary>
+        // public static AxisAlignedBox2 Null
+        // {
+        //     get
+        //     {
+        //         AxisAlignedBox2 nullBox = new AxisAlignedBox2(new float2(-0.5f, -0.5f), new float2(0.5f, 0.5f));
+        //         // nullBox.IsNull = true;
+        //         // nullBox.isInfinite = false;
+        //         return nullBox;
+        //     }
+        // }
 
         /// <summary>
         ///    Get/set the center point of this bounding box.
@@ -563,101 +566,101 @@ namespace Atma.Math
         {
             get
             {
-                return (m_minVector + m_maxVector) * 0.5f;
+                return (Min + Max) * 0.5f;
             }
             set
             {
                 float2 halfSize = .5f * Size;
-                m_minVector = value - halfSize;
-                m_maxVector = value + halfSize;
-                UpdateCorners();
+                Min = value - halfSize;
+                Max = value + halfSize;
+                //UpdateCorners();
             }
         }
 
-        /// <summary>
-        ///		Returns an array of 8 corner points, useful for
-        ///		collision vs. non-aligned objects.
-        /// </summary>
-        /// <remarks>
-        ///		If the order of these corners is important, they are as
-        ///		follows: The 4 points of the minimum Z face (note that
-        ///		because we use right-handed coordinates, the minimum Z is
-        ///		at the 'back' of the box) starting with the minimum point of
-        ///		all, then anticlockwise around this face (if you are looking
-        ///		onto the face from outside the box). Then the 4 points of the
-        ///		maximum Z face, starting with maximum point of all, then
-        ///		anticlockwise around this face (looking onto the face from
-        ///		outside the box). Like this:
-        ///		<pre>
-        ///		      -z
-        ///		   1-----2
-        ///		  /|+y  /|
-        ///		 / |   / | +x
-        ///		5-----4  |
-        ///	 -x	|  0--|--3
-        ///		| /   | /
-        ///		|/ -y |/
-        ///		6-----7
-        ///		   +z
-        ///		</pre>
-        /// </remarks>
-        public float2[] Corners
-        {
-            get
-            {
-                Debug.Assert(!isNull && !isInfinite, "Cannot get the corners of a null or infinite box.");
+        // /// <summary>
+        // ///		Returns an array of 8 corner points, useful for
+        // ///		collision vs. non-aligned objects.
+        // /// </summary>
+        // /// <remarks>
+        // ///		If the order of these corners is important, they are as
+        // ///		follows: The 4 points of the minimum Z face (note that
+        // ///		because we use right-handed coordinates, the minimum Z is
+        // ///		at the 'back' of the box) starting with the minimum point of
+        // ///		all, then anticlockwise around this face (if you are looking
+        // ///		onto the face from outside the box). Then the 4 points of the
+        // ///		maximum Z face, starting with maximum point of all, then
+        // ///		anticlockwise around this face (looking onto the face from
+        // ///		outside the box). Like this:
+        // ///		<pre>
+        // ///		      -z
+        // ///		   1-----2
+        // ///		  /|+y  /|
+        // ///		 / |   / | +x
+        // ///		5-----4  |
+        // ///	 -x	|  0--|--3
+        // ///		| /   | /
+        // ///		|/ -y |/
+        // ///		6-----7
+        // ///		   +z
+        // ///		</pre>
+        // /// </remarks>
+        // public float2[] Corners
+        // {
+        //     get
+        //     {
+        //         Debug.Assert(!isNull && !isInfinite, "Cannot get the corners of a null or infinite box.");
 
-                return corners;
-            }
-        }
+        //         return corners;
+        //     }
+        // }
 
         public float2 HalfSize
         {
             get
             {
-                if (isNull)
-                    return float2.Zero;
+                // if (isNull)
+                //     return float2.Zero;
 
-                if (isInfinite)
-                    return new float2(float.PositiveInfinity, float.PositiveInfinity);
+                // if (isInfinite)
+                //     return new float2(float.PositiveInfinity, float.PositiveInfinity);
 
                 return (Maximum - Minimum) * 0.5f;
             }
         }
 
-        /// <summary>
-        /// Returns true if the box is infinite.
-        /// </summary>
-        public bool IsInfinite
-        {
-            get
-            {
-                return isInfinite;
-            }
-            set
-            {
-                isInfinite = value;
-                if (value)
-                    isNull = false;
-            }
-        }
+        // /// <summary>
+        // /// Returns true if the box is infinite.
+        // /// </summary>
+        // public bool IsInfinite
+        // {
+        //     get
+        //     {
+        //         return isInfinite;
+        //     }
+        //     set
+        //     {
+        //         isInfinite = value;
+        //         if (value)
+        //             isNull = false;
+        //     }
+        // }
 
-        /// <summary>
-        ///		Get/set the value of whether this box is null (i.e. not dimensions, etc).
-        /// </summary>
-        public bool IsNull
-        {
-            get
-            {
-                return isNull;
-            }
-            set
-            {
-                isNull = value;
-                if (value)
-                    isInfinite = false;
-            }
-        }
+        // /// <summary>
+        // ///		Get/set the value of whether this box is null (i.e. not dimensions, etc).
+        // /// </summary>
+        // public bool IsNull
+        // {
+        //     get
+        //     {
+        //         return isNull;
+        //     }
+        //     set
+        //     {
+        //         isNull = value;
+        //         if (value)
+        //             isInfinite = false;
+        //     }
+        // }
 
         /// <summary>
         ///		Get/set the maximum corner of the box.
@@ -666,13 +669,13 @@ namespace Atma.Math
         {
             get
             {
-                return m_maxVector;
+                return Max;
             }
             set
             {
-                isNull = false;
-                m_maxVector = value;
-                UpdateCorners();
+                //isNull = false;
+                Max = value;
+                //UpdateCorners();
             }
         }
 
@@ -683,13 +686,13 @@ namespace Atma.Math
         {
             get
             {
-                return m_minVector;
+                return Min;
             }
             set
             {
-                isNull = false;
-                m_minVector = value;
-                UpdateCorners();
+                //isNull = false;
+                Min = value;
+                //UpdateCorners();
             }
         }
 
@@ -700,15 +703,15 @@ namespace Atma.Math
         {
             get
             {
-                return m_maxVector - m_minVector;
+                return Max - Min;
             }
             set
             {
                 float2 center = Center;
                 float2 halfSize = .5f * value;
-                m_minVector = center - halfSize;
-                m_maxVector = center + halfSize;
-                UpdateCorners();
+                Min = center - halfSize;
+                Max = center + halfSize;
+                //UpdateCorners();
             }
         }
 
@@ -719,11 +722,11 @@ namespace Atma.Math
         {
             get
             {
-                if (isNull)
-                    return 0.0f;
+                // if (isNull)
+                //     return 0.0f;
 
-                if (isInfinite)
-                    return float.PositiveInfinity;
+                // if (isInfinite)
+                //     return float.PositiveInfinity;
 
                 float2 diff = Maximum - Minimum;
                 return diff.x * diff.y;
@@ -744,7 +747,7 @@ namespace Atma.Math
             //         (object.ReferenceEquals(right, null) || right.isNull))
             //    return true;
 
-            return left.m_minVector != right.m_minVector || left.m_maxVector != right.m_maxVector;
+            return left.Min != right.Min || left.Max != right.Max;
             //return
             //    (left.corners[0] != right.corners[0] || left.corners[1] != right.corners[1] || left.corners[2] != right.corners[2] ||
             //    left.corners[3] != right.corners[3] || left.corners[4] != right.corners[4] || left.corners[5] != right.corners[5] ||
@@ -761,7 +764,7 @@ namespace Atma.Math
             //         (object.ReferenceEquals(right, null) || right.isNull))
             //    return false;
 
-            return left.m_minVector == right.m_minVector && left.m_maxVector == right.m_maxVector;
+            return left.Min == right.Min && left.Max == right.Max;
             //(left.corners[0] == right.corners[0] && left.corners[1] == right.corners[1] && left.corners[2] == right.corners[2] &&
             //left.corners[3] == right.corners[3] && left.corners[4] == right.corners[4] && left.corners[5] == right.corners[5] &&
             //left.corners[6] == right.corners[6] && left.corners[7] == right.corners[7]);
@@ -772,18 +775,19 @@ namespace Atma.Math
             return obj is AxisAlignedBox2 && this == (AxisAlignedBox2)obj;
         }
 
-        public override int GetHashCode()
+        public unsafe override int GetHashCode()
         {
-            if (isNull)
-                return 0;
+            // if (isNull)
+            //     return 0;
 
-            return corners[0].GetHashCode() ^ corners[1].GetHashCode() ^ corners[2].GetHashCode() ^ corners[3].GetHashCode();// ^
+            return (Min.GetHashCode() * 7) ^ Max.GetHashCode();
+            //return corners[0].GetHashCode() ^ corners[1].GetHashCode() ^ corners[2].GetHashCode() ^ corners[3].GetHashCode();// ^
             //corners[4].GetHashCode() ^ corners[5].GetHashCode() ^ corners[6].GetHashCode() ^ corners[7].GetHashCode();
         }
 
         public override string ToString()
         {
-            return String.Format("{0}:{1}", this.m_minVector, this.m_maxVector);
+            return String.Format("{0}:{1}", this.Min, this.Max);
         }
 
         #endregion Operator Overloads
@@ -826,7 +830,7 @@ namespace Atma.Math
         //        var center = (rotatedCorners[0] + rotatedCorners[1] + rotatedCorners[2] + rotatedCorners[3]) / 4f;
         //        this.m_minVector = center;
         //        this.m_maxVector = center;
-        //        UpdateCorners();
+        ////        UpdateCorners();
 
         //        this.Merge(rotatedCorners[0]);
         //        this.Merge(rotatedCorners[1]);
