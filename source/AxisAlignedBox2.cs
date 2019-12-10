@@ -176,10 +176,10 @@ namespace Atma.Math
 
         }
 
-        public void UpdateCorners(float2 minVector, float2 maxVector)
+        public void Offset(float2 offset)
         {
-            Min = minVector;
-            Max = maxVector;
+            Min += offset;
+            Max += offset;
         }
 
         #endregion Public methods
