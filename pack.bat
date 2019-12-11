@@ -1,0 +1,1 @@
+dotnet pack source -o P:\packages --include-symbols --include-source
