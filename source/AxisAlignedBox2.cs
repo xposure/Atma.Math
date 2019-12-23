@@ -12,7 +12,7 @@ namespace Atma.Math
     ///	    for an axis-aligned bounding box (AABB) for collision and
     ///	    visibility determination.
     /// </remarks>
-    public struct AxisAlignedBox2 : ICloneable
+    public struct AxisAlignedBox2
     {
         #region Fields
 
@@ -504,15 +504,6 @@ namespace Atma.Math
         }
 
         #endregion Operator Overloads
-
-        #region ICloneable Members
-
-        public object Clone()
-        {
-            return new AxisAlignedBox2(this);
-        }
-
-        #endregion ICloneable Members
 
         // public AxisAlignedBox2[] fromRectOffset(RectOffset offset)
         // {
