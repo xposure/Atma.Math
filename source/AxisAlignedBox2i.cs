@@ -31,13 +31,13 @@ namespace Atma.Math
             Max.y = y1;
         }
 
-        public AxisAlignedBox2i(int2 min, int2 max)
+        public AxisAlignedBox2i(in int2 min, in int2 max)
         {
             Min = min;
             Max = max;
         }
 
-        public AxisAlignedBox2i(AxisAlignedBox2i box)
+        public AxisAlignedBox2i(in AxisAlignedBox2i box)
         {
             Min = box.Min;
             Max = box.Max;
@@ -71,7 +71,7 @@ namespace Atma.Math
         // /// <param name="center">Center of the new box</param>
         // /// <param name="size">Entire size of the new box</param>
         // /// <returns>New bounding box</returns>
-        // public static AxisAlignedBox2 FromDimensions(int2 center, int2 size)
+        // public static AxisAlignedBox2 FromDimensions(in int2 center, in int2 size)
         // {
         //     float2 halfSize = .5f * size;
 
@@ -92,13 +92,13 @@ namespace Atma.Math
             return new AxisAlignedBox2(min, max);
         }
 
-        public static AxisAlignedBox2 FromRect(int2 min, int w, int h)
+        public static AxisAlignedBox2 FromRect(in int2 min, int w, int h)
         {
             var max = new int2(w, h) + min;
             return new AxisAlignedBox2(min, max);
         }
 
-        public static AxisAlignedBox2 FromRect(int2 min, int2 size)
+        public static AxisAlignedBox2 FromRect(in int2 min, in int2 size)
         {
             return new AxisAlignedBox2(min, min + size);
         }
@@ -116,7 +116,7 @@ namespace Atma.Math
             if ((y & 1) == 1) Max.y++;
         }
 
-        public void Inflate(int2 size)
+        public void Inflate(in int2 size)
         {
             Inflate(size.x, size.y);
         }
@@ -125,7 +125,7 @@ namespace Atma.Math
         ///		Allows for merging two boxes together (combining).
         /// </summary>
         /// <param name="box">Source box.</param>
-        public void Merge(AxisAlignedBox2i box)
+        public void Merge(in AxisAlignedBox2i box)
         {
             if (box.Min.x < Min.x)
                 Min.x = box.Min.x;
@@ -143,7 +143,7 @@ namespace Atma.Math
         ///		Extends the box to encompass the specified point (if needed).
         /// </summary>
         /// <param name="point"></param>
-        public void Merge(int2 point)
+        public void Merge(in int2 point)
         {
             if (point.x > Max.x)
                 Max.x = point.x;
@@ -161,7 +161,7 @@ namespace Atma.Math
         ///    Scales the size of the box by the supplied factor.
         /// </summary>
         /// <param name="factor">Factor of scaling to apply to the box.</param>
-        public void Scale(int2 factor)
+        public void Scale(in int2 factor)
         {
             SetExtents(Min * factor, Max * factor);
         }
@@ -172,14 +172,14 @@ namespace Atma.Math
         /// </summary>
         /// <param name="min"></param>
         /// <param name="max"></param>
-        public void SetExtents(int2 min, int2 max)
+        public void SetExtents(in int2 min, in int2 max)
         {
             Min = min;
             Max = max;
 
         }
 
-        public void Offset(int2 offset)
+        public void Offset(in int2 offset)
         {
             Min += offset;
             Max += offset;
@@ -194,13 +194,13 @@ namespace Atma.Math
         /// </summary>
         /// <param name="v"></param>
         /// <returns>True if the vector is contained inside the box.</returns>
-        public bool Contains(int2 v)
+        public bool Contains(in int2 v)
         {
             return Min.x <= v.x && v.x <= Max.x &&
                       Min.y <= v.y && v.y <= Max.y;
         }
 
-        public bool Contains(AxisAlignedBox2i box)
+        public bool Contains(in AxisAlignedBox2i box)
         {
             return Contains(box.Min) && Contains(box.Max);
         }
@@ -213,7 +213,7 @@ namespace Atma.Math
         /// <summary>
         ///		Calculate the area of intersection of this box and another
         /// </summary>
-        public bool Intersection(AxisAlignedBox2i b2, out AxisAlignedBox2i intersection)
+        public bool Intersection(in AxisAlignedBox2i b2, out AxisAlignedBox2i intersection)
         {
             if (!Intersects(b2))
             {
@@ -254,7 +254,7 @@ namespace Atma.Math
         /// </summary>
         /// <param name="box2"></param>
         /// <returns>True if the 2 boxes intersect, false otherwise.</returns>
-        public bool Intersects(AxisAlignedBox2i box2)
+        public bool Intersects(in AxisAlignedBox2i box2)
         {
             // Use up to 6 separating planes
             if (this.Max.x <= box2.Min.x)
@@ -281,21 +281,11 @@ namespace Atma.Math
             index = -1;
             for (var i = 0; i < boxes.Length; i++)
             {
-                ref readonly var box2 = ref boxes[i];
-                // Use up to 6 separating planes
-                if (this.Max.x <= box2.Min.x)
-                    return false;
-                if (this.Max.y <= box2.Min.y)
-                    return false;
-
-                if (this.Min.x >= box2.Max.x)
-                    return false;
-                if (this.Min.y >= box2.Max.y)
-                    return false;
-
-                // otherwise, must be intersecting
-                index = i;
-                return true;
+                if (this.Intersects(boxes[i]))
+                {
+                    index = i;
+                    return true;
+                }
             }
             return false;
         }
@@ -334,7 +324,7 @@ namespace Atma.Math
         /// </summary>
         /// <param name="vector"></param>
         /// <returns>True if the vector is within this box, false otherwise.</returns>
-        public bool Intersects(int2 vector)
+        public bool Intersects(in int2 vector)
         {
             return (vector.x >= Min.x && vector.x <= Max.x &&
                 vector.y >= Min.y && vector.y <= Max.y);
@@ -347,7 +337,7 @@ namespace Atma.Math
         /// <summary>
         ///    Get/set the center point of this bounding box.
         /// </summary>
-        // public int2 Center
+        // public in int2 Center
         // {
         //     get
         //     {
@@ -355,13 +345,13 @@ namespace Atma.Math
         //     }
         //     set
         //     {
-        //         int2 halfSize = .5f * Size;
+        //         in int2 halfSize = .5f * Size;
         //         Min = value - halfSize;
         //         Max = value + halfSize;
         //     }
         // }
 
-        // public int2 HalfSize
+        // public in int2 HalfSize
         // {
         //     get
         //     {
@@ -403,12 +393,12 @@ namespace Atma.Math
 
         #region Operator Overloads
 
-        public static bool operator !=(AxisAlignedBox2i left, AxisAlignedBox2i right)
+        public static bool operator !=(in AxisAlignedBox2i left, in AxisAlignedBox2i right)
         {
             return left.Min != right.Min || left.Max != right.Max;
         }
 
-        public static bool operator ==(AxisAlignedBox2i left, AxisAlignedBox2i right)
+        public static bool operator ==(in AxisAlignedBox2i left, in AxisAlignedBox2i right)
         {
             return left.Min == right.Min && left.Max == right.Max;
         }
